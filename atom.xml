@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>yetyao blog</title>
+  
+  <subtitle>less is more</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="php" rel="hub"/>
+  <link href="http://yoursite.com/"/>
+  <updated>2018-09-22T07:49:13.215Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>yetyao</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>工具推荐</title>
+    <link href="http://yoursite.com/2018/09/22/%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/"/>
+    <id>http://yoursite.com/2018/09/22/工具推荐/</id>
+    <published>2018-09-22T03:55:27.000Z</published>
+    <updated>2018-09-22T07:49:13.215Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>办公类</p></blockquote><ol><li>snipaste <a href="https://zh.snipaste.com/" target="_blank" rel="noopener">截屏</a> (F1 截屏)</li><li>foxmail <a href="http://www.foxmail.com/" target="_blank" rel="noopener">邮件</a></li><li>spacesniffer pc电脑间排查<a href="http://www.uderzo.it/main_products/space_sniffer/download.html" target="_blank" rel="noopener">官网</a></li><li>foxmail <a href="http://www.foxmail.com/" target="_blank" rel="noopener">官网</a> </li><li>everthing    <a href="https://everything.en.softonic.com/" target="_blank" rel="noopener">文件搜索</a></li><li>clover      文件夹</li><li>XYplorerFree 文件管理器</li><li>快压        解压</li><li>夜神模拟器  手机模拟器</li><li>2345看图    看图</li><li>2345pdfreader pdf打开</li><li>网易云音乐 音乐</li><li>ditto       复制历史 (ctrl+ ` : 打开复制历史)</li><li>TeamViewer  电脑手机连接 <a href="https://www.teamviewer.com/zhcn/support/documents/" target="_blank" rel="noopener">文档</a></li><li>Iobit uninstaller 卸载软件</li><li>解压 <a href="https://www.7-zip.org/" target="_blank" rel="noopener">7z</a></li></ol><blockquote><p>编程类</p></blockquote><ol><li>sublime     编程神器</li><li>vim          上古神器</li><li>netbeans/editplus     IDE</li><li>notepad++    文本编辑</li><li>postman      模拟请求</li><li><a href="https://yapi.ymfe.org" target="_blank" rel="noopener">yapi</a>api管理平台</li><li>switchHost  host切换</li><li>xshell5     终端连接</li><li>filezilla   服务器文件传输</li><li><a href="http://www.hostbuf.com/t/988.html" target="_blank" rel="noopener">链接linux</a></li><li>Navicat     连接数据库</li><li>Resilio Sync 分布式存储</li><li>Fiddler <a href="http://www.phpernote.com/php-template/1281.html" target="_blank" rel="noopener">抓包</a></li><li>feedDemon   <a href="http://www.feeddemon.com/" target="_blank" rel="noopener">邮件订阅</a></li><li>LocoyPlatform 火车头数据抓取</li><li>go ide goLand(官网)[<a href="https://www.jetbrains.com/go]" target="_blank" rel="noopener">https://www.jetbrains.com/go]</a> (激活)[<a href="https://blog.csdn.net/qq_17088237/article/details/79403548]" target="_blank" rel="noopener">https://blog.csdn.net/qq_17088237/article/details/79403548]</a></li><li>winshake 查看Tcp请求 <a href="https://www.wireshark.org/download.html" target="_blank" rel="noopener">官网</a></li><li>phpstrom <a href="https://www.jianshu.com/p/f4cf6ac951a0" target="_blank" rel="noopener">PHPIDE</a></li><li>BitBucket 版本控制</li><li>sourcetree  gitlab 版本控制</li><li>gitkraken <a href="https://www.gitkraken.com" target="_blank" rel="noopener">图形化版本控制</a></li></ol><blockquote><p>上网</p></blockquote><ol><li>chrome  <a href="https://www.google.com/chrome/" target="_blank" rel="noopener">浏览器</a></li><li>gitbook      <a href="https://www.gitbook.com/" target="_blank" rel="noopener">书籍编辑</a></li><li>jsonView chrom中扩展 <a href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc/related?hl=zh-CN" target="_blank" rel="noopener">查看json数据</a></li><li>everything <a href="https://www.voidtools.com/downloads/" target="_blank" rel="noopener">官网</a></li></ol><blockquote><p>学习</p></blockquote><ol><li>有道云笔记  <a href="https://note.youdao.com/" target="_blank" rel="noopener">笔记</a></li><li>xmind       <a href="https://www.xmind.cn/" target="_blank" rel="noopener">脑图官网</a></li><li>dotplayer   <a href="https://potplayer.daum.net/" target="_blank" rel="noopener">播放器</a></li><li>pdf 看书:   <a href="https://www.sumatrapdfreader.org/free-pdf-reader.html" target="_blank" rel="noopener">Sumatra PDF</a></li><li>calibre pc看书</li><li>coggle 类xmind在线画图</li><li>visio 画图</li></ol><blockquote><p>工具推荐博客</p></blockquote><p><a href="https://www.kancloud.cn/maozhenggang/monkey-cheats/93901" target="_blank" rel="noopener">mac win linux 推荐</a></p><blockquote><p>mac</p></blockquote><ol><li>macdown <a href="http://macdown.uranusjr.com/" target="_blank" rel="noopener">markdown software</a></li><li>atom <a href="https://atom.io/" target="_blank" rel="noopener">官网</a></li><li>DataGrid（数据库管理工具）</li><li>paw <a href="https://paw.cloud/" target="_blank" rel="noopener">类似postman</a></li><li>kitematic docker管理工具</li><li>iterm2 <a href="https://www.iterm2.com/downloads.html" target="_blank" rel="noopener">终端</a></li><li>copyq 复制粘贴 <a href="https://hluk.github.io/CopyQ/" target="_blank" rel="noopener">官网</a></li></ol><blockquote><p>在线工具</p></blockquote><ol><li><a href="https://unbug.github.io/codelf" target="_blank" rel="noopener">函数命名codeif</a></li><li><a href="https://www.processon.com" target="_blank" rel="noopener">processon</a></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;办公类&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;snipaste &lt;a href=&quot;https://zh.snipaste.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;截屏&lt;/a&gt; (F1 截屏)&lt;/li
+      
+    
+    </summary>
+    
+      <category term="工具" scheme="http://yoursite.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="工具" scheme="http://yoursite.com/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mysql_数据类型_1</title>
+    <link href="http://yoursite.com/2018/09/20/mysql-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B-1/"/>
+    <id>http://yoursite.com/2018/09/20/mysql-数据类型-1/</id>
+    <published>2018-09-19T16:06:57.000Z</published>
+    <updated>2018-09-22T07:51:23.923Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="mysql"><a href="#mysql" class="headerlink" title="mysql"></a>mysql</h2><ol><li>整型<ol><li>tinyint</li><li>smallint</li><li>mediumint</li><li>int</li><li>bigint</li></ol></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;mysql&quot;&gt;&lt;a href=&quot;#mysql&quot; class=&quot;headerlink&quot; title=&quot;mysql&quot;&gt;&lt;/a&gt;mysql&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;整型&lt;ol&gt;
+&lt;li&gt;tinyint&lt;/li&gt;
+&lt;li&gt;smallint&lt;/li&gt;
+&lt;li&gt;medium
+      
+    
+    </summary>
+    
+      <category term="mysql" scheme="http://yoursite.com/categories/mysql/"/>
+    
+    
+      <category term="mysql" scheme="http://yoursite.com/tags/mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2018/09/17/hello-world/"/>
+    <id>http://yoursite.com/2018/09/17/hello-world/</id>
+    <published>2018-09-17T15:58:10.242Z</published>
+    <updated>2018-09-17T15:58:10.242Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown语法入门</title>
+    <link href="http://yoursite.com/2018/08/25/Markdown%E8%AF%AD%E6%B3%95%E5%85%A5%E9%97%A8/"/>
+    <id>http://yoursite.com/2018/08/25/Markdown语法入门/</id>
+    <published>2018-08-24T17:20:59.000Z</published>
+    <updated>2018-09-19T16:00:58.421Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="标题-（Headers）"><a href="#标题-（Headers）" class="headerlink" title="标题 （Headers）"></a>标题 （Headers）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 标题 1</span><br><span class="line">## 标题 2</span><br><span class="line">### 标题 3</span><br><span class="line">#### 标题 4</span><br><span class="line">##### 标题 5</span><br><span class="line">###### 标题 6</span><br></pre></td></tr></table></figure><h2 id="强调-（Emphasis）"><a href="#强调-（Emphasis）" class="headerlink" title="强调 （Emphasis）"></a>强调 （Emphasis）</h2><p><strong>粗体</strong><br><strong>粗体</strong><br><em>斜体</em><br>_斜体_<br><em>斜体<strong>结合</strong>粗体</em></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">**粗体**</span><br><span class="line">__粗体__</span><br><span class="line">*斜体*</span><br><span class="line">_斜体_</span><br><span class="line">_斜体**结合**粗体_</span><br></pre></td></tr></table></figure><h2 id="列表（Lists）"><a href="#列表（Lists）" class="headerlink" title="列表（Lists）"></a>列表（Lists）</h2><ul><li>表项a</li><li>表型b</li></ul><ol><li>表项1</li><li>表项2</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">* 表项1</span><br><span class="line">* 表项2</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1. 表项1</span><br><span class="line">2. 表项2</span><br></pre></td></tr></table></figure><h2 id="图片-Images"><a href="#图片-Images" class="headerlink" title="图片 (Images)"></a>图片 (Images)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![图名title](http://image_url.com)</span><br></pre></td></tr></table></figure><h2 id="链接-Links"><a href="#链接-Links" class="headerlink" title="链接 (Links)"></a>链接 (Links)</h2><p><a href="https://yetyao.github.io/" target="_blank" rel="noopener">yetyao blog</a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[链接文字](http://link_url.com)</span><br></pre></td></tr></table></figure><h2 id="引号-Blockquotes"><a href="#引号-Blockquotes" class="headerlink" title="引号 (Blockquotes)"></a>引号 (Blockquotes)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; 书写引文文本</span><br></pre></td></tr></table></figure><h2 id="内联代码-Inline-Code"><a href="#内联代码-Inline-Code" class="headerlink" title="内联代码 (Inline Code)"></a>内联代码 (Inline Code)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sql文本 `select *  from xx_order limit 1` sql文本</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;标题-（Headers）&quot;&gt;&lt;a href=&quot;#标题-（Headers）&quot; class=&quot;headerlink&quot; title=&quot;标题 （Headers）&quot;&gt;&lt;/a&gt;标题 （Headers）&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="Markdown" scheme="http://yoursite.com/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PHP运算符</title>
+    <link href="http://yoursite.com/2018/07/15/PHP%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
+    <id>http://yoursite.com/2018/07/15/PHP运算符/</id>
+    <published>2018-07-15T12:18:59.000Z</published>
+    <updated>2018-09-19T16:01:10.134Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="PHP运算符"><a href="#PHP运算符" class="headerlink" title="PHP运算符"></a>PHP运算符</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$a = 0;</span><br><span class="line">$b = 0;</span><br><span class="line">if($a=3||$b=3)&#123;</span><br><span class="line">$a++;</span><br><span class="line">$b++;</span><br><span class="line">&#125;</span><br><span class="line">echo $a.&apos;-&apos;.$b;</span><br><span class="line">//1-1</span><br></pre></td></tr></table></figure><blockquote><p>|| <em>优先级</em>高于 =<br><code>if($a=3||$b=3)</code> 相当于 <code>if($a=(3||$b=3))</code><br><code>$a = (3||$b=3)</code> 又因为<em>短路</em>导致 <code>$a=true</code><br><code>if($a=true)</code> 相当于 <code>if(true)</code> 此时因为<em>意外赋值</em> $a为true,$b为0<br><code>$a++</code>和<code>$b++</code> 进行<em>后加加</em><br>故$a为1 $b为1 结果为 1-1</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$a = 0;</span><br><span class="line">$b = 0;</span><br><span class="line">if($a=3||$b=3)&#123;</span><br><span class="line">    $a;</span><br><span class="line">    $b++;</span><br><span class="line">&#125;</span><br><span class="line">echo $a.&apos;-&apos;.$b;</span><br><span class="line">//1-1</span><br></pre></td></tr></table></figure><blockquote><p>|| <em>优先级</em>高于 =<br><code>if($a=3||$b=3)</code> 相当于 <code>if($a=(3||$b=3))</code><br><code>$a = (3||$b=3)</code> 又因为<em>短路</em>导致 <code>$a=true</code><br><code>if($a=true)</code> 相当于 <code>if(true)</code> 此时因为<em>意外赋值</em> $a为true,$b为0<br><code>$b++</code> 进行<em>后加加</em>  <code>echo true;</code> 为1<br>故$a为true $b为1  结果为 1-1 </p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$a = 0;</span><br><span class="line">$b = 0;</span><br><span class="line">if($a=3 or $b=3)&#123;</span><br><span class="line">    $a++;</span><br><span class="line">    $b++;</span><br><span class="line">&#125;</span><br><span class="line">echo $a.&apos;-&apos;.$b;</span><br><span class="line">//4-1</span><br></pre></td></tr></table></figure><blockquote><p>or <em>优先级</em>低于 =<br>因为<em>短路</em> <code>if($a=3 or $b=3)</code> 相当于 <code>if($a=3)</code><br><code>if($a=3)</code> 相当于 <code>if(3)</code> 此时因为<em>意外赋值</em> $a为3,$b为0<br><code>$a++</code>和<code>$b++</code> 进行<em>后加加</em><br>故$a为4 $b为1 结果为 4-1</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;PHP运算符&quot;&gt;&lt;a href=&quot;#PHP运算符&quot; class=&quot;headerlink&quot; title=&quot;PHP运算符&quot;&gt;&lt;/a&gt;PHP运算符&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gut
+      
+    
+    </summary>
+    
+      <category term="PHP" scheme="http://yoursite.com/categories/PHP/"/>
+    
+    
+      <category term="PHP" scheme="http://yoursite.com/tags/PHP/"/>
+    
+  </entry>
+  
+</feed>
