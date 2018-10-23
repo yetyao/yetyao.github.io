@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="yetyao blog">
 <meta property="og:description" content="__construct() 实例化对象时被调用，当__construct和以类名为函数名的函数同时存在时，__construct将被调用，另一个不被调用。作用：初始化类的成员变量 __destruct() 当删除一个对象或对象操作终止时被调用。作用：释放对象占用的资源 __call() 对象调用某个方法，若方法可访问，则直接调用；若方法不可访问，则会去调用__call函数。 __get() 读取">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-23T16:14:15.047Z">
+<meta property="og:updated_time" content="2018-10-23T16:18:49.907Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PHP-魔术函数">
 <meta name="twitter:description" content="__construct() 实例化对象时被调用，当__construct和以类名为函数名的函数同时存在时，__construct将被调用，另一个不被调用。作用：初始化类的成员变量 __destruct() 当删除一个对象或对象操作终止时被调用。作用：释放对象占用的资源 __call() 对象调用某个方法，若方法可访问，则直接调用；若方法不可访问，则会去调用__call函数。 __get() 读取">
@@ -107,14 +107,16 @@
 <li><code>__wakeup()</code> <code>unserialize</code>时被调用，做些对象的初始化工作。</li>
 <li><code>__isset()</code> 检测一个对象的属性是否存在时被调用。如：<code>isset($c-&gt;name)</code>。</li>
 <li><code>__unset()</code> <code>unset</code>一个对象的属性时被调用。如：<code>unset($c-&gt;name)</code>。</li>
-<li><code>__set_state()</code> 类的实例被<code>var_export</code>时，该方法会被调用<br>用<code>__set_state</code>的返回值做为<code>var_export</code>的返回值。<br>13.<code>__autoload()</code> 实例化一个对象时，如果对应的类不存在，则该方法被调用。</li>
-<li><code>__debugInfo()</code> 类的实例被<code>var_dump</code>时，该方法会被调用（PHP 5.6.0才有）<br>15  <code>__invoke()</code>把类的实例当成函数一样调用时，该方法会被调用</li>
+<li><code>__set_state()</code> 类的实例被<code>var_export</code>时，该方法会被调用。用<code>__set_state</code>的返回值做为<code>var_export</code>的返回值。</li>
+<li><code>__autoload()</code> 实例化一个对象时，如果对应的类不存在，则该方法被调用。</li>
+<li><code>__debugInfo()</code> 类的实例被<code>var_dump</code>时，该方法会被调用（PHP 5.6.0才有）</li>
+<li><code>__invoke()</code>把类的实例当成函数一样调用时，该方法会被调用</li>
 </ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/24/php-魔术函数/" data-id="cjnlxgll8000e2umc45vk6shj" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/24/php-魔术函数/" data-id="cjnlxkqz4000e4jmckg7fult5" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>

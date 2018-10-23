@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   <link href="php" rel="hub"/>
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-23T16:14:15.047Z</updated>
+  <updated>2018-10-23T16:18:49.907Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://yoursite.com/2018/10/24/php-%E9%AD%94%E6%9C%AF%E5%87%BD%E6%95%B0/"/>
     <id>http://yoursite.com/2018/10/24/php-魔术函数/</id>
     <published>2018-10-24T15:18:59.000Z</published>
-    <updated>2018-10-23T16:14:15.047Z</updated>
+    <updated>2018-10-23T16:18:49.907Z</updated>
     
-    <content type="html"><![CDATA[<ol><li><code>__construct()</code> 实例化对象时被调用，<br>当<code>__construct</code>和以类名为函数名的函数同时存在时，<code>__construct</code>将被调用，另一个不被调用。<br>作用：初始化类的成员变量</li><li><code>__destruct()</code> 当删除一个对象或对象操作终止时被调用。<br>作用：释放对象占用的资源</li><li><code>__call()</code> 对象调用某个方法，若方法可访问，则直接调用；若方法不可访问，则会去调用<code>__call</code>函数。</li><li><code>__get()</code> 读取一个对象的属性时， 若属性存在，则直接返回属性值； 若不存在，则会调用<code>__get</code>函数。</li><li><code>__set()</code> 设置一个对象的属性时， 若属性存在，则直接赋值； 若不存在，则会调用<code>__set</code>函数。</li><li><code>__toString()</code> 打印一个对象的时被调用。<br>如<code>echo $obj;</code>或<code>print $obj;</code></li><li><code>__clone()</code> 克隆对象时被调用。如：<code>$t=new Test();$t1=clone $t;</code></li><li><code>__sleep()</code>serialize之前被调用。若对象比较大，想删减一点东东再序列化，可考虑一下此函数。</li><li><code>__wakeup()</code> <code>unserialize</code>时被调用，做些对象的初始化工作。</li><li><code>__isset()</code> 检测一个对象的属性是否存在时被调用。如：<code>isset($c-&gt;name)</code>。</li><li><code>__unset()</code> <code>unset</code>一个对象的属性时被调用。如：<code>unset($c-&gt;name)</code>。</li><li><code>__set_state()</code> 类的实例被<code>var_export</code>时，该方法会被调用<br>用<code>__set_state</code>的返回值做为<code>var_export</code>的返回值。<br>13.<code>__autoload()</code> 实例化一个对象时，如果对应的类不存在，则该方法被调用。</li><li><code>__debugInfo()</code> 类的实例被<code>var_dump</code>时，该方法会被调用（PHP 5.6.0才有）<br>15  <code>__invoke()</code>把类的实例当成函数一样调用时，该方法会被调用</li></ol>]]></content>
+    <content type="html"><![CDATA[<ol><li><code>__construct()</code> 实例化对象时被调用，<br>当<code>__construct</code>和以类名为函数名的函数同时存在时，<code>__construct</code>将被调用，另一个不被调用。<br>作用：初始化类的成员变量</li><li><code>__destruct()</code> 当删除一个对象或对象操作终止时被调用。<br>作用：释放对象占用的资源</li><li><code>__call()</code> 对象调用某个方法，若方法可访问，则直接调用；若方法不可访问，则会去调用<code>__call</code>函数。</li><li><code>__get()</code> 读取一个对象的属性时， 若属性存在，则直接返回属性值； 若不存在，则会调用<code>__get</code>函数。</li><li><code>__set()</code> 设置一个对象的属性时， 若属性存在，则直接赋值； 若不存在，则会调用<code>__set</code>函数。</li><li><code>__toString()</code> 打印一个对象的时被调用。<br>如<code>echo $obj;</code>或<code>print $obj;</code></li><li><code>__clone()</code> 克隆对象时被调用。如：<code>$t=new Test();$t1=clone $t;</code></li><li><code>__sleep()</code>serialize之前被调用。若对象比较大，想删减一点东东再序列化，可考虑一下此函数。</li><li><code>__wakeup()</code> <code>unserialize</code>时被调用，做些对象的初始化工作。</li><li><code>__isset()</code> 检测一个对象的属性是否存在时被调用。如：<code>isset($c-&gt;name)</code>。</li><li><code>__unset()</code> <code>unset</code>一个对象的属性时被调用。如：<code>unset($c-&gt;name)</code>。</li><li><code>__set_state()</code> 类的实例被<code>var_export</code>时，该方法会被调用。用<code>__set_state</code>的返回值做为<code>var_export</code>的返回值。</li><li><code>__autoload()</code> 实例化一个对象时，如果对应的类不存在，则该方法被调用。</li><li><code>__debugInfo()</code> 类的实例被<code>var_dump</code>时，该方法会被调用（PHP 5.6.0才有）</li><li><code>__invoke()</code>把类的实例当成函数一样调用时，该方法会被调用</li></ol>]]></content>
     
     <summary type="html">
     
