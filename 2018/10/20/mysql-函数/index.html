@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="yetyao blog">
 <meta property="og:description" content="1. if IF(expr,v1,v2)如果表达式 expr 成立，返回结果 v1；否则，返回结果 v2   12345678select if(&amp;apos;1&amp;apos;,1,2);--1select if(&amp;apos;0&amp;apos;,1,2);--2select if(&amp;apos;jack&amp;apos;,1,2);--2select if(&amp;apos;1&amp;apos;,true,false);--">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-23T14:57:21.850Z">
+<meta property="og:updated_time" content="2018-10-23T15:30:04.699Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mysql-函数-1">
 <meta name="twitter:description" content="1. if IF(expr,v1,v2)如果表达式 expr 成立，返回结果 v1；否则，返回结果 v2   12345678select if(&amp;apos;1&amp;apos;,1,2);--1select if(&amp;apos;0&amp;apos;,1,2);--2select if(&amp;apos;jack&amp;apos;,1,2);--2select if(&amp;apos;1&amp;apos;,true,false);--">
@@ -104,19 +104,20 @@
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">select  ifnull(&apos;null&apos;,1);</span><br><span class="line">-- null</span><br><span class="line">select ifnull(null,1);</span><br><span class="line">-- 1</span><br><span class="line">select ifnull(&apos;&apos;,1);</span><br><span class="line">-- （空字符串）</span><br><span class="line">select ifnull(0,1);</span><br><span class="line">-- 0</span><br></pre></td></tr></table></figure>
 <h2 id="3-last-insert-id"><a href="#3-last-insert-id" class="headerlink" title="3. last_insert_id"></a>3. last_insert_id</h2><blockquote>
-<p>LAST_INSERT_ID()<br>返回最近生成的 AUTO_INCREMENT 值</p>
+<p>LAST_INSERT_ID()<br>返回最近生成的 AUTO_INCREMENT 值<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select last_insert_id();</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <h2 id="4-version"><a href="#4-version" class="headerlink" title="4. version"></a>4. version</h2><blockquote>
-<p>version()<br>返回mysql版本</p>
+<p>version()<br>返回mysql版本<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select version();</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <h2 id="5-isnull"><a href="#5-isnull" class="headerlink" title="5. isnull"></a>5. isnull</h2><blockquote>
 <p>isnull(null)<br>判断是否为null 是返回1 否返回0</p>
 </blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">select isnull(&apos;null&apos;)</span><br><span class="line">--0</span><br><span class="line">select isnull(0);</span><br><span class="line">--0</span><br><span class="line">select isnull(&apos;&apos;);</span><br><span class="line">--0</span><br><span class="line">select isnull(null);</span><br><span class="line">--1</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/20/mysql-函数/" data-id="cjnlvl0970000comc0zlg0vjl" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/20/mysql-函数/" data-id="cjnlvlxka0007dnmc1fysk82v" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/">mysql</a></li></ul>
@@ -175,7 +176,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/mysql/" style="font-size: 20px;">mysql</a> <a href="/tags/time/" style="font-size: 10px;">time</a> <a href="/tags/工具/" style="font-size: 10px;">工具</a>
+      <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/PHP/" style="font-size: 15px;">PHP</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/mysql/" style="font-size: 20px;">mysql</a> <a href="/tags/time/" style="font-size: 10px;">time</a> <a href="/tags/工具/" style="font-size: 10px;">工具</a>
     </div>
   </div>
 
@@ -197,6 +198,14 @@
       <ul>
         
           <li>
+            <a href="/2018/10/24/php-魔术函数/">PHP-魔术函数</a>
+          </li>
+        
+          <li>
+            <a href="/2018/10/24/php-魔术函数/">(no title)</a>
+          </li>
+        
+          <li>
             <a href="/2018/10/20/mysql-时间函数/">mysql-函数-1</a>
           </li>
         
@@ -206,14 +215,6 @@
         
           <li>
             <a href="/2018/09/29/git-入门/">git 入门</a>
-          </li>
-        
-          <li>
-            <a href="/2018/09/22/工具推荐/">工具推荐</a>
-          </li>
-        
-          <li>
-            <a href="/2018/09/20/mysql-数据类型-1/">mysql_数据类型_1</a>
           </li>
         
       </ul>
