@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2018/11/07/PHP-spl/</loc>
+    
+    <lastmod>2018-11-07T13:33:32.697Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/11/07/PHP-core/</loc>
+    
+    <lastmod>2018-11-07T13:31:34.869Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2018/10/25/%E5%85%B3%E4%BA%8E%E6%8C%A8%E9%AA%82/</loc>
     
     <lastmod>2018-10-23T16:44:03.972Z</lastmod>
