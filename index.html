@@ -70,6 +70,175 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-php-数字-方法" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/11/22/php-数字-方法/" class="article-date">
+  <time datetime="2018-11-22T12:18:59.000Z" itemprop="datePublished">2018-11-22</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/PHP/">PHP</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/22/php-数字-方法/">PHP-数字—方法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">public function bqwhits($hits)</span><br><span class="line">&#123;</span><br><span class="line">   $b = 1000;//千</span><br><span class="line">   $c = 10000;//万</span><br><span class="line">   $d = 100000000;//亿</span><br><span class="line"> </span><br><span class="line">   if ($hits &gt;= $b &amp;&amp; $hits &lt; $c) &#123;</span><br><span class="line">      return round($hits / $b, 2) . &apos;千&apos;;</span><br><span class="line">   &#125;</span><br><span class="line">   else if ($hits &gt;= $c &amp;&amp; $hits &lt; $d) &#123;</span><br><span class="line">      return round($hits / $c, 2) . &apos;万&apos;;</span><br><span class="line">   &#125;</span><br><span class="line">   elseif ($hits &gt;= $d) &#123;</span><br><span class="line">      return round($hits / $d, 2) . &apos;亿&apos;;</span><br><span class="line">   &#125;</span><br><span class="line">   else &#123;</span><br><span class="line">      return $hits;</span><br><span class="line">   &#125;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/11/22/php-数字-方法/" data-id="cjoscng1f000lbkmcgekqw5io" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-php-时间-方法" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/11/22/php-时间-方法/" class="article-date">
+  <time datetime="2018-11-22T10:18:59.000Z" itemprop="datePublished">2018-11-22</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/PHP/">PHP</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/22/php-时间-方法/">PHP-时间-方法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">//时间戳转成分钟</span><br><span class="line">function transTime($time) &#123;</span><br><span class="line">    $time = (int) substr($time, 0, 10);</span><br><span class="line">    $int = time() - $time;</span><br><span class="line">    $str = &apos;&apos;;</span><br><span class="line">    if ($int &lt;= 2) &#123;</span><br><span class="line">        $str = sprintf(&apos;刚刚&apos;, $int);</span><br><span class="line">    &#125; elseif ($int &lt; 60) &#123;</span><br><span class="line">        $str = sprintf(&apos;%d秒前&apos;, $int);</span><br><span class="line">    &#125; elseif ($int &lt; 3600) &#123;</span><br><span class="line">        $str = sprintf(&apos;%d分钟前&apos;, floor($int / 60));</span><br><span class="line">    &#125; elseif ($int &lt; 86400) &#123;</span><br><span class="line">        $str = sprintf(&apos;%d小时前&apos;, floor($int / 3600));</span><br><span class="line">    &#125; elseif ($int &lt; 2592000) &#123;</span><br><span class="line">        $str = sprintf(&apos;%d天前&apos;, floor($int / 86400));</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        $str = date(&apos;Y-m-d&apos;, $time);</span><br><span class="line">    &#125;</span><br><span class="line">    return $str;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/11/22/php-时间-方法/" data-id="cjoscng1n0010bkmcokhoc3sk" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-加密解密" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/11/22/加密解密/" class="article-date">
+  <time datetime="2018-11-22T10:18:59.000Z" itemprop="datePublished">2018-11-22</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/PHP/">PHP</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/22/加密解密/">PHP-加密解密-方法1</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">function encrypt($data, $key) &#123;</span><br><span class="line">    $size = mcrypt_get_block_size(&apos;des&apos;, &apos;ecb&apos;);</span><br><span class="line">    $data = pkcs5_pad($data, $size);</span><br><span class="line">    $td = mcrypt_module_open(&apos;des&apos;, &apos;&apos;, &apos;ecb&apos;, &apos;&apos;);</span><br><span class="line">    $iv = @mcrypt_create_iv(mcrypt_enc_get_iv_size($td), MCRYPT_RAND);</span><br><span class="line">    @mcrypt_generic_init($td, $key, $iv);</span><br><span class="line">    $data = mcrypt_generic($td, $data);</span><br><span class="line">    mcrypt_generic_deinit($td);</span><br><span class="line">    mcrypt_module_close($td);</span><br><span class="line">    return strtoupper(bin2hex($data));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function decrypt($data, $key) &#123;</span><br><span class="line">    $data = hex2bin(strtolower($data));</span><br><span class="line">    $td = mcrypt_module_open(&apos;des&apos;, &apos;&apos;, &apos;ecb&apos;, &apos;&apos;);</span><br><span class="line">    $iv = @mcrypt_create_iv(mcrypt_enc_get_iv_size($td), MCRYPT_RAND);</span><br><span class="line">    $ks = mcrypt_enc_get_key_size($td);</span><br><span class="line">    @mcrypt_generic_init($td, $key, $iv);</span><br><span class="line">    $decrypted = mdecrypt_generic($td, $data);</span><br><span class="line">    mcrypt_generic_deinit($td);</span><br><span class="line">    mcrypt_module_close($td);</span><br><span class="line">    $result = pkcs5_unpad($decrypted);</span><br><span class="line">    return $result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/11/22/加密解密/" data-id="cjoscng1j000sbkmcnx7hstz3" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-PHP-方法-获取IP" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/11/17/PHP-方法-获取IP/" class="article-date">
+  <time datetime="2018-11-17T12:18:59.000Z" itemprop="datePublished">2018-11-17</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/PHP/">PHP</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/17/PHP-方法-获取IP/">PHP-方法-获取IP</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">// 获取客户端IP</span><br><span class="line">function real_ip() &#123;</span><br><span class="line">    static $realip = NULL;</span><br><span class="line">    if ($realip !== NULL) &#123;</span><br><span class="line">        return $realip;</span><br><span class="line">    &#125;</span><br><span class="line">    if (isset($_SERVER)) &#123;</span><br><span class="line">        if (isset($_SERVER [&apos;HTTP_X_FORWARDED_FOR&apos;])) &#123;</span><br><span class="line">            $arr = explode(&apos;,&apos;, $_SERVER [&apos;HTTP_X_FORWARDED_FOR&apos;]);</span><br><span class="line">            /* 取X-Forwarded-For中第一个非unknown的有效IP字符串 */</span><br><span class="line">            foreach ($arr as $ip) &#123;</span><br><span class="line">                $ip = trim($ip);</span><br><span class="line">                if ($ip != &apos;unknown&apos;) &#123;</span><br><span class="line">                    $realip = $ip;</span><br><span class="line">                    break;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; elseif (isset($_SERVER [&apos;HTTP_CLIENT_IP&apos;])) &#123;</span><br><span class="line">            $realip = $_SERVER [&apos;HTTP_CLIENT_IP&apos;];</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            if (isset($_SERVER [&apos;REMOTE_ADDR&apos;])) &#123;</span><br><span class="line">                $realip = $_SERVER [&apos;REMOTE_ADDR&apos;];</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">                $realip = &apos;0.0.0.0&apos;;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        if (getenv(&apos;HTTP_X_FORWARDED_FOR&apos;)) &#123;</span><br><span class="line">            $realip = getenv(&apos;HTTP_X_FORWARDED_FOR&apos;);</span><br><span class="line">        &#125; elseif (getenv(&apos;HTTP_CLIENT_IP&apos;)) &#123;</span><br><span class="line">            $realip = getenv(&apos;HTTP_CLIENT_IP&apos;);</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            $realip = getenv(&apos;REMOTE_ADDR&apos;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    preg_match(&quot;/[\d\.]&#123;7,15&#125;/&quot;, $realip, $onlineip);</span><br><span class="line">    $realip = !empty($onlineip [0]) ? $onlineip [0] : &apos;0.0.0.0&apos;;</span><br><span class="line">    return $realip;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/11/17/PHP-方法-获取IP/" data-id="cjoscng0y0004bkmcqyo80hr6" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-PHP-spl" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/11/07/PHP-spl/" class="article-date">
@@ -100,7 +269,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/07/PHP-spl/" data-id="cjo8oro3s001r48mcojtvsxqd" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/11/07/PHP-spl/" data-id="cjoscng2j0026bkmcw9gyr0ms" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
@@ -142,7 +311,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/07/PHP-core/" data-id="cjo8oro3n001o48mco92hjhbu" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/11/07/PHP-core/" data-id="cjoscng2d0023bkmcsj18jqyv" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
@@ -185,7 +354,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/25/关于挨骂/" data-id="cjo8oro2q000i48mcywofyxjp" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/25/关于挨骂/" data-id="cjoscng1q0018bkmccy7qk38q" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/鸡汤/">鸡汤</a></li></ul>
@@ -254,7 +423,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/25/自我提升/" data-id="cjo8oro31000x48mca0zh0xxd" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/25/自我提升/" data-id="cjoscng1p0014bkmcq4ae75zn" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/方法/">方法</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/鸡汤/">鸡汤</a></li></ul>
@@ -314,7 +483,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/25/正则表达式入门/" data-id="cjo8oro2y000t48mcmswafc90" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/25/正则表达式入门/" data-id="cjoscng1s001cbkmcyq2y1fpk" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/正则/">正则</a></li></ul>
@@ -411,295 +580,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/25/PHP-50点提升php编程效率/" data-id="cjo8oro2u000l48mc5adv8ci4" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/25/PHP-50点提升php编程效率/" data-id="cjoscng0t0002bkmc8kqyj77d" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-php-魔术函数" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/10/24/php-魔术函数/" class="article-date">
-  <time datetime="2018-10-24T15:18:59.000Z" itemprop="datePublished">2018-10-24</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/PHP/">PHP</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/24/php-魔术函数/">PHP-魔术函数</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ol>
-<li><code>__construct()</code> 实例化对象时被调用，<br>当<code>__construct</code>和以类名为函数名的函数同时存在时，<code>__construct</code>将被调用，另一个不被调用。<br>作用：初始化类的成员变量</li>
-<li><code>__destruct()</code> 当删除一个对象或对象操作终止时被调用。<br>作用：释放对象占用的资源</li>
-<li><code>__call()</code> 对象调用某个方法，若方法可访问，则直接调用；若方法不可访问，则会去调用<code>__call</code>函数。</li>
-<li><code>__get()</code> 读取一个对象的属性时， 若属性存在，则直接返回属性值； 若不存在，则会调用<code>__get</code>函数。</li>
-<li><code>__set()</code> 设置一个对象的属性时， 若属性存在，则直接赋值； 若不存在，则会调用<code>__set</code>函数。</li>
-<li><code>__toString()</code> 打印一个对象的时被调用。<br>如<code>echo $obj;</code>或<code>print $obj;</code></li>
-<li><code>__clone()</code> 克隆对象时被调用。如：<code>$t=new Test();$t1=clone $t;</code></li>
-<li><code>__sleep()</code>serialize之前被调用。若对象比较大，想删减一点东东再序列化，可考虑一下此函数。</li>
-<li><code>__wakeup()</code> <code>unserialize</code>时被调用，做些对象的初始化工作。</li>
-<li><code>__isset()</code> 检测一个对象的属性是否存在时被调用。如：<code>isset($c-&gt;name)</code>。</li>
-<li><code>__unset()</code> <code>unset</code>一个对象的属性时被调用。如：<code>unset($c-&gt;name)</code>。</li>
-<li><code>__set_state()</code> 类的实例被<code>var_export</code>时，该方法会被调用。用<code>__set_state</code>的返回值做为<code>var_export</code>的返回值。</li>
-<li><code>__autoload()</code> 实例化一个对象时，如果对应的类不存在，则该方法被调用。</li>
-<li><code>__debugInfo()</code> 类的实例被<code>var_dump</code>时，该方法会被调用（PHP 5.6.0才有）</li>
-<li><code>__invoke()</code>把类的实例当成函数一样调用时，该方法会被调用</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/24/php-魔术函数/" data-id="cjo8oro2o000e48mc7z4hnq3v" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-mysql-时间函数" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/10/20/mysql-时间函数/" class="article-date">
-  <time datetime="2018-10-20T12:00:01.000Z" itemprop="datePublished">2018-10-20</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/mysql/">mysql</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/20/mysql-时间函数/">mysql-函数-1</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="1-now"><a href="#1-now" class="headerlink" title="1. now"></a>1. now</h2><blockquote>
-<p>now() 返回当前时间戳<br>2018-11-11 11:11:11</p>
-</blockquote>
-<h2 id="2-UNIX-TIMESTAMP"><a href="#2-UNIX-TIMESTAMP" class="headerlink" title="2. UNIX_TIMESTAMP"></a>2. UNIX_TIMESTAMP</h2><blockquote>
-<p>返回时间值</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select UNIX_TIMESTAMP(&apos;2017-06-10 13:02:18&apos;);</span><br><span class="line">--1497070938</span><br></pre></td></tr></table></figure>
-<h2 id="3-FROM-UNIXTIME"><a href="#3-FROM-UNIXTIME" class="headerlink" title="3. FROM_UNIXTIME"></a>3. FROM_UNIXTIME</h2><blockquote>
-<p>返回时间戳<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">select FROM_UNIXTIME(1497070938, &apos;%Y-%m-%d %H:%i:%S&apos;);</span><br><span class="line">--2017-06-10 13:02:18</span><br><span class="line">select FROM_UNIXTIME(1497070938);</span><br><span class="line">--2017-06-10 13:02:18</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<h2 id="4-curtime"><a href="#4-curtime" class="headerlink" title="4. curtime"></a>4. curtime</h2><blockquote>
-<p>返回当前时间<br>time(now()),current_time();<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select curtime(),current_time(),time(now());</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<h2 id="5-curdate"><a href="#5-curdate" class="headerlink" title="5. curdate"></a>5. curdate</h2><blockquote>
-<p>返回当前日期<br>date(now()),current_date();<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select curdate(),current_date(),date(now());</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<h2 id="6-datediff"><a href="#6-datediff" class="headerlink" title="6.datediff"></a>6.datediff</h2><blockquote>
-<p>日期差<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">datediff(&apos;2008-08-08&apos;, &apos;2008-08-01&apos;); -- 7</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/20/mysql-时间函数/" data-id="cjo8oro2m000c48mcnevv5ejr" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/">mysql</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/time/">time</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-mysql-函数" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/10/20/mysql-函数/" class="article-date">
-  <time datetime="2018-10-19T16:06:57.000Z" itemprop="datePublished">2018-10-20</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/mysql/">mysql</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/20/mysql-函数/">mysql-函数-1</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="1-if"><a href="#1-if" class="headerlink" title="1. if"></a>1. if</h2><blockquote>
-<p>IF(expr,v1,v2)<br>如果表达式 expr 成立，返回结果 v1；否则，返回结果 v2</p>
-</blockquote>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">select if(&apos;1&apos;,1,2);</span><br><span class="line">--1</span><br><span class="line">select if(&apos;0&apos;,1,2);</span><br><span class="line">--2</span><br><span class="line">select if(&apos;jack&apos;,1,2);</span><br><span class="line">--2</span><br><span class="line">select if(&apos;1&apos;,true,false);</span><br><span class="line">--1</span><br></pre></td></tr></table></figure>
-<h2 id="2-ifnull"><a href="#2-ifnull" class="headerlink" title="2. ifnull"></a>2. ifnull</h2><blockquote>
-<p>IFNULL(v1,v2)<br>如果 v1 的值不为 NULL，则返回 v1，否则返回 v2。</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">select  ifnull(&apos;null&apos;,1);</span><br><span class="line">-- null</span><br><span class="line">select ifnull(null,1);</span><br><span class="line">-- 1</span><br><span class="line">select ifnull(&apos;&apos;,1);</span><br><span class="line">-- （空字符串）</span><br><span class="line">select ifnull(0,1);</span><br><span class="line">-- 0</span><br></pre></td></tr></table></figure>
-<h2 id="3-last-insert-id"><a href="#3-last-insert-id" class="headerlink" title="3. last_insert_id"></a>3. last_insert_id</h2><blockquote>
-<p>LAST_INSERT_ID()<br>返回最近生成的 AUTO_INCREMENT 值<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select last_insert_id();</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<h2 id="4-version"><a href="#4-version" class="headerlink" title="4. version"></a>4. version</h2><blockquote>
-<p>version()<br>返回mysql版本<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select version();</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<h2 id="5-isnull"><a href="#5-isnull" class="headerlink" title="5. isnull"></a>5. isnull</h2><blockquote>
-<p>isnull(null)<br>判断是否为null 是返回1 否返回0</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">select isnull(&apos;null&apos;)</span><br><span class="line">--0</span><br><span class="line">select isnull(0);</span><br><span class="line">--0</span><br><span class="line">select isnull(&apos;&apos;);</span><br><span class="line">--0</span><br><span class="line">select isnull(null);</span><br><span class="line">--1</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/20/mysql-函数/" data-id="cjo8oro2i000748mc8e3uyk94" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/">mysql</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-git-入门" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/09/29/git-入门/" class="article-date">
-  <time datetime="2018-09-29T13:59:44.000Z" itemprop="datePublished">2018-09-29</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/git/">git</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/29/git-入门/">git 入门</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="git-安装"><a href="#git-安装" class="headerlink" title="git 安装"></a>git 安装</h4><ul>
-<li>Git 安装<a href="https://git-scm.com/" target="_blank" rel="noopener">官网</a> </li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;yourname&quot;</span><br><span class="line"></span><br><span class="line">git config --global user.email &quot;youremail@163.com&quot; </span><br><span class="line"></span><br><span class="line">git config --list  (查看配置)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>sourceTree 安装<a href="https://www.sourcetreeapp.com/" target="_blank" rel="noopener">官网</a></li>
-</ul>
-<h4 id="git-仓库"><a href="#git-仓库" class="headerlink" title="git 仓库"></a>git 仓库</h4><ul>
-<li>初始化版本库</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init ( 生成.git文件)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>添加文件到版本库</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">git add</span><br><span class="line"></span><br><span class="line">git add --help (查看帮助文档  q 退出文档)</span><br><span class="line">git add  -A  (提交全部文件)</span><br><span class="line"></span><br><span class="line">git reset HEAD demo.txt (从仓库中移除)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">git checkout -- demo.txt （删除未提交变更）</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">git commit</span><br><span class="line"></span><br><span class="line">git commit -m &quot;commit info&quot;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>查看仓库状态</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure>
-<h4 id="Git-工作流"><a href="#Git-工作流" class="headerlink" title="Git 工作流"></a>Git 工作流</h4><ul>
-<li>查看历史提交版本</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log</span><br></pre></td></tr></table></figure>
-<ul>
-<li>回退到某一版本 </li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard 2d62d28ea69a8ed0f69ae3daf0749c0382f2e197</span><br></pre></td></tr></table></figure>
-<ul>
-<li>删除某文件</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm -f test.php</span><br></pre></td></tr></table></figure>
-<h4 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h4><ul>
-<li>创建 SSH key 到github</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremai@email.com&quot;</span><br><span class="line"></span><br><span class="line">cat id_rsa.pub</span><br><span class="line"></span><br><span class="line">复制公钥到github</span><br><span class="line">   </span><br><span class="line">ssh -T git@github.com   (判断是否设置成功)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>添加远程仓库</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@github.com:youname/youproject.git   (设置远程仓库)</span><br><span class="line"></span><br><span class="line">git pull origin master (拉取远程内容)</span><br><span class="line"></span><br><span class="line">git push -u origin master （推送到远程仓库）</span><br></pre></td></tr></table></figure>
-<h4 id="克隆仓库"><a href="#克隆仓库" class="headerlink" title="克隆仓库"></a>克隆仓库</h4><ul>
-<li>克隆仓库</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone  git地址</span><br></pre></td></tr></table></figure>
-<h4 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h4><ul>
-<li><p>创建分支</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch feature/test1_branch (创建分支feature/test1_branch)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>分支列表</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch</span><br></pre></td></tr></table></figure>
-<ul>
-<li>切换分支</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout master (切换到master分支上)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>删除分支</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -d feature/test1_branch (删除分支)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>合并分支</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge branch1</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/29/git-入门/" data-id="cjo8oro29000248mc3l4zqvg2" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
 
     </footer>
   </div>
@@ -765,23 +649,23 @@
       <ul>
         
           <li>
+            <a href="/2018/11/22/php-数字-方法/">PHP-数字—方法</a>
+          </li>
+        
+          <li>
+            <a href="/2018/11/22/php-时间-方法/">PHP-时间-方法</a>
+          </li>
+        
+          <li>
+            <a href="/2018/11/22/加密解密/">PHP-加密解密-方法1</a>
+          </li>
+        
+          <li>
+            <a href="/2018/11/17/PHP-方法-获取IP/">PHP-方法-获取IP</a>
+          </li>
+        
+          <li>
             <a href="/2018/11/07/PHP-spl/">PHP运算符</a>
-          </li>
-        
-          <li>
-            <a href="/2018/11/07/PHP-core/">PHP运算符</a>
-          </li>
-        
-          <li>
-            <a href="/2018/10/25/关于挨骂/">关于挨骂</a>
-          </li>
-        
-          <li>
-            <a href="/2018/10/25/自我提升/">我自提升</a>
-          </li>
-        
-          <li>
-            <a href="/2018/10/25/正则表达式入门/">正则表达式入门</a>
           </li>
         
       </ul>
