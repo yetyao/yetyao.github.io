@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://yoursite.com/2018/12/12/PHP-%E6%8E%A8%E8%8D%90%E8%B5%84%E6%BA%90/</loc>
+    <lastmod>2018-12-12T15:59:25.659Z</lastmod>
+  </url>  <url>
+    <loc>http://yoursite.com/2018/11/07/PHP-core/</loc>
+    <lastmod>2018-12-12T15:55:50.734Z</lastmod>
+  </url>  <url>
     <loc>http://yoursite.com/2018/11/17/PHP-%E6%96%B9%E6%B3%95-%E8%8E%B7%E5%8F%96IP/</loc>
     <lastmod>2018-11-22T08:42:25.029Z</lastmod>
   </url>  <url>
@@ -15,9 +21,6 @@
   </url>  <url>
     <loc>http://yoursite.com/2018/11/07/PHP-spl/</loc>
     <lastmod>2018-11-07T13:33:32.697Z</lastmod>
-  </url>  <url>
-    <loc>http://yoursite.com/2018/11/07/PHP-core/</loc>
-    <lastmod>2018-11-07T13:31:34.869Z</lastmod>
   </url>  <url>
     <loc>http://yoursite.com/2018/10/25/%E5%85%B3%E4%BA%8E%E6%8C%A8%E9%AA%82/</loc>
     <lastmod>2018-10-23T16:44:03.972Z</lastmod>
