@@ -106,7 +106,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/12/12/PHP-推荐资源/" data-id="cjpld284y00025kmcp3jufj5p" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/12/12/PHP-推荐资源/" data-id="cjq2bq4y4000259mcz1p7olpm" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
@@ -148,7 +148,49 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/22/php-数字-方法/" data-id="cjpld285v000p5kmc2ojdgqkm" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/11/22/php-数字-方法/" data-id="cjq2bq4yw000q59mcv52f70v8" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-php-时间-方法" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/11/22/php-时间-方法/" class="article-date">
+  <time datetime="2018-11-22T10:18:59.000Z" itemprop="datePublished">2018-11-22</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/PHP/">PHP</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/22/php-时间-方法/">PHP-时间-方法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">//时间戳转成分钟</span><br><span class="line">function transTime($time) &#123;</span><br><span class="line">    $time = (int) substr($time, 0, 10);</span><br><span class="line">    $int = time() - $time;</span><br><span class="line">    $str = &apos;&apos;;</span><br><span class="line">    if ($int &lt;= 2) &#123;</span><br><span class="line">        $str = sprintf(&apos;刚刚&apos;, $int);</span><br><span class="line">    &#125; elseif ($int &lt; 60) &#123;</span><br><span class="line">        $str = sprintf(&apos;%d秒前&apos;, $int);</span><br><span class="line">    &#125; elseif ($int &lt; 3600) &#123;</span><br><span class="line">        $str = sprintf(&apos;%d分钟前&apos;, floor($int / 60));</span><br><span class="line">    &#125; elseif ($int &lt; 86400) &#123;</span><br><span class="line">        $str = sprintf(&apos;%d小时前&apos;, floor($int / 3600));</span><br><span class="line">    &#125; elseif ($int &lt; 2592000) &#123;</span><br><span class="line">        $str = sprintf(&apos;%d天前&apos;, floor($int / 86400));</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        $str = date(&apos;Y-m-d&apos;, $time);</span><br><span class="line">    &#125;</span><br><span class="line">    return $str;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/11/22/php-时间-方法/" data-id="cjq2bq4z2000z59mcnud0laag" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
@@ -191,49 +233,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/22/加密解密/" data-id="cjpld286200125kmcywvt6cl0" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-php-时间-方法" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/11/22/php-时间-方法/" class="article-date">
-  <time datetime="2018-11-22T10:18:59.000Z" itemprop="datePublished">2018-11-22</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/PHP/">PHP</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/22/php-时间-方法/">PHP-时间-方法</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">//时间戳转成分钟</span><br><span class="line">function transTime($time) &#123;</span><br><span class="line">    $time = (int) substr($time, 0, 10);</span><br><span class="line">    $int = time() - $time;</span><br><span class="line">    $str = &apos;&apos;;</span><br><span class="line">    if ($int &lt;= 2) &#123;</span><br><span class="line">        $str = sprintf(&apos;刚刚&apos;, $int);</span><br><span class="line">    &#125; elseif ($int &lt; 60) &#123;</span><br><span class="line">        $str = sprintf(&apos;%d秒前&apos;, $int);</span><br><span class="line">    &#125; elseif ($int &lt; 3600) &#123;</span><br><span class="line">        $str = sprintf(&apos;%d分钟前&apos;, floor($int / 60));</span><br><span class="line">    &#125; elseif ($int &lt; 86400) &#123;</span><br><span class="line">        $str = sprintf(&apos;%d小时前&apos;, floor($int / 3600));</span><br><span class="line">    &#125; elseif ($int &lt; 2592000) &#123;</span><br><span class="line">        $str = sprintf(&apos;%d天前&apos;, floor($int / 86400));</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        $str = date(&apos;Y-m-d&apos;, $time);</span><br><span class="line">    &#125;</span><br><span class="line">    return $str;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/22/php-时间-方法/" data-id="cjpld285w000r5kmcr3u70ma6" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/11/22/加密解密/" data-id="cjq2bq4z4001359mcl37ce4cd" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
@@ -275,7 +275,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/17/PHP-方法-获取IP/" data-id="cjpld285800075kmczzi24mmz" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/11/17/PHP-方法-获取IP/" data-id="cjq2bq4yi000a59mc2awrx5d1" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
@@ -317,7 +317,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/07/PHP-spl/" data-id="cjpld2878002b5kmcfq5apj2p" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/11/07/PHP-spl/" data-id="cjq2bq50p002j59mcwqgon4ew" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
@@ -2629,7 +2629,7 @@ public function __toString(): string {}
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/07/PHP-core/" data-id="cjpld287200285kmcxqdkk87d" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/11/07/PHP-core/" data-id="cjq2bq50c002g59mckishmzzp" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
@@ -2672,7 +2672,7 @@ public function __toString(): string {}
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/25/关于挨骂/" data-id="cjpld2860000y5kmcnkbed1u1" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/25/关于挨骂/" data-id="cjq2bq4z9001b59mc9bth2u3w" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/鸡汤/">鸡汤</a></li></ul>
@@ -2741,7 +2741,7 @@ public function __toString(): string {}
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/25/自我提升/" data-id="cjpld2867001a5kmc4qeowctd" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/25/自我提升/" data-id="cjq2bq4zd001n59mc1ncxtfue" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/方法/">方法</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/鸡汤/">鸡汤</a></li></ul>
@@ -2801,7 +2801,7 @@ public function __toString(): string {}
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/25/正则表达式入门/" data-id="cjpld2869001e5kmcdfhss89b" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/25/正则表达式入门/" data-id="cjq2bq4zc001j59mcnkmor8qh" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/正则/">正则</a></li></ul>
@@ -2817,7 +2817,7 @@ public function __toString(): string {}
 
   <nav id="page-nav">
     
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
   </nav>
 
 </section>
@@ -2878,11 +2878,11 @@ public function __toString(): string {}
           </li>
         
           <li>
-            <a href="/2018/11/22/加密解密/">PHP-加密解密-方法1</a>
+            <a href="/2018/11/22/php-时间-方法/">PHP-时间-方法</a>
           </li>
         
           <li>
-            <a href="/2018/11/22/php-时间-方法/">PHP-时间-方法</a>
+            <a href="/2018/11/22/加密解密/">PHP-加密解密-方法1</a>
           </li>
         
           <li>
