@@ -5,19 +5,20 @@
   
 
   
-  <title>Tag: 工具 | yetyao blog</title>
+  <title>js中值为false的6中情况 | yetyao blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="程序猿">
-<meta name="keywords" content="PHP JavaScript Linux MySQL">
-<meta property="og:type" content="website">
-<meta property="og:title" content="yetyao blog">
-<meta property="og:url" content="http://yoursite.com/tags/工具/index.html">
+  <meta name="description" content="false undefined null 0 或 0.0 ‘’ 或 “” NaN    利用！取反运算符  1234567891011121314151617!!undefined // true!null // true!0 // true!NaN // true!&amp;quot;&amp;quot; // true!54 // false!&amp;apos;hello&amp;apos; // false![] //">
+<meta name="keywords" content="JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js中值为false的6中情况">
+<meta property="og:url" content="http://yoursite.com/2019/03/28/JavaScript中值为false的6中情况/index.html">
 <meta property="og:site_name" content="yetyao blog">
-<meta property="og:description" content="程序猿">
+<meta property="og:description" content="false undefined null 0 或 0.0 ‘’ 或 “” NaN    利用！取反运算符  1234567891011121314151617!!undefined // true!null // true!0 // true!NaN // true!&amp;quot;&amp;quot; // true!54 // false!&amp;apos;hello&amp;apos; // false![] //">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-03-28T13:12:51.728Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="yetyao blog">
-<meta name="twitter:description" content="程序猿">
+<meta name="twitter:title" content="js中值为false的6中情况">
+<meta name="twitter:description" content="false undefined null 0 或 0.0 ‘’ 或 “” NaN    利用！取反运算符  1234567891011121314151617!!undefined // true!null // true!0 // true!NaN // true!&amp;quot;&amp;quot; // true!54 // false!&amp;apos;hello&amp;apos; // false![] //">
   
     <link rel="alternate" href="/atom.xml" title="yetyao blog" type="application/atom+xml">
   
@@ -68,40 +69,72 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/09/22/工具推荐/" class="archive-article-date">
-  <time datetime="2018-09-22T03:55:27.000Z" itemprop="datePublished">Sep 22</time>
+        <section id="main"><article id="post-JavaScript中值为false的6中情况" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/03/28/JavaScript中值为false的6中情况/" class="article-date">
+  <time datetime="2019-03-28T13:59:44.000Z" itemprop="datePublished">2019-03-28</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/22/工具推荐/">工具推荐</a>
+    <h1 class="article-title" itemprop="name">
+      js中值为false的6中情况
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>false</li>
+<li>undefined</li>
+<li>null</li>
+<li>0 或 0.0</li>
+<li>‘’ 或 “”</li>
+<li>NaN</li>
+</ol>
+<blockquote>
+<p> 利用！取反运算符</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">!!undefined // true</span><br><span class="line"></span><br><span class="line">!null // true</span><br><span class="line"></span><br><span class="line">!0 // true</span><br><span class="line"></span><br><span class="line">!NaN // true</span><br><span class="line"></span><br><span class="line">!&quot;&quot; // true</span><br><span class="line"></span><br><span class="line">!54 // false</span><br><span class="line"></span><br><span class="line">!&apos;hello&apos; // false</span><br><span class="line"></span><br><span class="line">![] // false</span><br><span class="line"></span><br><span class="line">!&#123;&#125; // false</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>[] 和 {} 为true</p>
+</blockquote>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">if([])&#123;</span><br><span class="line">    console.log(&apos;[] is true&apos;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// [] is true</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> if(&#123;&#125;)&#123;</span><br><span class="line">    console.log(&apos;&#123;&#125; is true&apos;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// &#123;&#125; is true</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/03/28/JavaScript中值为false的6中情况/" data-id="cjtsnrt640001m0mc5k34jqyh" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li></ul>
 
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/03/25/睡眠/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">睡眠技巧</div>
+    </a>
+  
+</nav>
+
+  
+</article>
 
 </section>
         

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   <link href="php" rel="hub"/>
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-28T01:35:42.433Z</updated>
+  <updated>2019-03-28T13:12:51.728Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,41 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>js中值为false的6中情况</title>
+    <link href="http://yoursite.com/2019/03/28/JavaScript%E4%B8%AD%E5%80%BC%E4%B8%BAfalse%E7%9A%846%E4%B8%AD%E6%83%85%E5%86%B5/"/>
+    <id>http://yoursite.com/2019/03/28/JavaScript中值为false的6中情况/</id>
+    <published>2019-03-28T13:59:44.000Z</published>
+    <updated>2019-03-28T13:12:51.728Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li>false</li><li>undefined</li><li>null</li><li>0 或 0.0</li><li>‘’ 或 “”</li><li>NaN</li></ol><blockquote><p> 利用！取反运算符</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">!!undefined // true</span><br><span class="line"></span><br><span class="line">!null // true</span><br><span class="line"></span><br><span class="line">!0 // true</span><br><span class="line"></span><br><span class="line">!NaN // true</span><br><span class="line"></span><br><span class="line">!&quot;&quot; // true</span><br><span class="line"></span><br><span class="line">!54 // false</span><br><span class="line"></span><br><span class="line">!&apos;hello&apos; // false</span><br><span class="line"></span><br><span class="line">![] // false</span><br><span class="line"></span><br><span class="line">!&#123;&#125; // false</span><br></pre></td></tr></table></figure><blockquote><p>[] 和 {} 为true</p></blockquote> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">if([])&#123;</span><br><span class="line">    console.log(&apos;[] is true&apos;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// [] is true</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> if(&#123;&#125;)&#123;</span><br><span class="line">    console.log(&apos;&#123;&#125; is true&apos;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// &#123;&#125; is true</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ol&gt;
+&lt;li&gt;false&lt;/li&gt;
+&lt;li&gt;undefined&lt;/li&gt;
+&lt;li&gt;null&lt;/li&gt;
+&lt;li&gt;0 或 0.0&lt;/li&gt;
+&lt;li&gt;‘’ 或 “”&lt;/li&gt;
+&lt;li&gt;NaN&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt; 利用！取反运算符&lt;/p&gt;
+&lt;/bl
+      
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="http://yoursite.com/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>睡眠技巧</title>
@@ -467,41 +502,6 @@
     
     
       <category term="mysql" scheme="http://yoursite.com/tags/mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>js中值为false的6中情况</title>
-    <link href="http://yoursite.com/2018/09/29/JavaScript%E4%B8%AD%E5%80%BC%E4%B8%BAfalse%E7%9A%846%E4%B8%AD%E6%83%85%E5%86%B5/"/>
-    <id>http://yoursite.com/2018/09/29/JavaScript中值为false的6中情况/</id>
-    <published>2018-09-29T13:59:44.000Z</published>
-    <updated>2019-03-28T08:50:23.728Z</updated>
-    
-    <content type="html"><![CDATA[<ol><li>false</li><li>undefined</li><li>null</li><li>0 或 0.0</li><li>‘’ 或 “”</li><li>NaN</li></ol><blockquote><p>[] 和 {} 为true</p></blockquote> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">if([])&#123;</span><br><span class="line">    console.log(&apos;[] is true&apos;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// [] is true</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> if(&#123;&#125;)&#123;</span><br><span class="line">    console.log(&apos;&#123;&#125; is true&apos;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// &#123;&#125; is true</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;ol&gt;
-&lt;li&gt;false&lt;/li&gt;
-&lt;li&gt;undefined&lt;/li&gt;
-&lt;li&gt;null&lt;/li&gt;
-&lt;li&gt;0 或 0.0&lt;/li&gt;
-&lt;li&gt;‘’ 或 “”&lt;/li&gt;
-&lt;li&gt;NaN&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[] 和 {} 为true&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-      <category term="JavaScript" scheme="http://yoursite.com/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
     
   </entry>
   
