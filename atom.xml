@@ -127,13 +127,13 @@
   </entry>
   
   <entry>
-    <title>PHP-时间-方法</title>
-    <link href="http://yoursite.com/2018/11/22/php-%E6%97%B6%E9%97%B4-%E6%96%B9%E6%B3%95/"/>
-    <id>http://yoursite.com/2018/11/22/php-时间-方法/</id>
+    <title>PHP-加密解密-方法1</title>
+    <link href="http://yoursite.com/2018/11/22/%E5%8A%A0%E5%AF%86%E8%A7%A3%E5%AF%86/"/>
+    <id>http://yoursite.com/2018/11/22/加密解密/</id>
     <published>2018-11-22T10:18:59.000Z</published>
-    <updated>2018-11-22T08:37:23.029Z</updated>
+    <updated>2018-11-22T08:35:18.592Z</updated>
     
-    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">//时间戳转成分钟</span><br><span class="line">function transTime($time) &#123;</span><br><span class="line">    $time = (int) substr($time, 0, 10);</span><br><span class="line">    $int = time() - $time;</span><br><span class="line">    $str = &apos;&apos;;</span><br><span class="line">    if ($int &lt;= 2) &#123;</span><br><span class="line">        $str = sprintf(&apos;刚刚&apos;, $int);</span><br><span class="line">    &#125; elseif ($int &lt; 60) &#123;</span><br><span class="line">        $str = sprintf(&apos;%d秒前&apos;, $int);</span><br><span class="line">    &#125; elseif ($int &lt; 3600) &#123;</span><br><span class="line">        $str = sprintf(&apos;%d分钟前&apos;, floor($int / 60));</span><br><span class="line">    &#125; elseif ($int &lt; 86400) &#123;</span><br><span class="line">        $str = sprintf(&apos;%d小时前&apos;, floor($int / 3600));</span><br><span class="line">    &#125; elseif ($int &lt; 2592000) &#123;</span><br><span class="line">        $str = sprintf(&apos;%d天前&apos;, floor($int / 86400));</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        $str = date(&apos;Y-m-d&apos;, $time);</span><br><span class="line">    &#125;</span><br><span class="line">    return $str;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">function encrypt($data, $key) &#123;</span><br><span class="line">    $size = mcrypt_get_block_size(&apos;des&apos;, &apos;ecb&apos;);</span><br><span class="line">    $data = pkcs5_pad($data, $size);</span><br><span class="line">    $td = mcrypt_module_open(&apos;des&apos;, &apos;&apos;, &apos;ecb&apos;, &apos;&apos;);</span><br><span class="line">    $iv = @mcrypt_create_iv(mcrypt_enc_get_iv_size($td), MCRYPT_RAND);</span><br><span class="line">    @mcrypt_generic_init($td, $key, $iv);</span><br><span class="line">    $data = mcrypt_generic($td, $data);</span><br><span class="line">    mcrypt_generic_deinit($td);</span><br><span class="line">    mcrypt_module_close($td);</span><br><span class="line">    return strtoupper(bin2hex($data));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function decrypt($data, $key) &#123;</span><br><span class="line">    $data = hex2bin(strtolower($data));</span><br><span class="line">    $td = mcrypt_module_open(&apos;des&apos;, &apos;&apos;, &apos;ecb&apos;, &apos;&apos;);</span><br><span class="line">    $iv = @mcrypt_create_iv(mcrypt_enc_get_iv_size($td), MCRYPT_RAND);</span><br><span class="line">    $ks = mcrypt_enc_get_key_size($td);</span><br><span class="line">    @mcrypt_generic_init($td, $key, $iv);</span><br><span class="line">    $decrypted = mdecrypt_generic($td, $data);</span><br><span class="line">    mcrypt_generic_deinit($td);</span><br><span class="line">    mcrypt_module_close($td);</span><br><span class="line">    $result = pkcs5_unpad($decrypted);</span><br><span class="line">    return $result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -152,13 +152,13 @@
   </entry>
   
   <entry>
-    <title>PHP-加密解密-方法1</title>
-    <link href="http://yoursite.com/2018/11/22/%E5%8A%A0%E5%AF%86%E8%A7%A3%E5%AF%86/"/>
-    <id>http://yoursite.com/2018/11/22/加密解密/</id>
+    <title>PHP-时间-方法</title>
+    <link href="http://yoursite.com/2018/11/22/php-%E6%97%B6%E9%97%B4-%E6%96%B9%E6%B3%95/"/>
+    <id>http://yoursite.com/2018/11/22/php-时间-方法/</id>
     <published>2018-11-22T10:18:59.000Z</published>
-    <updated>2018-11-22T08:35:18.592Z</updated>
+    <updated>2018-11-22T08:37:23.029Z</updated>
     
-    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">function encrypt($data, $key) &#123;</span><br><span class="line">    $size = mcrypt_get_block_size(&apos;des&apos;, &apos;ecb&apos;);</span><br><span class="line">    $data = pkcs5_pad($data, $size);</span><br><span class="line">    $td = mcrypt_module_open(&apos;des&apos;, &apos;&apos;, &apos;ecb&apos;, &apos;&apos;);</span><br><span class="line">    $iv = @mcrypt_create_iv(mcrypt_enc_get_iv_size($td), MCRYPT_RAND);</span><br><span class="line">    @mcrypt_generic_init($td, $key, $iv);</span><br><span class="line">    $data = mcrypt_generic($td, $data);</span><br><span class="line">    mcrypt_generic_deinit($td);</span><br><span class="line">    mcrypt_module_close($td);</span><br><span class="line">    return strtoupper(bin2hex($data));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function decrypt($data, $key) &#123;</span><br><span class="line">    $data = hex2bin(strtolower($data));</span><br><span class="line">    $td = mcrypt_module_open(&apos;des&apos;, &apos;&apos;, &apos;ecb&apos;, &apos;&apos;);</span><br><span class="line">    $iv = @mcrypt_create_iv(mcrypt_enc_get_iv_size($td), MCRYPT_RAND);</span><br><span class="line">    $ks = mcrypt_enc_get_key_size($td);</span><br><span class="line">    @mcrypt_generic_init($td, $key, $iv);</span><br><span class="line">    $decrypted = mdecrypt_generic($td, $data);</span><br><span class="line">    mcrypt_generic_deinit($td);</span><br><span class="line">    mcrypt_module_close($td);</span><br><span class="line">    $result = pkcs5_unpad($decrypted);</span><br><span class="line">    return $result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">//时间戳转成分钟</span><br><span class="line">function transTime($time) &#123;</span><br><span class="line">    $time = (int) substr($time, 0, 10);</span><br><span class="line">    $int = time() - $time;</span><br><span class="line">    $str = &apos;&apos;;</span><br><span class="line">    if ($int &lt;= 2) &#123;</span><br><span class="line">        $str = sprintf(&apos;刚刚&apos;, $int);</span><br><span class="line">    &#125; elseif ($int &lt; 60) &#123;</span><br><span class="line">        $str = sprintf(&apos;%d秒前&apos;, $int);</span><br><span class="line">    &#125; elseif ($int &lt; 3600) &#123;</span><br><span class="line">        $str = sprintf(&apos;%d分钟前&apos;, floor($int / 60));</span><br><span class="line">    &#125; elseif ($int &lt; 86400) &#123;</span><br><span class="line">        $str = sprintf(&apos;%d小时前&apos;, floor($int / 3600));</span><br><span class="line">    &#125; elseif ($int &lt; 2592000) &#123;</span><br><span class="line">        $str = sprintf(&apos;%d天前&apos;, floor($int / 86400));</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        $str = date(&apos;Y-m-d&apos;, $time);</span><br><span class="line">    &#125;</span><br><span class="line">    return $str;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -471,6 +471,41 @@
   </entry>
   
   <entry>
+    <title>js中值为false的6中情况</title>
+    <link href="http://yoursite.com/2018/09/29/JavaScript%E4%B8%AD%E5%80%BC%E4%B8%BAfalse%E7%9A%846%E4%B8%AD%E6%83%85%E5%86%B5/"/>
+    <id>http://yoursite.com/2018/09/29/JavaScript中值为false的6中情况/</id>
+    <published>2018-09-29T13:59:44.000Z</published>
+    <updated>2019-03-28T08:50:23.728Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li>false</li><li>undefined</li><li>null</li><li>0 或 0.0</li><li>‘’ 或 “”</li><li>NaN</li></ol><blockquote><p>[] 和 {} 为true</p></blockquote> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">if([])&#123;</span><br><span class="line">    console.log(&apos;[] is true&apos;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// [] is true</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> if(&#123;&#125;)&#123;</span><br><span class="line">    console.log(&apos;&#123;&#125; is true&apos;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// &#123;&#125; is true</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ol&gt;
+&lt;li&gt;false&lt;/li&gt;
+&lt;li&gt;undefined&lt;/li&gt;
+&lt;li&gt;null&lt;/li&gt;
+&lt;li&gt;0 或 0.0&lt;/li&gt;
+&lt;li&gt;‘’ 或 “”&lt;/li&gt;
+&lt;li&gt;NaN&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[] 和 {} 为true&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="http://yoursite.com/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>git 入门</title>
     <link href="http://yoursite.com/2018/09/29/git-%E5%85%A5%E9%97%A8/"/>
     <id>http://yoursite.com/2018/09/29/git-入门/</id>
@@ -522,35 +557,6 @@
     
     
       <category term="工具" scheme="http://yoursite.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mysql_数据类型_1</title>
-    <link href="http://yoursite.com/2018/09/20/mysql-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B-1/"/>
-    <id>http://yoursite.com/2018/09/20/mysql-数据类型-1/</id>
-    <published>2018-09-19T16:06:57.000Z</published>
-    <updated>2018-09-22T07:51:23.923Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="mysql"><a href="#mysql" class="headerlink" title="mysql"></a>mysql</h2><ol><li>整型<ol><li>tinyint</li><li>smallint</li><li>mediumint</li><li>int</li><li>bigint</li></ol></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;mysql&quot;&gt;&lt;a href=&quot;#mysql&quot; class=&quot;headerlink&quot; title=&quot;mysql&quot;&gt;&lt;/a&gt;mysql&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;整型&lt;ol&gt;
-&lt;li&gt;tinyint&lt;/li&gt;
-&lt;li&gt;smallint&lt;/li&gt;
-&lt;li&gt;medium
-      
-    
-    </summary>
-    
-      <category term="mysql" scheme="http://yoursite.com/categories/mysql/"/>
-    
-    
-      <category term="mysql" scheme="http://yoursite.com/tags/mysql/"/>
     
   </entry>
   
