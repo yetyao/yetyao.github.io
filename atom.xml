@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   <link href="php" rel="hub"/>
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-12T15:59:25.659Z</updated>
+  <updated>2019-03-28T01:35:42.433Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,13 +17,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>睡眠技巧</title>
+    <link href="http://yoursite.com/2019/03/25/%E7%9D%A1%E7%9C%A0/"/>
+    <id>http://yoursite.com/2019/03/25/睡眠/</id>
+    <published>2019-03-25T04:02:59.000Z</published>
+    <updated>2019-03-28T01:35:42.433Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="睡眠技巧"><a href="#睡眠技巧" class="headerlink" title="睡眠技巧"></a>睡眠技巧</h2><p>  如果每天试图入睡的时间太长，那么你或许可以在睡前养成一些有利于睡眠的习惯，比如洗澡、看书、提前一小时远离屏幕，以及最大限度地减少白天的咖啡因消耗量等等。<br>但是，如果你已经尝试过以上小技巧，却仍然无法摆脱困境该怎么办？以下三大专业级妙招或许可以帮助你快速入睡。</p><ol><li>军用两分钟快速入睡法这个秘密在1981年出版的一本名为《Relax and Win: Championship Performance》的书中被揭晓，但直到最近几个月才在网上引发关注。这是一种专门帮助士兵们在困难条件下入睡的冥想方法。据说在经过六周的练习后，96％的人都觉得有效。以下为《独立报》的描述：放松脸部肌肉，包括舌头、下巴与眼睛周围的肌肉- 将你的肩膀尽可能下沉，随后是上臂与下臂，一次只下沉一侧- 一边呼气，一边放松胸部，随后从大腿开始向下放松双腿。- 花10秒钟清空所有想法，随后想象出以下三个画面之一：- 你正躺在一艘浮在平静湖面上的独木舟上，眼前只有一片澄澈的蓝天。- 你正躺在漆黑房间内的黑色天鹅绒吊床上。- 你一遍又一遍地对自己说「别想了，别想了，别想了」持续10秒钟。</li></ol><ol start="2"><li>「4-7-8」技巧这是一位执业健康师提出的建议：<br>「你只需通过鼻子吸气四秒钟，屏住呼吸七秒钟，然后通过嘴巴呼气八秒钟即可」。这位健康师解释说，这套考究的数字组合会对我们的大脑产生类似于化学物质的影响，在减慢我们心率的同时安抚我们入眠。<br>而该技巧背后的科学解释则是：当人们感到压力或焦虑时，他们往往会呼吸不足(呼吸很短、很浅)。通过强迫自己缓慢吸气，你将吸入更多的氧气，再通过屏住呼吸迫使其影响你的血液，最后再慢慢呼气释放二氧化碳。因此，这个技巧将有效减慢你的心率并增加血液中的氧气量。</li></ol><ol start="3"><li>刺激控制疗法这种训练方法可以让你唤醒婴儿般的睡眠记忆！对于婴儿来说非常有效的方法，同样也适用于成年人，即使起初听上去有点奇怪。这一招就是利用古老的巴甫洛夫心理学，训练自己将床与睡眠且只与睡眠相联系。<br>「如果你发现自己无法入睡，就起身进入另一个房间。直到你忍无可忍之后，再回到卧室睡觉。你不用看时钟，只要你没有立即入睡就请起床。请记住，目标是让你在床上快速入睡！如果你在床上超过10分钟没有入睡而且没有起床，那你就没在听我的话」。当你承诺不会在床上进行任何非睡眠活动(OOXX除外)时，这一招会更加有效。随着时间的推移，你将加强床与睡眠之间的联系，并削弱床和其他一切事物之间的关联。<br>祝你好运，睡个好觉！</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;睡眠技巧&quot;&gt;&lt;a href=&quot;#睡眠技巧&quot; class=&quot;headerlink&quot; title=&quot;睡眠技巧&quot;&gt;&lt;/a&gt;睡眠技巧&lt;/h2&gt;&lt;p&gt;  如果每天试图入睡的时间太长，那么你或许可以在睡前养成一些有利于睡眠的习惯，比如洗澡、看书、提前一小时远离屏幕，以及最大限
+      
+    
+    </summary>
+    
+      <category term="健康" scheme="http://yoursite.com/categories/%E5%81%A5%E5%BA%B7/"/>
+    
+    
+      <category term="睡眠" scheme="http://yoursite.com/tags/%E7%9D%A1%E7%9C%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PHP-推荐资源</title>
     <link href="http://yoursite.com/2018/12/12/PHP-%E6%8E%A8%E8%8D%90%E8%B5%84%E6%BA%90/"/>
     <id>http://yoursite.com/2018/12/12/PHP-推荐资源/</id>
     <published>2018-12-12T12:18:59.000Z</published>
-    <updated>2018-12-12T15:59:25.659Z</updated>
+    <updated>2018-12-24T16:16:55.744Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="PHP-推荐资源"><a href="#PHP-推荐资源" class="headerlink" title="PHP-推荐资源"></a>PHP-推荐资源</h2><blockquote><p>github</p></blockquote><hr><p><a href="https://github.com/appzcoder/30-seconds-of-php-code" target="_blank" rel="noopener">30-seconds-of-php-code</a></p><hr>]]></content>
+    <content type="html"><![CDATA[<h2 id="PHP-推荐资源"><a href="#PHP-推荐资源" class="headerlink" title="PHP-推荐资源"></a>PHP-推荐资源</h2><blockquote><p>github</p></blockquote><hr><ol><li><a href="https://github.com/appzcoder/30-seconds-of-php-code" target="_blank" rel="noopener">30-seconds-of-php-code</a></li><li><a href="http://share.weimo.info" target="_blank" rel="noopener">某课资源</a></li></ol><hr>]]></content>
     
     <summary type="html">
     
@@ -33,7 +58,7 @@
 &lt;p&gt;github&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;p&gt;
+&lt;ol
       
     
     </summary>
@@ -42,6 +67,37 @@
     
     
       <category term="PHP" scheme="http://yoursite.com/tags/PHP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mysql 忘记root密码</title>
+    <link href="http://yoursite.com/2018/11/24/mysql-%E5%BF%98%E8%AE%B0root%E5%AF%86%E7%A0%81/"/>
+    <id>http://yoursite.com/2018/11/24/mysql-忘记root密码/</id>
+    <published>2018-11-24T03:55:30.000Z</published>
+    <updated>2018-12-24T12:57:02.393Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>mysql 版本 8.0.12</p></blockquote><ol><li>修改 /etc/my.cnf<br> 添加 skip-grant-tables</li><li>systemctl restart mysqld</li><li>mysql -u root -p (root身份登录)</li><li>use mysql</li><li>flush privileges</li><li>alter user ‘root‘@’localhost’ IDENTIFIED BY ‘mypassword’;</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;mysql 版本 8.0.12&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;修改 /etc/my.cnf&lt;br&gt; 添加 skip-grant-tables&lt;/li&gt;
+&lt;li&gt;systemctl restart mysqld&lt;/li&gt;
+&lt;l
+      
+    
+    </summary>
+    
+      <category term="mysql" scheme="http://yoursite.com/categories/mysql/"/>
+    
+    
+      <category term="mysql" scheme="http://yoursite.com/tags/mysql/"/>
     
   </entry>
   
@@ -117,6 +173,35 @@
     
     
       <category term="PHP" scheme="http://yoursite.com/tags/PHP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mysql 事务隔离级别</title>
+    <link href="http://yoursite.com/2018/11/22/mysql-%E4%BA%8B%E5%8A%A1%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB/"/>
+    <id>http://yoursite.com/2018/11/22/mysql-事务隔离级别/</id>
+    <published>2018-11-22T03:55:27.000Z</published>
+    <updated>2018-12-24T12:56:42.085Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>一. 事务的基本要素 （ACID）</p></blockquote><ol><li>原子性 （Atomicity）事务开始后所有操作，要么全部执行成功，要么全部执行失败，会回滚到事务执行开始的状态。也就是说事务是一个不可分割的整体，就像化学中学过的原子，是物质构成的基本单位。</li><li>一致性 （Consistency）事务开始前和结束后，数据库的完整性约束没有被破坏 。比如A向B转账，不可能A扣了钱，B却没收到。</li><li>隔离性    （Isolation）同一时间，只允许一个事务请求同一数据，不同的事务之间彼此没有干扰。比如A正在从一张银行卡中取钱，在A取钱的过程结束前，B不能向这张卡转账。</li><li>持久性    （Durability）事务完成后，事务对数据库的所有更新将被保存到数据库，不能回滚。</li></ol><blockquote><p>二. 事务的并发问题</p></blockquote><ol><li>脏读： 事务A读取了事务B更新的数据，然后B回滚操作，那么A读取读取到的数据就是脏数据</li><li>不可重复读：事务A多次读取同一数据，事务B在事务A多次读取的过程中，对数据做了更新并提交，导致事务A多次读取同一数据时，结果不一致</li><li>幻读： 系统管理员A将数据库中所有学生的成绩从具体分数改为ABCDE等级，但是系统管理员B就在这个时候插入了一条具体分数的记录，当系统管理员A改结束后发现还有一条记录没有改过来，就好像发生了幻觉一样，这就叫幻读。</li></ol><p>小结：不可重复读的和幻读很容易混淆，不可重复读侧重于<em>修改</em>，幻读侧重于<em>新增或删除</em>。解决不可重复读的问题<b>只需锁住满足条件的行</b>，解决幻读需要<em>锁表</em></p><blockquote><p>三. mysql 事务隔离级别</p></blockquote><table><thead><tr><th>事务隔离级别</th><th>脏读</th><th>不可重复读</th><th>幻读</th></tr></thead><tbody><tr><td>读未提交（read-uncommitted）</td><td>是</td><td>是</td><td>是</td></tr><tr><td>不可重复读（read-committed）</td><td>否</td><td>是</td><td>是</td></tr><tr><td>可重复读 （repeatable-read）</td><td>否</td><td>否</td><td>是</td></tr><tr><td>串行化 （serializable）</td><td>否</td><td>否</td><td>否</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;一. 事务的基本要素 （ACID）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;原子性 （Atomicity）事务开始后所有操作，要么全部执行成功，要么全部执行失败，会回滚到事务执行开始的状态。也就是说事务是一个不可分割的整体，就像化学中
+      
+    
+    </summary>
+    
+      <category term="mysql" scheme="http://yoursite.com/categories/mysql/"/>
+    
+    
+      <category term="mysql" scheme="http://yoursite.com/tags/mysql/"/>
     
   </entry>
   
@@ -412,66 +497,6 @@
   </entry>
   
   <entry>
-    <title>mysql 忘记root密码</title>
-    <link href="http://yoursite.com/2018/09/22/mysql-%E5%BF%98%E8%AE%B0root%E5%AF%86%E7%A0%81/"/>
-    <id>http://yoursite.com/2018/09/22/mysql-忘记root密码/</id>
-    <published>2018-09-22T03:55:27.000Z</published>
-    <updated>2018-12-24T09:20:57.941Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>mysql 版本 8.0.12</p></blockquote><ol><li>修改 /etc/my.cnf<br> 添加 skip-grant-tables</li><li>systemctl restart mysqld</li><li>mysql -u root -p (root身份登录)</li><li>use mysql</li><li>flush privileges</li><li>alter user ‘root‘@’localhost’ IDENTIFIED BY ‘mypassword’;</li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;
-&lt;p&gt;mysql 版本 8.0.12&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;修改 /etc/my.cnf&lt;br&gt; 添加 skip-grant-tables&lt;/li&gt;
-&lt;li&gt;systemctl restart mysqld&lt;/li&gt;
-&lt;l
-      
-    
-    </summary>
-    
-      <category term="mysql" scheme="http://yoursite.com/categories/mysql/"/>
-    
-    
-      <category term="mysql" scheme="http://yoursite.com/tags/mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mysql 事务隔离级别</title>
-    <link href="http://yoursite.com/2018/09/22/mysql-%E4%BA%8B%E5%8A%A1%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB/"/>
-    <id>http://yoursite.com/2018/09/22/mysql-事务隔离级别/</id>
-    <published>2018-09-22T03:55:27.000Z</published>
-    <updated>2018-12-24T07:58:22.625Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>一. 事务的基本要素 （ACID）</p></blockquote><ol><li>原子性 （Atomicity）事务开始后所有操作，要么全部执行成功，要么全部执行失败，会回滚到事务执行开始的状态。也就是说事务是一个不可分割的整体，就像化学中学过的原子，是物质构成的基本单位。</li><li>一致性 （Consistency）事务开始前和结束后，数据库的完整性约束没有被破坏 。比如A向B转账，不可能A扣了钱，B却没收到。</li><li>隔离性    （Isolation）同一时间，只允许一个事务请求同一数据，不同的事务之间彼此没有干扰。比如A正在从一张银行卡中取钱，在A取钱的过程结束前，B不能向这张卡转账。</li><li>持久性    （Durability）事务完成后，事务对数据库的所有更新将被保存到数据库，不能回滚。</li></ol><blockquote><p>二. 事务的并发问题</p></blockquote><ol><li>脏读： 事务A读取了事务B更新的数据，然后B回滚操作，那么A读取读取到的数据就是脏数据</li><li>不可重复读：事务A多次读取同一数据，事务B在事务A多次读取的过程中，对数据做了更新并提交，导致事务A多次读取同一数据时，结果不一致</li><li>幻读： 系统管理员A将数据库中所有学生的成绩从具体分数改为ABCDE等级，但是系统管理员B就在这个时候插入了一条具体分数的记录，当系统管理员A改结束后发现还有一条记录没有改过来，就好像发生了幻觉一样，这就叫幻读。</li></ol><p>小结：不可重复读的和幻读很容易混淆，不可重复读侧重于<em>修改</em>，幻读侧重于<em>新增或删除</em>。解决不可重复读的问题<b>只需锁住满足条件的行</b>，解决幻读需要<em>锁表</em></p><blockquote><p>三. mysql 事务隔离级别</p></blockquote><table><thead><tr><th>事务隔离级别</th><th>脏读</th><th>不可重复读</th><th>幻读</th></tr></thead><tbody><tr><td>读未提交（read-uncommitted）</td><td>是</td><td>是</td><td>是</td></tr><tr><td>不可重复读（read-committed）</td><td>否</td><td>是</td><td>是</td></tr><tr><td>可重复读 （repeatable-read）</td><td>否</td><td>否</td><td>是</td></tr><tr><td>串行化 （serializable）</td><td>否</td><td>否</td><td>否</td></tr></tbody></table>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;
-&lt;p&gt;一. 事务的基本要素 （ACID）&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;原子性 （Atomicity）事务开始后所有操作，要么全部执行成功，要么全部执行失败，会回滚到事务执行开始的状态。也就是说事务是一个不可分割的整体，就像化学中
-      
-    
-    </summary>
-    
-      <category term="mysql" scheme="http://yoursite.com/categories/mysql/"/>
-    
-    
-      <category term="mysql" scheme="http://yoursite.com/tags/mysql/"/>
-    
-  </entry>
-  
-  <entry>
     <title>工具推荐</title>
     <link href="http://yoursite.com/2018/09/22/%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/"/>
     <id>http://yoursite.com/2018/09/22/工具推荐/</id>
@@ -526,27 +551,6 @@
     
     
       <category term="mysql" scheme="http://yoursite.com/tags/mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2018/09/17/hello-world/"/>
-    <id>http://yoursite.com/2018/09/17/hello-world/</id>
-    <published>2018-09-17T15:58:10.242Z</published>
-    <updated>2018-09-17T15:58:10.242Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
     
   </entry>
   

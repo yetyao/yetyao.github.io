@@ -5,19 +5,20 @@
   
 
   
-  <title>Tag: 方法 | yetyao blog</title>
+  <title>mysql 事务隔离级别 | yetyao blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="程序猿">
-<meta name="keywords" content="PHP JavaScript Linux MySQL">
-<meta property="og:type" content="website">
-<meta property="og:title" content="yetyao blog">
-<meta property="og:url" content="http://yoursite.com/tags/方法/index.html">
+  <meta name="description" content="一. 事务的基本要素 （ACID）   原子性 （Atomicity）事务开始后所有操作，要么全部执行成功，要么全部执行失败，会回滚到事务执行开始的状态。也就是说事务是一个不可分割的整体，就像化学中学过的原子，是物质构成的基本单位。 一致性 （Consistency）事务开始前和结束后，数据库的完整性约束没有被破坏 。比如A向B转账，不可能A扣了钱，B却没收到。 隔离性    （Isolatio">
+<meta name="keywords" content="mysql">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mysql 事务隔离级别">
+<meta property="og:url" content="http://yoursite.com/2018/11/22/mysql-事务隔离级别/index.html">
 <meta property="og:site_name" content="yetyao blog">
-<meta property="og:description" content="程序猿">
+<meta property="og:description" content="一. 事务的基本要素 （ACID）   原子性 （Atomicity）事务开始后所有操作，要么全部执行成功，要么全部执行失败，会回滚到事务执行开始的状态。也就是说事务是一个不可分割的整体，就像化学中学过的原子，是物质构成的基本单位。 一致性 （Consistency）事务开始前和结束后，数据库的完整性约束没有被破坏 。比如A向B转账，不可能A扣了钱，B却没收到。 隔离性    （Isolatio">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-12-24T12:56:42.085Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="yetyao blog">
-<meta name="twitter:description" content="程序猿">
+<meta name="twitter:title" content="mysql 事务隔离级别">
+<meta name="twitter:description" content="一. 事务的基本要素 （ACID）   原子性 （Atomicity）事务开始后所有操作，要么全部执行成功，要么全部执行失败，会回滚到事务执行开始的状态。也就是说事务是一个不可分割的整体，就像化学中学过的原子，是物质构成的基本单位。 一致性 （Consistency）事务开始前和结束后，数据库的完整性约束没有被破坏 。比如A向B转账，不可能A扣了钱，B却没收到。 隔离性    （Isolatio">
   
     <link rel="alternate" href="/atom.xml" title="yetyao blog" type="application/atom+xml">
   
@@ -68,40 +69,123 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/10/25/自我提升/" class="archive-article-date">
-  <time datetime="2018-10-24T16:48:59.000Z" itemprop="datePublished">Oct 25</time>
+        <section id="main"><article id="post-mysql-事务隔离级别" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/11/22/mysql-事务隔离级别/" class="article-date">
+  <time datetime="2018-11-22T03:55:27.000Z" itemprop="datePublished">2018-11-22</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/mysql/">mysql</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/10/25/自我提升/">我自提升</a>
+    <h1 class="article-title" itemprop="name">
+      mysql 事务隔离级别
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>一. 事务的基本要素 （ACID）</p>
+</blockquote>
+<ol>
+<li>原子性 （Atomicity）事务开始后所有操作，要么全部执行成功，要么全部执行失败，会回滚到事务执行开始的状态。也就是说事务是一个不可分割的整体，就像化学中学过的原子，是物质构成的基本单位。</li>
+<li>一致性 （Consistency）事务开始前和结束后，数据库的完整性约束没有被破坏 。比如A向B转账，不可能A扣了钱，B却没收到。</li>
+<li>隔离性    （Isolation）同一时间，只允许一个事务请求同一数据，不同的事务之间彼此没有干扰。比如A正在从一张银行卡中取钱，在A取钱的过程结束前，B不能向这张卡转账。</li>
+<li>持久性    （Durability）事务完成后，事务对数据库的所有更新将被保存到数据库，不能回滚。</li>
+</ol>
+<blockquote>
+<p>二. 事务的并发问题</p>
+</blockquote>
+<ol>
+<li>脏读： 事务A读取了事务B更新的数据，然后B回滚操作，那么A读取读取到的数据就是脏数据</li>
+<li>不可重复读：事务A多次读取同一数据，事务B在事务A多次读取的过程中，对数据做了更新并提交，导致事务A多次读取同一数据时，结果不一致</li>
+<li>幻读： 系统管理员A将数据库中所有学生的成绩从具体分数改为ABCDE等级，但是系统管理员B就在这个时候插入了一条具体分数的记录，当系统管理员A改结束后发现还有一条记录没有改过来，就好像发生了幻觉一样，这就叫幻读。</li>
+</ol>
+<p>小结：不可重复读的和幻读很容易混淆，不可重复读侧重于<em>修改</em>，幻读侧重于<em>新增或删除</em>。解决不可重复读的问题<b>只需锁住满足条件的行</b>，解决幻读需要<em>锁表</em></p>
+<blockquote>
+<p>三. mysql 事务隔离级别</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>事务隔离级别</th>
+<th>脏读</th>
+<th>不可重复读</th>
+<th>幻读</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>读未提交（read-uncommitted）</td>
+<td>是</td>
+<td>是</td>
+<td>是</td>
+</tr>
+<tr>
+<td>不可重复读（read-committed）</td>
+<td>否</td>
+<td>是</td>
+<td>是</td>
+</tr>
+<tr>
+<td>可重复读 （repeatable-read）</td>
+<td>否</td>
+<td>否</td>
+<td>是</td>
+</tr>
+<tr>
+<td>串行化 （serializable）</td>
+<td>否</td>
+<td>否</td>
+<td>否</td>
+</tr>
+</tbody>
+</table>
 
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/11/22/mysql-事务隔离级别/" data-id="cjtrz0nm20007vzmc0w8j7phj" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/">mysql</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/11/22/加密解密/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          PHP-加密解密-方法1
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/11/17/PHP-方法-获取IP/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">PHP-方法-获取IP</div>
+    </a>
+  
+</nav>
+
+  
+</article>
 
 </section>
         
