@@ -52,31 +52,6 @@
   </entry>
   
   <entry>
-    <title>java-java8-lambda-01</title>
-    <link href="http://yoursite.com/2019/03/25/java-java8-%E6%96%B0%E7%89%B9%E6%80%A701-lambda/"/>
-    <id>http://yoursite.com/2019/03/25/java-java8-新特性01-lambda/</id>
-    <published>2019-03-25T04:02:59.000Z</published>
-    <updated>2019-09-11T07:50:41.981Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Lambda表达式"><a href="#Lambda表达式" class="headerlink" title="Lambda表达式"></a>Lambda表达式</h2><h4 id="Lambda表达式（lambda-expression）是一个匿名函数，由数学中的λ演算而得名。在Java-8中可以把Lambda表达式理解为匿名函数，它没有名称，但是有参数列表、函数主体、返回类型等。"><a href="#Lambda表达式（lambda-expression）是一个匿名函数，由数学中的λ演算而得名。在Java-8中可以把Lambda表达式理解为匿名函数，它没有名称，但是有参数列表、函数主体、返回类型等。" class="headerlink" title="Lambda表达式（lambda expression）是一个匿名函数，由数学中的λ演算而得名。在Java 8中可以把Lambda表达式理解为匿名函数，它没有名称，但是有参数列表、函数主体、返回类型等。"></a>Lambda表达式（lambda expression）是一个匿名函数，由数学中的λ演算而得名。在Java 8中可以把Lambda表达式理解为匿名函数，它没有名称，但是有参数列表、函数主体、返回类型等。</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(parameters) -&gt; &#123; statements; &#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;Lambda表达式&quot;&gt;&lt;a href=&quot;#Lambda表达式&quot; class=&quot;headerlink&quot; title=&quot;Lambda表达式&quot;&gt;&lt;/a&gt;Lambda表达式&lt;/h2&gt;&lt;h4 id=&quot;Lambda表达式（lambda-expression）是一个匿名函数，由
-      
-    
-    </summary>
-    
-      <category term="java8" scheme="http://yoursite.com/categories/java8/"/>
-    
-    
-      <category term="java" scheme="http://yoursite.com/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
     <title>java-java8-新特性02-StreamApi</title>
     <link href="http://yoursite.com/2019/03/25/java-java8-%E6%96%B0%E7%89%B9%E6%80%A702-StreamApi/"/>
     <id>http://yoursite.com/2019/03/25/java-java8-新特性02-StreamApi/</id>
@@ -90,6 +65,31 @@
       
       
         &lt;h2 id=&quot;Stream-API&quot;&gt;&lt;a href=&quot;#Stream-API&quot; class=&quot;headerlink&quot; title=&quot;Stream API&quot;&gt;&lt;/a&gt;Stream API&lt;/h2&gt;&lt;h4 id=&quot;Stream-API是对Java中集合操作的增强，可以利用它进行各
+      
+    
+    </summary>
+    
+      <category term="java8" scheme="http://yoursite.com/categories/java8/"/>
+    
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java-java8-lambda-01</title>
+    <link href="http://yoursite.com/2019/03/25/java-java8-%E6%96%B0%E7%89%B9%E6%80%A701-lambda/"/>
+    <id>http://yoursite.com/2019/03/25/java-java8-新特性01-lambda/</id>
+    <published>2019-03-25T04:02:59.000Z</published>
+    <updated>2019-09-11T07:50:41.981Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Lambda表达式"><a href="#Lambda表达式" class="headerlink" title="Lambda表达式"></a>Lambda表达式</h2><h4 id="Lambda表达式（lambda-expression）是一个匿名函数，由数学中的λ演算而得名。在Java-8中可以把Lambda表达式理解为匿名函数，它没有名称，但是有参数列表、函数主体、返回类型等。"><a href="#Lambda表达式（lambda-expression）是一个匿名函数，由数学中的λ演算而得名。在Java-8中可以把Lambda表达式理解为匿名函数，它没有名称，但是有参数列表、函数主体、返回类型等。" class="headerlink" title="Lambda表达式（lambda expression）是一个匿名函数，由数学中的λ演算而得名。在Java 8中可以把Lambda表达式理解为匿名函数，它没有名称，但是有参数列表、函数主体、返回类型等。"></a>Lambda表达式（lambda expression）是一个匿名函数，由数学中的λ演算而得名。在Java 8中可以把Lambda表达式理解为匿名函数，它没有名称，但是有参数列表、函数主体、返回类型等。</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(parameters) -&gt; &#123; statements; &#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Lambda表达式&quot;&gt;&lt;a href=&quot;#Lambda表达式&quot; class=&quot;headerlink&quot; title=&quot;Lambda表达式&quot;&gt;&lt;/a&gt;Lambda表达式&lt;/h2&gt;&lt;h4 id=&quot;Lambda表达式（lambda-expression）是一个匿名函数，由
       
     
     </summary>
