@@ -52,6 +52,56 @@
   </entry>
   
   <entry>
+    <title>java-java8-lambda-01</title>
+    <link href="http://yoursite.com/2019/03/25/java-java8-%E6%96%B0%E7%89%B9%E6%80%A701-lambda/"/>
+    <id>http://yoursite.com/2019/03/25/java-java8-新特性01-lambda/</id>
+    <published>2019-03-25T04:02:59.000Z</published>
+    <updated>2019-09-11T07:50:41.981Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Lambda表达式"><a href="#Lambda表达式" class="headerlink" title="Lambda表达式"></a>Lambda表达式</h2><h4 id="Lambda表达式（lambda-expression）是一个匿名函数，由数学中的λ演算而得名。在Java-8中可以把Lambda表达式理解为匿名函数，它没有名称，但是有参数列表、函数主体、返回类型等。"><a href="#Lambda表达式（lambda-expression）是一个匿名函数，由数学中的λ演算而得名。在Java-8中可以把Lambda表达式理解为匿名函数，它没有名称，但是有参数列表、函数主体、返回类型等。" class="headerlink" title="Lambda表达式（lambda expression）是一个匿名函数，由数学中的λ演算而得名。在Java 8中可以把Lambda表达式理解为匿名函数，它没有名称，但是有参数列表、函数主体、返回类型等。"></a>Lambda表达式（lambda expression）是一个匿名函数，由数学中的λ演算而得名。在Java 8中可以把Lambda表达式理解为匿名函数，它没有名称，但是有参数列表、函数主体、返回类型等。</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(parameters) -&gt; &#123; statements; &#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Lambda表达式&quot;&gt;&lt;a href=&quot;#Lambda表达式&quot; class=&quot;headerlink&quot; title=&quot;Lambda表达式&quot;&gt;&lt;/a&gt;Lambda表达式&lt;/h2&gt;&lt;h4 id=&quot;Lambda表达式（lambda-expression）是一个匿名函数，由
+      
+    
+    </summary>
+    
+      <category term="java8" scheme="http://yoursite.com/categories/java8/"/>
+    
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java-java8-新特性02-StreamApi</title>
+    <link href="http://yoursite.com/2019/03/25/java-java8-%E6%96%B0%E7%89%B9%E6%80%A702-StreamApi/"/>
+    <id>http://yoursite.com/2019/03/25/java-java8-新特性02-StreamApi/</id>
+    <published>2019-03-25T04:02:59.000Z</published>
+    <updated>2019-09-11T09:09:24.207Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Stream-API"><a href="#Stream-API" class="headerlink" title="Stream API"></a>Stream API</h2><h4 id="Stream-API是对Java中集合操作的增强，可以利用它进行各种过滤、排序、分组、聚合等操作"><a href="#Stream-API是对Java中集合操作的增强，可以利用它进行各种过滤、排序、分组、聚合等操作" class="headerlink" title="Stream API是对Java中集合操作的增强，可以利用它进行各种过滤、排序、分组、聚合等操作"></a>Stream API是对Java中集合操作的增强，可以利用它进行各种过滤、排序、分组、聚合等操作</h4><ul><li>使用方法 </li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\\ eg1：</span><br><span class="line">list.stream().forEach(System.out::println);</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">\\ eg2:</span><br><span class="line">List&lt;String&gt; userNames =</span><br><span class="line">        users.stream()</span><br><span class="line">        .filter(user -&gt; user.getAge() &gt; 20)</span><br><span class="line">        .sorted(comparing(User::getCreationDate))</span><br><span class="line">        .map(User::getUserName)</span><br><span class="line">        .collect(toList());</span><br></pre></td></tr></table></figure><ul><li><p>Stream接口中包含许多对流操作的方法</p><ol><li>filter()：对流的元素过滤</li><li>map()：将流的元素映射成另一个类型</li><li>distinct()：去除流中重复的元素</li><li>sorted()：对流的元素排序</li><li>forEach()：对流中的每个元素执行某个操作</li><li>peek()：与forEach()方法效果类似，不同的是，该方法会返回一个新的流，而forEach()无返回</li><li>limit()：截取流中前面几个元素</li><li>skip()：跳过流中前面几个元素</li><li>toArray()：将流转换为数组</li><li>reduce()：对流中的元素归约操作，将每个元素合起来形成一个新的值</li><li>collect()：对流的汇总操作，比如输出成List集合</li><li>anyMatch()：匹配流中的元素，类似的操作还有allMatch()和noneMatch()方法</li><li>findFirst()：查找第一个元素，类似的还有findAny()方法</li><li>max()：求最大值</li><li>min()：求最小值</li><li>count()：求总数</li></ol></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Stream-API&quot;&gt;&lt;a href=&quot;#Stream-API&quot; class=&quot;headerlink&quot; title=&quot;Stream API&quot;&gt;&lt;/a&gt;Stream API&lt;/h2&gt;&lt;h4 id=&quot;Stream-API是对Java中集合操作的增强，可以利用它进行各
+      
+    
+    </summary>
+    
+      <category term="java8" scheme="http://yoursite.com/categories/java8/"/>
+    
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>睡眠技巧</title>
     <link href="http://yoursite.com/2019/03/25/%E7%9D%A1%E7%9C%A0/"/>
     <id>http://yoursite.com/2019/03/25/睡眠/</id>
@@ -502,61 +552,6 @@
     
     
       <category term="mysql" scheme="http://yoursite.com/tags/mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>git 入门</title>
-    <link href="http://yoursite.com/2018/09/29/git-%E5%85%A5%E9%97%A8/"/>
-    <id>http://yoursite.com/2018/09/29/git-入门/</id>
-    <published>2018-09-29T13:59:44.000Z</published>
-    <updated>2018-10-22T01:35:13.994Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="git-安装"><a href="#git-安装" class="headerlink" title="git 安装"></a>git 安装</h4><ul><li>Git 安装<a href="https://git-scm.com/" target="_blank" rel="noopener">官网</a> </li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;yourname&quot;</span><br><span class="line"></span><br><span class="line">git config --global user.email &quot;youremail@163.com&quot; </span><br><span class="line"></span><br><span class="line">git config --list  (查看配置)</span><br></pre></td></tr></table></figure><ul><li>sourceTree 安装<a href="https://www.sourcetreeapp.com/" target="_blank" rel="noopener">官网</a></li></ul><h4 id="git-仓库"><a href="#git-仓库" class="headerlink" title="git 仓库"></a>git 仓库</h4><ul><li>初始化版本库</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init ( 生成.git文件)</span><br></pre></td></tr></table></figure><ul><li>添加文件到版本库</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">git add</span><br><span class="line"></span><br><span class="line">git add --help (查看帮助文档  q 退出文档)</span><br><span class="line">git add  -A  (提交全部文件)</span><br><span class="line"></span><br><span class="line">git reset HEAD demo.txt (从仓库中移除)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">git checkout -- demo.txt （删除未提交变更）</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">git commit</span><br><span class="line"></span><br><span class="line">git commit -m &quot;commit info&quot;</span><br></pre></td></tr></table></figure><ul><li>查看仓库状态</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure><h4 id="Git-工作流"><a href="#Git-工作流" class="headerlink" title="Git 工作流"></a>Git 工作流</h4><ul><li>查看历史提交版本</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log</span><br></pre></td></tr></table></figure><ul><li>回退到某一版本 </li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard 2d62d28ea69a8ed0f69ae3daf0749c0382f2e197</span><br></pre></td></tr></table></figure><ul><li>删除某文件</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm -f test.php</span><br></pre></td></tr></table></figure><h4 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h4><ul><li>创建 SSH key 到github</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremai@email.com&quot;</span><br><span class="line"></span><br><span class="line">cat id_rsa.pub</span><br><span class="line"></span><br><span class="line">复制公钥到github</span><br><span class="line">   </span><br><span class="line">ssh -T git@github.com   (判断是否设置成功)</span><br></pre></td></tr></table></figure><ul><li>添加远程仓库</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@github.com:youname/youproject.git   (设置远程仓库)</span><br><span class="line"></span><br><span class="line">git pull origin master (拉取远程内容)</span><br><span class="line"></span><br><span class="line">git push -u origin master （推送到远程仓库）</span><br></pre></td></tr></table></figure><h4 id="克隆仓库"><a href="#克隆仓库" class="headerlink" title="克隆仓库"></a>克隆仓库</h4><ul><li>克隆仓库</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone  git地址</span><br></pre></td></tr></table></figure><h4 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h4><ul><li><p>创建分支</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch feature/test1_branch (创建分支feature/test1_branch)</span><br></pre></td></tr></table></figure></li><li><p>分支列表</p></li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch</span><br></pre></td></tr></table></figure><ul><li>切换分支</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout master (切换到master分支上)</span><br></pre></td></tr></table></figure><ul><li>删除分支</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -d feature/test1_branch (删除分支)</span><br></pre></td></tr></table></figure><ul><li>合并分支</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge branch1</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h4 id=&quot;git-安装&quot;&gt;&lt;a href=&quot;#git-安装&quot; class=&quot;headerlink&quot; title=&quot;git 安装&quot;&gt;&lt;/a&gt;git 安装&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;Git 安装&lt;a href=&quot;https://git-scm.com/&quot; target=&quot;_bl
-      
-    
-    </summary>
-    
-      <category term="git" scheme="http://yoursite.com/categories/git/"/>
-    
-    
-      <category term="git" scheme="http://yoursite.com/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>工具推荐</title>
-    <link href="http://yoursite.com/2018/09/22/%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/"/>
-    <id>http://yoursite.com/2018/09/22/工具推荐/</id>
-    <published>2018-09-22T03:55:27.000Z</published>
-    <updated>2018-09-22T07:49:13.215Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>办公类</p></blockquote><ol><li>snipaste <a href="https://zh.snipaste.com/" target="_blank" rel="noopener">截屏</a> (F1 截屏)</li><li>foxmail <a href="http://www.foxmail.com/" target="_blank" rel="noopener">邮件</a></li><li>spacesniffer pc电脑间排查<a href="http://www.uderzo.it/main_products/space_sniffer/download.html" target="_blank" rel="noopener">官网</a></li><li>foxmail <a href="http://www.foxmail.com/" target="_blank" rel="noopener">官网</a> </li><li>everthing    <a href="https://everything.en.softonic.com/" target="_blank" rel="noopener">文件搜索</a></li><li>clover      文件夹</li><li>XYplorerFree 文件管理器</li><li>快压        解压</li><li>夜神模拟器  手机模拟器</li><li>2345看图    看图</li><li>2345pdfreader pdf打开</li><li>网易云音乐 音乐</li><li>ditto       复制历史 (ctrl+ ` : 打开复制历史)</li><li>TeamViewer  电脑手机连接 <a href="https://www.teamviewer.com/zhcn/support/documents/" target="_blank" rel="noopener">文档</a></li><li>Iobit uninstaller 卸载软件</li><li>解压 <a href="https://www.7-zip.org/" target="_blank" rel="noopener">7z</a></li></ol><blockquote><p>编程类</p></blockquote><ol><li>sublime     编程神器</li><li>vim          上古神器</li><li>netbeans/editplus     IDE</li><li>notepad++    文本编辑</li><li>postman      模拟请求</li><li><a href="https://yapi.ymfe.org" target="_blank" rel="noopener">yapi</a>api管理平台</li><li>switchHost  host切换</li><li>xshell5     终端连接</li><li>filezilla   服务器文件传输</li><li><a href="http://www.hostbuf.com/t/988.html" target="_blank" rel="noopener">链接linux</a></li><li>Navicat     连接数据库</li><li>Resilio Sync 分布式存储</li><li>Fiddler <a href="http://www.phpernote.com/php-template/1281.html" target="_blank" rel="noopener">抓包</a></li><li>feedDemon   <a href="http://www.feeddemon.com/" target="_blank" rel="noopener">邮件订阅</a></li><li>LocoyPlatform 火车头数据抓取</li><li>go ide goLand(官网)[<a href="https://www.jetbrains.com/go]" target="_blank" rel="noopener">https://www.jetbrains.com/go]</a> (激活)[<a href="https://blog.csdn.net/qq_17088237/article/details/79403548]" target="_blank" rel="noopener">https://blog.csdn.net/qq_17088237/article/details/79403548]</a></li><li>winshake 查看Tcp请求 <a href="https://www.wireshark.org/download.html" target="_blank" rel="noopener">官网</a></li><li>phpstrom <a href="https://www.jianshu.com/p/f4cf6ac951a0" target="_blank" rel="noopener">PHPIDE</a></li><li>BitBucket 版本控制</li><li>sourcetree  gitlab 版本控制</li><li>gitkraken <a href="https://www.gitkraken.com" target="_blank" rel="noopener">图形化版本控制</a></li></ol><blockquote><p>上网</p></blockquote><ol><li>chrome  <a href="https://www.google.com/chrome/" target="_blank" rel="noopener">浏览器</a></li><li>gitbook      <a href="https://www.gitbook.com/" target="_blank" rel="noopener">书籍编辑</a></li><li>jsonView chrom中扩展 <a href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc/related?hl=zh-CN" target="_blank" rel="noopener">查看json数据</a></li><li>everything <a href="https://www.voidtools.com/downloads/" target="_blank" rel="noopener">官网</a></li></ol><blockquote><p>学习</p></blockquote><ol><li>有道云笔记  <a href="https://note.youdao.com/" target="_blank" rel="noopener">笔记</a></li><li>xmind       <a href="https://www.xmind.cn/" target="_blank" rel="noopener">脑图官网</a></li><li>dotplayer   <a href="https://potplayer.daum.net/" target="_blank" rel="noopener">播放器</a></li><li>pdf 看书:   <a href="https://www.sumatrapdfreader.org/free-pdf-reader.html" target="_blank" rel="noopener">Sumatra PDF</a></li><li>calibre pc看书</li><li>coggle 类xmind在线画图</li><li>visio 画图</li></ol><blockquote><p>工具推荐博客</p></blockquote><p><a href="https://www.kancloud.cn/maozhenggang/monkey-cheats/93901" target="_blank" rel="noopener">mac win linux 推荐</a></p><blockquote><p>mac</p></blockquote><ol><li>macdown <a href="http://macdown.uranusjr.com/" target="_blank" rel="noopener">markdown software</a></li><li>atom <a href="https://atom.io/" target="_blank" rel="noopener">官网</a></li><li>DataGrid（数据库管理工具）</li><li>paw <a href="https://paw.cloud/" target="_blank" rel="noopener">类似postman</a></li><li>kitematic docker管理工具</li><li>iterm2 <a href="https://www.iterm2.com/downloads.html" target="_blank" rel="noopener">终端</a></li><li>copyq 复制粘贴 <a href="https://hluk.github.io/CopyQ/" target="_blank" rel="noopener">官网</a></li></ol><blockquote><p>在线工具</p></blockquote><ol><li><a href="https://unbug.github.io/codelf" target="_blank" rel="noopener">函数命名codeif</a></li><li><a href="https://www.processon.com" target="_blank" rel="noopener">processon</a></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;
-&lt;p&gt;办公类&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;snipaste &lt;a href=&quot;https://zh.snipaste.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;截屏&lt;/a&gt; (F1 截屏)&lt;/li
-      
-    
-    </summary>
-    
-      <category term="工具" scheme="http://yoursite.com/categories/%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="工具" scheme="http://yoursite.com/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
