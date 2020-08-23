@@ -5,20 +5,20 @@
   
 
   
-  <title>PHP运算符 | yetyao blog</title>
+  <title>mysql事务 | yetyao blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="PHP运算符123456789&amp;lt;?php$a = 0;$b = 0;if($a=3||$b=3)&amp;#123;	$a++;	$b++;&amp;#125;echo $a.&amp;apos;-&amp;apos;.$b;//1-1  || 优先级高于 =if($a=3||$b=3) 相当于 if($a=(3||$b=3))$a = (3||$b=3) 又因为短路导致 $a=trueif($a=true) 相当于 if">
-<meta name="keywords" content="PHP">
+  <meta name="description" content="一. 事务的基本要素 （ACID） 原子性 （Atomicity）事务开始后所有操作，要么全部执行成功，要么全部执行失败，会回滚到事务执行开始的状态。也就是说事务是一个不可分割的整体，就像化学中学过的原子，是物质构成的基本单位。 一致性 （Consistency）事务开始前和结束后，数据库的完整性约束没有被破坏 。比如A向B转账，不可能A扣了钱，B却没收到。3 .隔离性 （Isolation）同一">
+<meta name="keywords" content="mysql">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PHP运算符">
-<meta property="og:url" content="http://yoursite.com/2018/07/15/PHP运算符/index.html">
+<meta property="og:title" content="mysql事务">
+<meta property="og:url" content="http://yoursite.com/2019/07/15/mysql-transaction/index.html">
 <meta property="og:site_name" content="yetyao blog">
-<meta property="og:description" content="PHP运算符123456789&amp;lt;?php$a = 0;$b = 0;if($a=3||$b=3)&amp;#123;	$a++;	$b++;&amp;#125;echo $a.&amp;apos;-&amp;apos;.$b;//1-1  || 优先级高于 =if($a=3||$b=3) 相当于 if($a=(3||$b=3))$a = (3||$b=3) 又因为短路导致 $a=trueif($a=true) 相当于 if">
+<meta property="og:description" content="一. 事务的基本要素 （ACID） 原子性 （Atomicity）事务开始后所有操作，要么全部执行成功，要么全部执行失败，会回滚到事务执行开始的状态。也就是说事务是一个不可分割的整体，就像化学中学过的原子，是物质构成的基本单位。 一致性 （Consistency）事务开始前和结束后，数据库的完整性约束没有被破坏 。比如A向B转账，不可能A扣了钱，B却没收到。3 .隔离性 （Isolation）同一">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-24T18:15:40.515Z">
+<meta property="og:updated_time" content="2020-08-23T09:05:07.007Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="PHP运算符">
-<meta name="twitter:description" content="PHP运算符123456789&amp;lt;?php$a = 0;$b = 0;if($a=3||$b=3)&amp;#123;	$a++;	$b++;&amp;#125;echo $a.&amp;apos;-&amp;apos;.$b;//1-1  || 优先级高于 =if($a=3||$b=3) 相当于 if($a=(3||$b=3))$a = (3||$b=3) 又因为短路导致 $a=trueif($a=true) 相当于 if">
+<meta name="twitter:title" content="mysql事务">
+<meta name="twitter:description" content="一. 事务的基本要素 （ACID） 原子性 （Atomicity）事务开始后所有操作，要么全部执行成功，要么全部执行失败，会回滚到事务执行开始的状态。也就是说事务是一个不可分割的整体，就像化学中学过的原子，是物质构成的基本单位。 一致性 （Consistency）事务开始前和结束后，数据库的完整性约束没有被破坏 。比如A向B转账，不可能A扣了钱，B却没收到。3 .隔离性 （Isolation）同一">
   
     <link rel="alternate" href="/atom.xml" title="yetyao blog" type="application/atom+xml">
   
@@ -69,14 +69,14 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-PHP运算符" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-mysql-transaction" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/07/15/PHP运算符/" class="article-date">
-  <time datetime="2018-07-15T12:18:59.000Z" itemprop="datePublished">2018-07-15</time>
+    <a href="/2019/07/15/mysql-transaction/" class="article-date">
+  <time datetime="2019-07-15T12:18:59.000Z" itemprop="datePublished">2019-07-15</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/PHP/">PHP</a>
+    <a class="article-category-link" href="/categories/mysql/">mysql</a>
   </div>
 
   </div>
@@ -87,7 +87,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      PHP运算符
+      mysql事务
     </h1>
   
 
@@ -95,26 +95,24 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="PHP运算符"><a href="#PHP运算符" class="headerlink" title="PHP运算符"></a>PHP运算符</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$a = 0;</span><br><span class="line">$b = 0;</span><br><span class="line">if($a=3||$b=3)&#123;</span><br><span class="line">	$a++;</span><br><span class="line">	$b++;</span><br><span class="line">&#125;</span><br><span class="line">echo $a.&apos;-&apos;.$b;</span><br><span class="line">//1-1</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>|| <em>优先级</em>高于 =<br><code>if($a=3||$b=3)</code> 相当于 <code>if($a=(3||$b=3))</code><br><code>$a = (3||$b=3)</code> 又因为<em>短路</em>导致 <code>$a=true</code><br><code>if($a=true)</code> 相当于 <code>if(true)</code> 此时因为<em>意外赋值</em> $a为true,$b为0<br><code>$a++</code>和<code>$b++</code> 进行<em>后加加</em><br>故$a为1 $b为1 结果为 1-1</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$a = 0;</span><br><span class="line">$b = 0;</span><br><span class="line">if($a=3||$b=3)&#123;</span><br><span class="line">    $a;</span><br><span class="line">    $b++;</span><br><span class="line">&#125;</span><br><span class="line">echo $a.&apos;-&apos;.$b;</span><br><span class="line">//1-1</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>|| <em>优先级</em>高于 =<br><code>if($a=3||$b=3)</code> 相当于 <code>if($a=(3||$b=3))</code><br><code>$a = (3||$b=3)</code> 又因为<em>短路</em>导致 <code>$a=true</code><br><code>if($a=true)</code> 相当于 <code>if(true)</code> 此时因为<em>意外赋值</em> $a为true,$b为0<br><code>$b++</code> 进行<em>后加加</em>  <code>echo true;</code> 为1<br>故$a为true $b为1  结果为 1-1 </p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$a = 0;</span><br><span class="line">$b = 0;</span><br><span class="line">if($a=3 or $b=3)&#123;</span><br><span class="line">    $a++;</span><br><span class="line">    $b++;</span><br><span class="line">&#125;</span><br><span class="line">echo $a.&apos;-&apos;.$b;</span><br><span class="line">//4-1</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>or <em>优先级</em>低于 =<br>因为<em>短路</em> <code>if($a=3 or $b=3)</code> 相当于 <code>if($a=3)</code><br><code>if($a=3)</code> 相当于 <code>if(3)</code> 此时因为<em>意外赋值</em> $a为3,$b为0<br><code>$a++</code>和<code>$b++</code> 进行<em>后加加</em><br>故$a为4 $b为1 结果为 4-1</p>
-</blockquote>
+        <h2 id="一-事务的基本要素-（ACID）"><a href="#一-事务的基本要素-（ACID）" class="headerlink" title="一. 事务的基本要素 （ACID）"></a>一. 事务的基本要素 （ACID）</h2><ol>
+<li>原子性 （Atomicity）事务开始后所有操作，要么全部执行成功，要么全部执行失败，会回滚到事务执行开始的状态。也就是说事务是一个不可分割的整体，就像化学中学过的原子，是物质构成的基本单位。</li>
+<li>一致性 （Consistency）事务开始前和结束后，数据库的完整性约束没有被破坏 。比如A向B转账，不可能A扣了钱，B却没收到。<br>3 .隔离性 （Isolation）同一时间，只允许一个事务请求同一数据，不同的事务之间彼此没有干扰。比如A正在从一张银行卡中取钱，在A取钱的过程结束前，B不能向这张卡转账。<br>持久性 （Durability）事务完成后，事务对数据库的所有更新将被保存到数据库，不能回滚。</li>
+</ol>
+<h2 id="二-事务的并发问题"><a href="#二-事务的并发问题" class="headerlink" title="二. 事务的并发问题"></a>二. 事务的并发问题</h2><ol>
+<li>脏读： 事务A读取了事务B更新的数据，然后B回滚操作，那么A读取读取到的数据就是脏数据</li>
+<li>不可重复读：事务A多次读取同一数据，事务B在事务A多次读取的过程中，对数据做了更新并提交，导致事务A多次读取同一数据时，结果不一致</li>
+<li>幻读： 系统管理员A将数据库中所有学生的成绩从具体分数改为ABCDE等级，但是系统管理员B就在这个时候插入了一条具体分数的记录，当系统管理员A改结束后发现还有一条记录没有改过来，就好像发生了幻觉一样，这就叫幻读。</li>
+</ol>
+<p>小结：不可重复读的和幻读很容易混淆，不可重复读侧重于修改，幻读侧重于新增或删除。解决不可重复读的问题只需锁住满足条件的行，解决幻读需要锁表</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/15/PHP运算符/" data-id="cke6vf84e000370sau4ncfjd4" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/07/15/mysql-transaction/" data-id="cke6vf84l000670sax2gkiysd" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/">mysql</a></li></ul>
 
     </footer>
   </div>
@@ -122,19 +120,19 @@
     
 <nav id="article-nav">
   
-    <a href="/2018/08/25/Markdown语法入门/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/07/15/mysql-password/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          Markdown语法入门
+          mysql8.0.12忘记密码
         
       </div>
     </a>
   
   
-    <a href="/2018/07/15/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/08/25/Markdown语法入门/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
+      <div class="article-nav-title">Markdown语法入门</div>
     </a>
   
 </nav>

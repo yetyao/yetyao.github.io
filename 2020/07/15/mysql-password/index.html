@@ -5,19 +5,20 @@
   
 
   
-  <title>归档: 2018/8 | yetyao blog</title>
+  <title>mysql8.0.12忘记密码 | yetyao blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="程序猿">
-<meta name="keywords" content="PHP JavaScript Linux MySQL">
-<meta property="og:type" content="website">
-<meta property="og:title" content="yetyao blog">
-<meta property="og:url" content="http://yoursite.com/archives/2018/08/index.html">
+  <meta name="description" content="修改 /etc/my.cnf 添加 skip-grant-tables systemctl restart mysqld mysql -u root -p (root身份登录) use mysql flush privileges alter user ‘root‘@’localhost’ IDENTIFIED BY ‘mypassword’;">
+<meta name="keywords" content="mysql">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mysql8.0.12忘记密码">
+<meta property="og:url" content="http://yoursite.com/2020/07/15/mysql-password/index.html">
 <meta property="og:site_name" content="yetyao blog">
-<meta property="og:description" content="程序猿">
+<meta property="og:description" content="修改 /etc/my.cnf 添加 skip-grant-tables systemctl restart mysqld mysql -u root -p (root身份登录) use mysql flush privileges alter user ‘root‘@’localhost’ IDENTIFIED BY ‘mypassword’;">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2020-08-23T09:05:59.403Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="yetyao blog">
-<meta name="twitter:description" content="程序猿">
+<meta name="twitter:title" content="mysql8.0.12忘记密码">
+<meta name="twitter:description" content="修改 /etc/my.cnf 添加 skip-grant-tables systemctl restart mysqld mysql -u root -p (root身份登录) use mysql flush privileges alter user ‘root‘@’localhost’ IDENTIFIED BY ‘mypassword’;">
   
     <link rel="alternate" href="/atom.xml" title="yetyao blog" type="application/atom+xml">
   
@@ -68,40 +69,75 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/08/25/Markdown语法入门/" class="archive-article-date">
-  <time datetime="2018-08-24T17:20:59.000Z" itemprop="datePublished">8月 25</time>
+        <section id="main"><article id="post-mysql-password" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/15/mysql-password/" class="article-date">
+  <time datetime="2020-07-15T12:18:59.000Z" itemprop="datePublished">2020-07-15</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/mysql/">mysql</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/25/Markdown语法入门/">Markdown语法入门</a>
+    <h1 class="article-title" itemprop="name">
+      mysql8.0.12忘记密码
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>修改 /etc/my.cnf</li>
+<li>添加 skip-grant-tables</li>
+<li>systemctl restart mysqld</li>
+<li>mysql -u root -p (root身份登录)</li>
+<li>use mysql</li>
+<li>flush privileges</li>
+<li>alter user ‘root‘@’localhost’ IDENTIFIED BY ‘mypassword’;</li>
+</ol>
 
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/07/15/mysql-password/" data-id="cke6vf84o000970sa8pnuydwe" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/">mysql</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/07/15/JavaScript-false/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          javascript中false的几种情况
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/07/15/mysql-transaction/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">mysql事务</div>
+    </a>
+  
+</nav>
+
+  
+</article>
 
 </section>
         

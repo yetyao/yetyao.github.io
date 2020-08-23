@@ -5,20 +5,20 @@
   
 
   
-  <title>PHP运算符 | yetyao blog</title>
+  <title>javascript中false的几种情况 | yetyao blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="PHP运算符123456789&amp;lt;?php$a = 0;$b = 0;if($a=3||$b=3)&amp;#123;	$a++;	$b++;&amp;#125;echo $a.&amp;apos;-&amp;apos;.$b;//1-1  || 优先级高于 =if($a=3||$b=3) 相当于 if($a=(3||$b=3))$a = (3||$b=3) 又因为短路导致 $a=trueif($a=true) 相当于 if">
-<meta name="keywords" content="PHP">
+  <meta name="description" content="false undefined null 0 或 0.0 ‘’ 或 “” NaN  利用！取反运算符1234567891011121314151617!!undefined // true!null // true!0 // true!NaN // true!&amp;quot;&amp;quot; // true!54 // false!&amp;apos;hello&amp;apos; // false![] // fal">
+<meta name="keywords" content="javascript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PHP运算符">
-<meta property="og:url" content="http://yoursite.com/2018/07/15/PHP运算符/index.html">
+<meta property="og:title" content="javascript中false的几种情况">
+<meta property="og:url" content="http://yoursite.com/2020/07/15/JavaScript-false/index.html">
 <meta property="og:site_name" content="yetyao blog">
-<meta property="og:description" content="PHP运算符123456789&amp;lt;?php$a = 0;$b = 0;if($a=3||$b=3)&amp;#123;	$a++;	$b++;&amp;#125;echo $a.&amp;apos;-&amp;apos;.$b;//1-1  || 优先级高于 =if($a=3||$b=3) 相当于 if($a=(3||$b=3))$a = (3||$b=3) 又因为短路导致 $a=trueif($a=true) 相当于 if">
+<meta property="og:description" content="false undefined null 0 或 0.0 ‘’ 或 “” NaN  利用！取反运算符1234567891011121314151617!!undefined // true!null // true!0 // true!NaN // true!&amp;quot;&amp;quot; // true!54 // false!&amp;apos;hello&amp;apos; // false![] // fal">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-24T18:15:40.515Z">
+<meta property="og:updated_time" content="2020-08-23T09:09:52.131Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="PHP运算符">
-<meta name="twitter:description" content="PHP运算符123456789&amp;lt;?php$a = 0;$b = 0;if($a=3||$b=3)&amp;#123;	$a++;	$b++;&amp;#125;echo $a.&amp;apos;-&amp;apos;.$b;//1-1  || 优先级高于 =if($a=3||$b=3) 相当于 if($a=(3||$b=3))$a = (3||$b=3) 又因为短路导致 $a=trueif($a=true) 相当于 if">
+<meta name="twitter:title" content="javascript中false的几种情况">
+<meta name="twitter:description" content="false undefined null 0 或 0.0 ‘’ 或 “” NaN  利用！取反运算符1234567891011121314151617!!undefined // true!null // true!0 // true!NaN // true!&amp;quot;&amp;quot; // true!54 // false!&amp;apos;hello&amp;apos; // false![] // fal">
   
     <link rel="alternate" href="/atom.xml" title="yetyao blog" type="application/atom+xml">
   
@@ -69,14 +69,14 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-PHP运算符" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-JavaScript-false" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/07/15/PHP运算符/" class="article-date">
-  <time datetime="2018-07-15T12:18:59.000Z" itemprop="datePublished">2018-07-15</time>
+    <a href="/2020/07/15/JavaScript-false/" class="article-date">
+  <time datetime="2020-07-15T12:18:59.000Z" itemprop="datePublished">2020-07-15</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/PHP/">PHP</a>
+    <a class="article-category-link" href="/categories/javascript/">javascript</a>
   </div>
 
   </div>
@@ -87,7 +87,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      PHP运算符
+      javascript中false的几种情况
     </h1>
   
 
@@ -95,26 +95,23 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="PHP运算符"><a href="#PHP运算符" class="headerlink" title="PHP运算符"></a>PHP运算符</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$a = 0;</span><br><span class="line">$b = 0;</span><br><span class="line">if($a=3||$b=3)&#123;</span><br><span class="line">	$a++;</span><br><span class="line">	$b++;</span><br><span class="line">&#125;</span><br><span class="line">echo $a.&apos;-&apos;.$b;</span><br><span class="line">//1-1</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>|| <em>优先级</em>高于 =<br><code>if($a=3||$b=3)</code> 相当于 <code>if($a=(3||$b=3))</code><br><code>$a = (3||$b=3)</code> 又因为<em>短路</em>导致 <code>$a=true</code><br><code>if($a=true)</code> 相当于 <code>if(true)</code> 此时因为<em>意外赋值</em> $a为true,$b为0<br><code>$a++</code>和<code>$b++</code> 进行<em>后加加</em><br>故$a为1 $b为1 结果为 1-1</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$a = 0;</span><br><span class="line">$b = 0;</span><br><span class="line">if($a=3||$b=3)&#123;</span><br><span class="line">    $a;</span><br><span class="line">    $b++;</span><br><span class="line">&#125;</span><br><span class="line">echo $a.&apos;-&apos;.$b;</span><br><span class="line">//1-1</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>|| <em>优先级</em>高于 =<br><code>if($a=3||$b=3)</code> 相当于 <code>if($a=(3||$b=3))</code><br><code>$a = (3||$b=3)</code> 又因为<em>短路</em>导致 <code>$a=true</code><br><code>if($a=true)</code> 相当于 <code>if(true)</code> 此时因为<em>意外赋值</em> $a为true,$b为0<br><code>$b++</code> 进行<em>后加加</em>  <code>echo true;</code> 为1<br>故$a为true $b为1  结果为 1-1 </p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$a = 0;</span><br><span class="line">$b = 0;</span><br><span class="line">if($a=3 or $b=3)&#123;</span><br><span class="line">    $a++;</span><br><span class="line">    $b++;</span><br><span class="line">&#125;</span><br><span class="line">echo $a.&apos;-&apos;.$b;</span><br><span class="line">//4-1</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>or <em>优先级</em>低于 =<br>因为<em>短路</em> <code>if($a=3 or $b=3)</code> 相当于 <code>if($a=3)</code><br><code>if($a=3)</code> 相当于 <code>if(3)</code> 此时因为<em>意外赋值</em> $a为3,$b为0<br><code>$a++</code>和<code>$b++</code> 进行<em>后加加</em><br>故$a为4 $b为1 结果为 4-1</p>
-</blockquote>
-
+        <ol>
+<li>false</li>
+<li>undefined</li>
+<li>null</li>
+<li>0 或 0.0</li>
+<li>‘’ 或 “”</li>
+<li>NaN</li>
+</ol>
+<h3 id="利用！取反运算符"><a href="#利用！取反运算符" class="headerlink" title="利用！取反运算符"></a>利用！取反运算符</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">!!undefined // true</span><br><span class="line"></span><br><span class="line">!null // true</span><br><span class="line"></span><br><span class="line">!0 // true</span><br><span class="line"></span><br><span class="line">!NaN // true</span><br><span class="line"></span><br><span class="line">!&quot;&quot; // true</span><br><span class="line"></span><br><span class="line">!54 // false</span><br><span class="line"></span><br><span class="line">!&apos;hello&apos; // false</span><br><span class="line"></span><br><span class="line">![] // false</span><br><span class="line"></span><br><span class="line">!&#123;&#125; // false</span><br></pre></td></tr></table></figure>
+<h3 id="和-为true"><a href="#和-为true" class="headerlink" title="[]和{} 为true"></a>[]和{} 为true</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">if([])&#123;</span><br><span class="line">    console.log(&apos;[] is true&apos;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// [] is true</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> if(&#123;&#125;)&#123;</span><br><span class="line">    console.log(&apos;&#123;&#125; is true&apos;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// &#123;&#125; is true</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/15/PHP运算符/" data-id="cke6vf84e000370sau4ncfjd4" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/07/15/JavaScript-false/" data-id="cke6vf84h000470sau68o0zh0" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
 
     </footer>
   </div>
@@ -122,19 +119,19 @@
     
 <nav id="article-nav">
   
-    <a href="/2018/08/25/Markdown语法入门/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/08/23/sleep/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          Markdown语法入门
+          睡眠技巧
         
       </div>
     </a>
   
   
-    <a href="/2018/07/15/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2020/07/15/mysql-password/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
+      <div class="article-nav-title">mysql8.0.12忘记密码</div>
     </a>
   
 </nav>
