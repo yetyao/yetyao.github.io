@@ -5,20 +5,20 @@
   
 
   
-  <title>mysql事务 | yetyao blog</title>
+  <title>mysql-索引 | yetyao blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一. 事务的基本要素 （ACID） 原子性 （Atomicity）事务开始后所有操作，要么全部执行成功，要么全部执行失败，会回滚到事务执行开始的状态。也就是说事务是一个不可分割的整体，就像化学中学过的原子，是物质构成的基本单位。 一致性 （Consistency）事务开始前和结束后，数据库的完整性约束没有被破坏 。比如A向B转账，不可能A扣了钱，B却没收到。3 .隔离性 （Isolation）同一">
+  <meta name="description" content="1)什么是索引:索引: 索引是一种特殊的文件(InnoDB数据表上的索引是表空间的一个组成部分)，它们包含着对数据表里所有记录的引用指针。更通俗的说，数据库索引好比是一本书前面的目录，能加快数据库的查询速度。在没有索引的情况下，数据库会遍历全部数据后选择符合条件的；而有了相应的索引之后，数据库会直接在索引中查找符合条件的选项。 索引的性质分类索引分为聚簇索引和非聚簇索引两种，聚簇索引是按照数据存放">
 <meta name="keywords" content="mysql">
 <meta property="og:type" content="article">
-<meta property="og:title" content="mysql事务">
-<meta property="og:url" content="http://yoursite.com/2019/07/15/mysql-transaction/index.html">
+<meta property="og:title" content="mysql-索引">
+<meta property="og:url" content="http://yoursite.com/2020/09/01/mysql-索引/index.html">
 <meta property="og:site_name" content="yetyao blog">
-<meta property="og:description" content="一. 事务的基本要素 （ACID） 原子性 （Atomicity）事务开始后所有操作，要么全部执行成功，要么全部执行失败，会回滚到事务执行开始的状态。也就是说事务是一个不可分割的整体，就像化学中学过的原子，是物质构成的基本单位。 一致性 （Consistency）事务开始前和结束后，数据库的完整性约束没有被破坏 。比如A向B转账，不可能A扣了钱，B却没收到。3 .隔离性 （Isolation）同一">
+<meta property="og:description" content="1)什么是索引:索引: 索引是一种特殊的文件(InnoDB数据表上的索引是表空间的一个组成部分)，它们包含着对数据表里所有记录的引用指针。更通俗的说，数据库索引好比是一本书前面的目录，能加快数据库的查询速度。在没有索引的情况下，数据库会遍历全部数据后选择符合条件的；而有了相应的索引之后，数据库会直接在索引中查找符合条件的选项。 索引的性质分类索引分为聚簇索引和非聚簇索引两种，聚簇索引是按照数据存放">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-08-23T09:05:07.007Z">
+<meta property="og:updated_time" content="2020-09-01T08:57:09.523Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mysql事务">
-<meta name="twitter:description" content="一. 事务的基本要素 （ACID） 原子性 （Atomicity）事务开始后所有操作，要么全部执行成功，要么全部执行失败，会回滚到事务执行开始的状态。也就是说事务是一个不可分割的整体，就像化学中学过的原子，是物质构成的基本单位。 一致性 （Consistency）事务开始前和结束后，数据库的完整性约束没有被破坏 。比如A向B转账，不可能A扣了钱，B却没收到。3 .隔离性 （Isolation）同一">
+<meta name="twitter:title" content="mysql-索引">
+<meta name="twitter:description" content="1)什么是索引:索引: 索引是一种特殊的文件(InnoDB数据表上的索引是表空间的一个组成部分)，它们包含着对数据表里所有记录的引用指针。更通俗的说，数据库索引好比是一本书前面的目录，能加快数据库的查询速度。在没有索引的情况下，数据库会遍历全部数据后选择符合条件的；而有了相应的索引之后，数据库会直接在索引中查找符合条件的选项。 索引的性质分类索引分为聚簇索引和非聚簇索引两种，聚簇索引是按照数据存放">
   
     <link rel="alternate" href="/atom.xml" title="yetyao blog" type="application/atom+xml">
   
@@ -69,10 +69,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-mysql-transaction" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-mysql-索引" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/07/15/mysql-transaction/" class="article-date">
-  <time datetime="2019-07-15T12:18:59.000Z" itemprop="datePublished">2019-07-15</time>
+    <a href="/2020/09/01/mysql-索引/" class="article-date">
+  <time datetime="2020-09-01T12:18:59.000Z" itemprop="datePublished">2020-09-01</time>
 </a>
     
   <div class="article-category">
@@ -87,7 +87,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      mysql事务
+      mysql-索引
     </h1>
   
 
@@ -95,21 +95,21 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="一-事务的基本要素-（ACID）"><a href="#一-事务的基本要素-（ACID）" class="headerlink" title="一. 事务的基本要素 （ACID）"></a>一. 事务的基本要素 （ACID）</h2><ol>
-<li>原子性 （Atomicity）事务开始后所有操作，要么全部执行成功，要么全部执行失败，会回滚到事务执行开始的状态。也就是说事务是一个不可分割的整体，就像化学中学过的原子，是物质构成的基本单位。</li>
-<li>一致性 （Consistency）事务开始前和结束后，数据库的完整性约束没有被破坏 。比如A向B转账，不可能A扣了钱，B却没收到。<br>3 .隔离性 （Isolation）同一时间，只允许一个事务请求同一数据，不同的事务之间彼此没有干扰。比如A正在从一张银行卡中取钱，在A取钱的过程结束前，B不能向这张卡转账。<br>持久性 （Durability）事务完成后，事务对数据库的所有更新将被保存到数据库，不能回滚。</li>
-</ol>
-<h2 id="二-事务的并发问题"><a href="#二-事务的并发问题" class="headerlink" title="二. 事务的并发问题"></a>二. 事务的并发问题</h2><ol>
-<li>脏读： 事务A读取了事务B更新的数据，然后B回滚操作，那么A读取读取到的数据就是脏数据</li>
-<li>不可重复读：事务A多次读取同一数据，事务B在事务A多次读取的过程中，对数据做了更新并提交，导致事务A多次读取同一数据时，结果不一致</li>
-<li>幻读： 系统管理员A将数据库中所有学生的成绩从具体分数改为ABCDE等级，但是系统管理员B就在这个时候插入了一条具体分数的记录，当系统管理员A改结束后发现还有一条记录没有改过来，就好像发生了幻觉一样，这就叫幻读。</li>
-</ol>
-<p>小结：不可重复读的和幻读很容易混淆，不可重复读侧重于修改，幻读侧重于新增或删除。解决不可重复读的问题只需锁住满足条件的行，解决幻读需要锁表</p>
-
+        <h2 id="1-什么是索引"><a href="#1-什么是索引" class="headerlink" title="1)什么是索引:"></a>1)什么是索引:</h2><h3 id="索引-索引是一种特殊的文件-InnoDB数据表上的索引是表空间的一个组成部分-，它们包含着对数据表里所有记录的引用指针。"><a href="#索引-索引是一种特殊的文件-InnoDB数据表上的索引是表空间的一个组成部分-，它们包含着对数据表里所有记录的引用指针。" class="headerlink" title="索引: 索引是一种特殊的文件(InnoDB数据表上的索引是表空间的一个组成部分)，它们包含着对数据表里所有记录的引用指针。"></a>索引: 索引是一种特殊的文件(InnoDB数据表上的索引是表空间的一个组成部分)，它们包含着对数据表里所有记录的引用指针。</h3><pre><code>更通俗的说，数据库索引好比是一本书前面的目录，能加快数据库的查询速度。在没有索引的情况下，数据库会遍历全部数据后选择符合条件的；而有了相应的索引之后，数据库会直接在索引中查找符合条件的选项。
+</code></pre><h3 id="索引的性质分类"><a href="#索引的性质分类" class="headerlink" title="索引的性质分类"></a>索引的性质分类</h3><pre><code>索引分为聚簇索引和非聚簇索引两种，聚簇索引是按照数据存放的物理位置为顺序的，而非聚簇索引就不一样了；聚簇索引能提高多行检索的速度，而非聚簇索引对于单行的检索很快
+</code></pre><h2 id="2）索引的优点："><a href="#2）索引的优点：" class="headerlink" title="2）索引的优点："></a>2）索引的优点：</h2><pre><code>1. 通过创建唯一性索引，可以保证数据库表中每一行数据的唯一性。
+2. 可以大大加快数据的检索速度，这也是创建索引的最主要的原因。
+3. 可以加速表和表之间的连接，特别是在实现数据的参考完整性方面特别有意义。
+4. 在使用分组和排序 子句进行数据检索时，同样可以显著减少查询中分组和排序的时间。
+5. 通过使用索引，可以在查询的过程中，使用优化隐藏器，提高系统的性能。
+</code></pre><h2 id="3）索引的缺点："><a href="#3）索引的缺点：" class="headerlink" title="3）索引的缺点："></a>3）索引的缺点：</h2><pre><code>1. 创建索引和维护索引要耗费时间，这种时间随着数据量的增加而增加。
+2. 索引需要占物理空间，除了数据表占数据空间之外，每一个索引还要占一定的物理空间，如果要建立聚簇索引，那么需要的空间就会更大。
+3. 当对表中的数据进行增加、删除和修改的时候，索引也要动态的维护，这样就降低了数据的维护速度。
+</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/15/mysql-transaction/" data-id="ckek1wumk000m5csam3a2j2ex" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/09/01/mysql-索引/" data-id="ckek1wum4000f5csaed25x17q" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/">mysql</a></li></ul>
@@ -120,19 +120,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2020/07/15/JavaScript-false/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          javascript中false的几种情况
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/03/15/java8-stream/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2020/09/01/高并发大流量/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">java-java8-新特性02-StreamApi</div>
+      <div class="article-nav-title">PHP-高并发大流量的解决方案</div>
     </a>
   
 </nav>
