@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>PHP-高并发大流量的解决方案 | yetyao blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="web资源防盗链1. referer 2. 加密签名 减少HTTP请求1. 图片地图 CSS精灵 2. 合并CSS和JS 3. 图片使用base64减少页面请求数 浏览器缓存和压缩优化技术CDN加速建立独立图片服务器动态语言静态化动态语言层并发处理数据库缓存层的优化mysql 数据层优化1. 分库分表,分区 2. 读写分离 3. 负载均衡 web服务器的负载均衡和请求分发1. nginx反向代理实">
+<meta name="keywords" content="PHP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PHP-高并发大流量的解决方案">
+<meta property="og:url" content="http://yoursite.com/2020/09/01/高并发大流量/index.html">
+<meta property="og:site_name" content="yetyao blog">
+<meta property="og:description" content="web资源防盗链1. referer 2. 加密签名 减少HTTP请求1. 图片地图 CSS精灵 2. 合并CSS和JS 3. 图片使用base64减少页面请求数 浏览器缓存和压缩优化技术CDN加速建立独立图片服务器动态语言静态化动态语言层并发处理数据库缓存层的优化mysql 数据层优化1. 分库分表,分区 2. 读写分离 3. 负载均衡 web服务器的负载均衡和请求分发1. nginx反向代理实">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2022-09-02T10:21:41.715Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="PHP-高并发大流量的解决方案">
+<meta name="twitter:description" content="web资源防盗链1. referer 2. 加密签名 减少HTTP请求1. 图片地图 CSS精灵 2. 合并CSS和JS 3. 图片使用base64减少页面请求数 浏览器缓存和压缩优化技术CDN加速建立独立图片服务器动态语言静态化动态语言层并发处理数据库缓存层的优化mysql 数据层优化1. 分库分表,分区 2. 读写分离 3. 负载均衡 web服务器的负载均衡和请求分发1. nginx反向代理实">
+  
+    <link rel="alternate" href="/atom.xml" title="yetyao blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">yetyao blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">less is more</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-高并发大流量" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/09/01/高并发大流量/" class="article-date">
+  <time datetime="2020-09-01T12:18:59.000Z" itemprop="datePublished">2020-09-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/PHP/">PHP</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      PHP-高并发大流量的解决方案
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="web资源防盗链"><a href="#web资源防盗链" class="headerlink" title="web资源防盗链"></a>web资源防盗链</h3><pre><code>1. referer
+2. 加密签名
+</code></pre><h3 id="减少HTTP请求"><a href="#减少HTTP请求" class="headerlink" title="减少HTTP请求"></a>减少HTTP请求</h3><pre><code>1. 图片地图 CSS精灵
+2. 合并CSS和JS
+3. 图片使用base64减少页面请求数
+</code></pre><h3 id="浏览器缓存和压缩优化技术"><a href="#浏览器缓存和压缩优化技术" class="headerlink" title="浏览器缓存和压缩优化技术"></a>浏览器缓存和压缩优化技术</h3><h3 id="CDN加速"><a href="#CDN加速" class="headerlink" title="CDN加速"></a>CDN加速</h3><h3 id="建立独立图片服务器"><a href="#建立独立图片服务器" class="headerlink" title="建立独立图片服务器"></a>建立独立图片服务器</h3><h3 id="动态语言静态化"><a href="#动态语言静态化" class="headerlink" title="动态语言静态化"></a>动态语言静态化</h3><h3 id="动态语言层并发处理"><a href="#动态语言层并发处理" class="headerlink" title="动态语言层并发处理"></a>动态语言层并发处理</h3><h3 id="数据库缓存层的优化"><a href="#数据库缓存层的优化" class="headerlink" title="数据库缓存层的优化"></a>数据库缓存层的优化</h3><h3 id="mysql-数据层优化"><a href="#mysql-数据层优化" class="headerlink" title="mysql 数据层优化"></a>mysql 数据层优化</h3><pre><code>1. 分库分表,分区
+2. 读写分离
+3. 负载均衡
+</code></pre><h3 id="web服务器的负载均衡和请求分发"><a href="#web服务器的负载均衡和请求分发" class="headerlink" title="web服务器的负载均衡和请求分发"></a>web服务器的负载均衡和请求分发</h3><pre><code>1. nginx反向代理实现负载均衡
+2. lvs实现负载均衡
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/09/01/高并发大流量/" data-id="cl7ofluff000coww5okx35098" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/09/01/mysql-索引/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          mysql-索引
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/08/23/php-notices/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">PHP tips</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/PHP/">PHP</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/java/">java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/javascript/">javascript</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/mysql/">mysql</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PHP/">PHP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/">mysql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Markdown/" style="font-size: 15px;">Markdown</a> <a href="/tags/PHP/" style="font-size: 20px;">PHP</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/mysql/" style="font-size: 20px;">mysql</a> <a href="/tags/python/" style="font-size: 10px;">python</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">九月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">三月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">八月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">七月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/09/02/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/08/python/">python异常处理</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/01/mysql-索引/">mysql-索引</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/01/高并发大流量/">PHP-高并发大流量的解决方案</a>
+          </li>
+        
+          <li>
+            <a href="/2020/08/23/php-notices/">PHP tips</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2022 yetyao<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
