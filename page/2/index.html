@@ -84,155 +84,6 @@ var _hmt = _hmt || [];
       <div class="outer">
         <section id="main">
   
-    <article id="post-高并发大流量" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/09/01/高并发大流量/" class="article-date">
-  <time datetime="2020-09-01T12:18:59.000Z" itemprop="datePublished">2020-09-01</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/PHP/">PHP</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/09/01/高并发大流量/">PHP-高并发大流量的解决方案</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="web资源防盗链"><a href="#web资源防盗链" class="headerlink" title="web资源防盗链"></a>web资源防盗链</h3><pre><code>1. referer
-2. 加密签名
-</code></pre><h3 id="减少HTTP请求"><a href="#减少HTTP请求" class="headerlink" title="减少HTTP请求"></a>减少HTTP请求</h3><pre><code>1. 图片地图 CSS精灵
-2. 合并CSS和JS
-3. 图片使用base64减少页面请求数
-</code></pre><h3 id="浏览器缓存和压缩优化技术"><a href="#浏览器缓存和压缩优化技术" class="headerlink" title="浏览器缓存和压缩优化技术"></a>浏览器缓存和压缩优化技术</h3><h3 id="CDN加速"><a href="#CDN加速" class="headerlink" title="CDN加速"></a>CDN加速</h3><h3 id="建立独立图片服务器"><a href="#建立独立图片服务器" class="headerlink" title="建立独立图片服务器"></a>建立独立图片服务器</h3><h3 id="动态语言静态化"><a href="#动态语言静态化" class="headerlink" title="动态语言静态化"></a>动态语言静态化</h3><h3 id="动态语言层并发处理"><a href="#动态语言层并发处理" class="headerlink" title="动态语言层并发处理"></a>动态语言层并发处理</h3><h3 id="数据库缓存层的优化"><a href="#数据库缓存层的优化" class="headerlink" title="数据库缓存层的优化"></a>数据库缓存层的优化</h3><h3 id="mysql-数据层优化"><a href="#mysql-数据层优化" class="headerlink" title="mysql 数据层优化"></a>mysql 数据层优化</h3><pre><code>1. 分库分表,分区
-2. 读写分离
-3. 负载均衡
-</code></pre><h3 id="web服务器的负载均衡和请求分发"><a href="#web服务器的负载均衡和请求分发" class="headerlink" title="web服务器的负载均衡和请求分发"></a>web服务器的负载均衡和请求分发</h3><pre><code>1. nginx反向代理实现负载均衡
-2. lvs实现负载均衡
-</code></pre>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yetyao.github.io/2020/09/01/高并发大流量/" data-id="clbagk97q000mykw5zilsjnwu" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-php-notices" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/08/23/php-notices/" class="article-date">
-  <time datetime="2020-08-23T09:18:59.000Z" itemprop="datePublished">2020-08-23</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/PHP/">PHP</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/08/23/php-notices/">PHP tips</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>　　0、用单引号代替双引号来包含字符串，这样做会更快一些。因为PHP会在双引号包围的字符串中搜寻变量，单引号则不会，注意：只有echo能这么做，它是一种可以把多个字符串当作参数的“函数”。</p>
-<p>　　1、如果能将类的方法定义成static，就尽量定义成static，它的速度会提升将近4倍。</p>
-<p>　　2、$row[‘id’] 的速度是$row[id]的7倍。</p>
-<p>　　3、echo 比 print 快，并且使用echo的多重参数(译注：指用逗号而不是句点)代替字符串连接，比如echo $str1,$str2。</p>
-<p>　　4、在执行for循环之前确定最大循环数，不要每循环一次都计算最大值，最好运用foreach代替。</p>
-<p>　　5、注销那些不用的变量尤其是大数组，以便释放内存。</p>
-<p>　　6、尽量避免使用<strong>get，</strong>set，__autoload。</p>
-<p>　　7、require_once()代价昂贵。</p>
-<p>　　8、include文件时尽量使用绝对路径，因为它避免了PHP去include_path里查找文件的速度，解析操作系统路径所需的时间会更少。</p>
-<p>　　9、如果你想知道脚本开始执行(译注：即服务器端收到客户端请求)的时刻，使用 $_SERVER[‘REQUEST_TIME’] 要好于time()</p>
-<p>　　10、函数代替正则表达式完成相同功能。</p>
-<p>　　11、str_replace函数比preg_replace函数快，但strtr函数的效率是str_replace函数的四倍。</p>
-<p>　　12、如果一个字符串替换函数，可接受数组或字符作为参数，并且参数长度不太长，那么可以考虑额外写一段替换代码，使得每次传递参数是一个字符，而不是只写一行代码接受数组作为查询和替换的参数。</p>
-<p>　　13、使用选择分支语句(译注：即switch case)好于使用多个if，else if语句。</p>
-<p>　　14、用@屏蔽错误消息的做法非常低效，极其低效。</p>
-<p>　　15、打开apache的mod_deflate模块，可以提高网页的浏览速度。</p>
-<p>　　16、数据库连接当使用完毕时应关掉，不要用长连接。</p>
-<p>　　17、错误消息代价昂贵。</p>
-<p>　　18、在方法中递增局部变量，速度是最快的。几乎与在函数中调用局部变量的速度相当。</p>
-<p>　　19、递增一个全局变量要比递增一个局部变量慢2倍。</p>
-<p>　　20、递增一个对象属性(如：$this-&gt;prop++)要比递增一个局部变量慢3倍。</p>
-<p>　　21、递增一个未预定义的局部变量要比递增一个预定义的局部变量慢9至10倍。</p>
-<p>　　22、仅定义一个局部变量而没在函数中调用它，同样会减慢速度(其程度相当于递增一个局部变量)。PHP大概会检查看是否存在全局变量。</p>
-<p>　　23、方法调用看来与类中定义的方法的数量无关，因为我(在测试方法之前和之后都)添加了10个方法，但性能上没有变化。</p>
-<p>　　24、派生类中的方法运行起来要快于在基类中定义的同样的方法。</p>
-<p>　　25、调用带有一个参数的空函数，其花费的时间相当于执行7至8次的局部变量递增操作。类似的方法调用所花费的时间接近于15次的局部变量递增操作。</p>
-<p>　　26、Apache解析一个PHP脚本的时间要比解析一个静态HTML页面慢2至10倍。尽量多用静态HTML页面，少用脚本。</p>
-<p>　　27、除非脚本可以缓存，否则每次调用时都会重新编译一次。引入一套PHP缓存机制通常可以提升25%至100%的性能，以免除编译开销。</p>
-<p>　　28、尽量做缓存，可使用memcached。memcached是一款高性能的内存对象缓存系统，可用来加速动态Web应用程序，减轻数据库负载。对运算码 (OP code)的缓存很有用，使得脚本不必为每个请求做重新编译。</p>
-<p>　　29、当操作字符串并需要检验其长度是否满足某种要求时，你想当然地会使用strlen()函数。此函数执行起来相当快，因为它不做任何计算，只返回 在 zval 结构(C的内置数据结构，用于存储PHP变量)中存储的已知字符串长度。但是，由于strlen()是函数，多多少少会有些慢，因为函数调用会经过诸多步 骤，如字母小写化(译注：指函数名小写化，PHP不区分函数名大小写)、哈希查找，会跟随被调用的函数一起执行。在某些情况下，你可以使用isset() 技巧加速执行你的代码。</p>
-<p>　　(举例如下)</p>
-<p>　　if (strlen($foo) &lt; 5) { echo “Foo is too short”$$ }</p>
-<p>　　(与下面的技巧做比较)</p>
-<p>　　if (!isset($foo{5})) { echo “Foo is too short”$$ }</p>
-<p>　　调用isset()恰巧比strlen()快，因为与后者不同的是，isset()作为一种语言结构，意味着它的执行不需要函数查找和字母小写化。也就是说，实际上在检验字符串长度的顶层代码中你没有花太多开销。</p>
-<p>　　30、当执行变量$i的递增或递减时，$i++会比++$i慢一些。这种差异是PHP特有的，并不适用于其他语言，所以请不要修改你的C或Java代 码并指望它们能立即变快，没用的。++$i更快是因为它只需要3条指令(opcodes)，$i++则需要4条指令。后置递增实际上会产生一个临时变量， 这个临时变量随后被递增。而前置递增直接在原值上递增。这是最优化处理的一种，正如Zend的PHP优化器所作的那样。牢记这个优化处理不失为一个好主 意，因为并不是所有的指令优化器都会做同样的优化处理，并且存在大量没有装配指令优化器的互联网服务提供商(ISPs)和服务器。</p>
-<p>　　31、并不是事必面向对象(OOP)，面向对象往往开销很大，每个方法和对象调用都会消耗很多内存。</p>
-<p>　　32、并非要用类实现所有的数据结构，数组也很有用。</p>
-<p>　　33、不要把方法细分得过多，仔细想想你真正打算重用的是哪些代码?</p>
-<p>　　34、当你需要时，你总能把代码分解成方法。</p>
-<p>　　35、尽量采用大量的PHP内置函数。</p>
-<p>　　36、如果在代码中存在大量耗时的函数，你可以考虑用C扩展的方式实现它们。</p>
-<p>　　37、评估检验(profile)你的代码。检验器会告诉你，代码的哪些部分消耗了多少时间。Xdebug调试器包含了检验程序，评估检验总体上可以显示出代码的瓶颈。</p>
-<p>　　38、mod_zip可作为Apache模块，用来即时压缩你的数据，并可让数据传输量降低80%。</p>
-<p>　　39、在可以用file_get_contents替代file、fopen、feof、fgets等系列方法的情况下，尽量用 file_get_contents，因为他的效率高得多!但是要注意file_get_contents在打开一个URL文件时候的PHP版本问题;</p>
-<p>　　40、尽量的少进行文件操作，虽然PHP的文件操作效率也不低的;</p>
-<p>　　41、优化Select SQL语句，在可能的情况下尽量少的进行Insert、Update操作(在update上，我被恶批过);</p>
-<p>　　42、尽可能的使用PHP内部函数(但是我却为了找个PHP里面不存在的函数，浪费了本可以写出一个自定义函数的时间，经验问题啊!);</p>
-<p>　　43、循环内部不要声明变量，尤其是大变量：对象(这好像不只是PHP里面要注意的问题吧?);</p>
-<p>　　44、多维数组尽量不要循环嵌套赋值;</p>
-<p>　　45、在可以用PHP内部字符串操作函数的情况下，不要用正则表达式;</p>
-<p>　　46、foreach效率更高，尽量用foreach代替while和for循环;</p>
-<p>　　47、用单引号替代双引号引用字符串;</p>
-<p>　　48、“用i+=1代替i=i+1。符合c/c++的习惯，效率还高”;</p>
-<p>　　49、对global变量，应该用完就unset()掉;</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yetyao.github.io/2020/08/23/php-notices/" data-id="clbagk96z000cykw5f17ik39k" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
     <article id="post-sleep" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/08/23/sleep/" class="article-date">
@@ -268,7 +119,7 @@ var _hmt = _hmt || [];
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yetyao.github.io/2020/08/23/sleep/" data-id="clbagk96y000bykw5z8h4xp51" class="article-share-link">Share</a>
+      <a data-url="http://yetyao.github.io/2020/08/23/sleep/" data-id="clbc3ama50008a8w5eiz4k130" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/">Markdown</a></li></ul>
@@ -319,7 +170,7 @@ var _hmt = _hmt || [];
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yetyao.github.io/2020/07/15/JavaScript-false/" data-id="clbagk96q0002ykw54l92bqkh" class="article-share-link">Share</a>
+      <a data-url="http://yetyao.github.io/2020/07/15/JavaScript-false/" data-id="clbc3am9o0000a8w5ip7txfw1" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
@@ -370,7 +221,7 @@ var _hmt = _hmt || [];
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yetyao.github.io/2020/07/15/mysql-password/" data-id="clbagk96t0005ykw57roeov1x" class="article-share-link">Share</a>
+      <a data-url="http://yetyao.github.io/2020/07/15/mysql-password/" data-id="clbc3am9v0002a8w5j72sugpo" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/">mysql</a></li></ul>
@@ -422,7 +273,7 @@ var _hmt = _hmt || [];
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yetyao.github.io/2019/07/15/mysql-transaction/" data-id="clbagk96t0006ykw562i2ma8a" class="article-share-link">Share</a>
+      <a data-url="http://yetyao.github.io/2019/07/15/mysql-transaction/" data-id="clbc3ama40007a8w5qbc5i3b1" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/">mysql</a></li></ul>
@@ -484,7 +335,7 @@ var _hmt = _hmt || [];
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yetyao.github.io/2019/03/15/java8-stream/" data-id="clbagk96s0004ykw5064iw590" class="article-share-link">Share</a>
+      <a data-url="http://yetyao.github.io/2019/03/15/java8-stream/" data-id="clbc3am9y0004a8w5vr8g47y5" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
@@ -540,7 +391,7 @@ var _hmt = _hmt || [];
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yetyao.github.io/2018/08/25/Markdown语法入门/" data-id="clbagk96r0003ykw5h8ate1sw" class="article-share-link">Share</a>
+      <a data-url="http://yetyao.github.io/2018/08/25/Markdown语法入门/" data-id="clbc3am9u0001a8w5fkf3xb2p" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/">Markdown</a></li></ul>
@@ -594,10 +445,383 @@ var _hmt = _hmt || [];
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yetyao.github.io/2018/07/15/PHP运算符/" data-id="clbagk96l0000ykw54s7ux3xi" class="article-share-link">Share</a>
+      <a data-url="http://yetyao.github.io/2018/07/15/PHP运算符/" data-id="clbc3am9w0003a8w5l9v0p7e5" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-电影网站" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2010/11/14/电影网站/" class="article-date">
+  <time datetime="2010-11-14T09:02:59.000Z" itemprop="datePublished">2010-11-14</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/电影/">电影</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2010/11/14/电影网站/">电影资源网址</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>电影资源综合搜索网站</li>
+</ol>
+<p>五号站</p>
+<p><a href="http://www.wuhaozhan.net" target="_blank" rel="noopener">http://www.wuhaozhan.net</a></p>
+<p>疯狂影视</p>
+<p><a href="http://ifkdy.com/" target="_blank" rel="noopener">http://ifkdy.com/</a></p>
+<p>片源网</p>
+<p><a href="http://pianyuan.la/" target="_blank" rel="noopener">http://pianyuan.la/</a></p>
+<p>茶杯狐</p>
+<p><a href="https://www.cupfox.com/" target="_blank" rel="noopener">https://www.cupfox.com/</a></p>
+<p>电影推荐MVCAT</p>
+<p><a href="http://www.mvcat.com/" target="_blank" rel="noopener">http://www.mvcat.com/</a></p>
+<p>Neets搜索站</p>
+<p><a href="https://neets.cc/" target="_blank" rel="noopener">https://neets.cc/</a></p>
+<p>一只大榴莲</p>
+<p><a href="http://www.llduang.com/" target="_blank" rel="noopener">http://www.llduang.com/</a></p>
+<p>搜书VIP/电影搜索</p>
+<p><a href="http://www.soshuvip.com/film.html" target="_blank" rel="noopener">http://www.soshuvip.com/film.html</a></p>
+<ol start="2">
+<li>电影资源分享网站</li>
+</ol>
+<p>以下网站大多数以资源下载为主，搜索范围仅限于站内，资源也限于站内。其中一些亦提供在线观看功能。</p>
+<p>音范丝</p>
+<p><a href="http://www.yinfans.me/" target="_blank" rel="noopener">http://www.yinfans.me/</a></p>
+<p>人人影视</p>
+<p><a href="http://www.yyets.com/" target="_blank" rel="noopener">http://www.yyets.com/</a></p>
+<p><a href="http://www.rrys2019.com" target="_blank" rel="noopener">http://www.rrys2019.com</a></p>
+<p>BD影视</p>
+<p><a href="https://www.bd-film.cc/" target="_blank" rel="noopener">https://www.bd-film.cc/</a></p>
+<p>爱笑聚</p>
+<p><a href="https://www.aixiaoju.com/" target="_blank" rel="noopener">https://www.aixiaoju.com/</a></p>
+<p>比特大雄</p>
+<p><a href="https://www.btdx8.com/" target="_blank" rel="noopener">https://www.btdx8.com/</a></p>
+<p>唯电影</p>
+<p><a href="https://vdianying.cc/" target="_blank" rel="noopener">https://vdianying.cc/</a></p>
+<p>6V电影网</p>
+<p><a href="http://www.hao6v.com/" target="_blank" rel="noopener">http://www.hao6v.com/</a></p>
+<p>飘花电影网</p>
+<p><a href="https://www.piaohua.com/" target="_blank" rel="noopener">https://www.piaohua.com/</a></p>
+<p>电影天堂</p>
+<p><a href="https://www.xiaopian.com/" target="_blank" rel="noopener">https://www.xiaopian.com/</a></p>
+<p>高清MP4吧</p>
+<p><a href="http://www.97tvs.com/" target="_blank" rel="noopener">http://www.97tvs.com/</a></p>
+<p>悠悠MP4</p>
+<p><a href="https://www.uump4.net/" target="_blank" rel="noopener">https://www.uump4.net/</a></p>
+<p>经典电影网</p>
+<p><a href="https://www.m1910.com/" target="_blank" rel="noopener">https://www.m1910.com/</a></p>
+<p>片源网</p>
+<p><a href="http://pianyuan.la/" target="_blank" rel="noopener">http://pianyuan.la/</a></p>
+<p>电影天堂</p>
+<p><a href="http://www.7bttt.com" target="_blank" rel="noopener">http://www.7bttt.com</a></p>
+<p>电影首发站</p>
+<p><a href="http://www.dysf.cc/" target="_blank" rel="noopener">http://www.dysf.cc/</a></p>
+<p>PinaHD高清片网</p>
+<p><a href="http://www.pianhd.com/" target="_blank" rel="noopener">http://www.pianhd.com/</a></p>
+<p>蓝光网</p>
+<p><a href="http://www.languang.co/" target="_blank" rel="noopener">http://www.languang.co/</a></p>
+<p>BT电影天堂</p>
+<p><a href="http://www.btbtdy1.com/" target="_blank" rel="noopener">http://www.btbtdy1.com/</a></p>
+<p>迅雷电影天堂</p>
+<p><a href="https://www.xl720.com/" target="_blank" rel="noopener">https://www.xl720.com/</a></p>
+<p>新版6V电影</p>
+<p><a href="https://www.66s.cc/" target="_blank" rel="noopener">https://www.66s.cc/</a></p>
+<p>片库</p>
+<p><a href="https://www.pianku.tv/" target="_blank" rel="noopener">https://www.pianku.tv/</a></p>
+<p>电影淘淘</p>
+<p><a href="http://www.dytt.com/" target="_blank" rel="noopener">http://www.dytt.com/</a></p>
+<p>优片网</p>
+<p><a href="http://www.iupian.com/" target="_blank" rel="noopener">http://www.iupian.com/</a></p>
+<p>蓝鲸电影</p>
+<p><a href="https://www.ljmovie.com/" target="_blank" rel="noopener">https://www.ljmovie.com/</a></p>
+<p>中国高清网</p>
+<p><a href="http://gaoqing.la/" target="_blank" rel="noopener">http://gaoqing.la/</a></p>
+<ol start="3">
+<li>纪录片资源网站</li>
+</ol>
+<p>以下网站主要提供纪录片的下载。某些网站可能需要注册登录，以及付费下载。</p>
+<p>纪录片之家</p>
+<p><a href="https://www.jlpzj.net" target="_blank" rel="noopener">https://www.jlpzj.net</a></p>
+<p>公开课纪录片下载网</p>
+<p><a href="http://www.opclass.com/" target="_blank" rel="noopener">http://www.opclass.com/</a></p>
+<p>熊猫盘纪录片</p>
+<p><a href="https://xiongmaopan.com/" target="_blank" rel="noopener">https://xiongmaopan.com/</a></p>
+<p>存档纪录片</p>
+<p><a href="http://www.cundangzg.com/" target="_blank" rel="noopener">http://www.cundangzg.com/</a></p>
+<p>盗火纪录片</p>
+<p><a href="http://www.daofire.com/" target="_blank" rel="noopener">http://www.daofire.com/</a></p>
+<p>纪录片天地</p>
+<p><a href="http://www.jlpcn.net/" target="_blank" rel="noopener">http://www.jlpcn.net/</a></p>
+<p>纪录片天堂</p>
+<p><a href="https://www.ummu.net/" target="_blank" rel="noopener">https://www.ummu.net/</a></p>
+<p>中国纪录片网</p>
+<p><a href="http://www.docuchina.cn/" target="_blank" rel="noopener">http://www.docuchina.cn/</a></p>
+<ol start="4">
+<li>电影下载论坛</li>
+</ol>
+<p>以下网站需要注册登录，某些网站需要达到一定级别才可获取资源，甚至付费下载等。</p>
+<p>Queer As Folk中文站 | 同志亦凡人中文站</p>
+<p><a href="https://www.qafone.co" target="_blank" rel="noopener">https://www.qafone.co</a></p>
+<p>A5影视论坛</p>
+<p><a href="http://www.y9ys.com/forum.php" target="_blank" rel="noopener">http://www.y9ys.com/forum.php</a></p>
+<p>树屋经典影视论坛</p>
+<p><a href="http://treehousesub.com/" target="_blank" rel="noopener">http://treehousesub.com/</a></p>
+<p>印度电影论坛</p>
+<p><a href="http://www.indmi.com/" target="_blank" rel="noopener">http://www.indmi.com/</a></p>
+<p>百度云资源论坛</p>
+<p><a href="http://www.mxroom.com/" target="_blank" rel="noopener">http://www.mxroom.com/</a></p>
+<p>PT Share</p>
+<p><a href="http://bbs.ptshare.org/" target="_blank" rel="noopener">http://bbs.ptshare.org/</a></p>
+<p>梵境论坛</p>
+<p><a href="http://www.indvaan.com/" target="_blank" rel="noopener">http://www.indvaan.com/</a></p>
+<ol start="5">
+<li>字幕网站</li>
+</ol>
+<p>以下网站为影视字幕下载网站。</p>
+<p>射手网（伪）</p>
+<p><a href="http://assrt.net/" target="_blank" rel="noopener">http://assrt.net/</a></p>
+<p>字幕库</p>
+<p><a href="http://www.zimuku.la/" target="_blank" rel="noopener">http://www.zimuku.la/</a></p>
+<p>SubHD</p>
+<p><a href="https://subhd.com" target="_blank" rel="noopener">https://subhd.com</a></p>
+<p>人人影视字幕</p>
+<p><a href="http://www.rrys2019.com/subtitle" target="_blank" rel="noopener">http://www.rrys2019.com/subtitle</a></p>
+<p>字幕（最大的开放式字幕库）</p>
+<p><a href="https://www.opensubtitles.org/zh" target="_blank" rel="noopener">https://www.opensubtitles.org/zh</a></p>
+<p>Subscene（外文字幕）</p>
+<p><a href="https://subscene.com/" target="_blank" rel="noopener">https://subscene.com/</a></p>
+<ol start="6">
+<li>在线观看网站</li>
+</ol>
+<p>以下网站主要提供在线观看，更新快慢不同，清晰度亦不相同。少部分提供下载链接。</p>
+<p>低端影视</p>
+<p><a href="https://ddrk.me/" target="_blank" rel="noopener">https://ddrk.me/</a></p>
+<p>豆瓣电影资源</p>
+<p><a href="http://www.douban666.com/" target="_blank" rel="noopener">http://www.douban666.com/</a></p>
+<p>NO视频</p>
+<p><a href="https://www.novipnoad.com/" target="_blank" rel="noopener">https://www.novipnoad.com/</a></p>
+<p>第一电影网</p>
+<p><a href="https://www.001d.com/" target="_blank" rel="noopener">https://www.001d.com/</a></p>
+<p>星辰影院</p>
+<p><a href="https://www.novipnoad.com/" target="_blank" rel="noopener">https://www.novipnoad.com/</a></p>
+<p>人人影视</p>
+<p><a href="http://www.yyetss.com/" target="_blank" rel="noopener">http://www.yyetss.com/</a></p>
+<p>在线之家</p>
+<p><a href="https://www.zxzj.me/" target="_blank" rel="noopener">https://www.zxzj.me/</a></p>
+<p>电影蜜蜂</p>
+<p><a href="https://www.dybee.tv/" target="_blank" rel="noopener">https://www.dybee.tv/</a></p>
+<p>豌豆影视</p>
+<p><a href="https://www.wandouys.com/" target="_blank" rel="noopener">https://www.wandouys.com/</a></p>
+<p>酷绘</p>
+<p><a href="https://www.kuhuiv.com/" target="_blank" rel="noopener">https://www.kuhuiv.com/</a></p>
+<p>2W.CM</p>
+<p><a href="http://www.kk2w.cc/" target="_blank" rel="noopener">http://www.kk2w.cc/</a></p>
+<p>看看屋</p>
+<p><a href="https://www.kankanwu.com/" target="_blank" rel="noopener">https://www.kankanwu.com/</a></p>
+<p>七七看片</p>
+<p><a href="https://www.77kpp.com/" target="_blank" rel="noopener">https://www.77kpp.com/</a></p>
+<p>影豆网</p>
+<p><a href="https://www.yingdou.pw/index.php" target="_blank" rel="noopener">https://www.yingdou.pw/index.php</a></p>
+<p>团长资源</p>
+<p><a href="https://www.tzfile.com" target="_blank" rel="noopener">https://www.tzfile.com</a></p>
+<p>外剧网</p>
+<p><a href="https://www.waijutv.com/" target="_blank" rel="noopener">https://www.waijutv.com/</a></p>
+<ol start="7">
+<li>动漫网站</li>
+</ol>
+<p>以下网站主要提供动漫观看及下载</p>
+<p>妮可动漫</p>
+<p><a href="http://www.nicotv.me/" target="_blank" rel="noopener">http://www.nicotv.me/</a></p>
+<p>蜜柑计划</p>
+<p><a href="https://mikanani.me/" target="_blank" rel="noopener">https://mikanani.me/</a></p>
+<p>天马动漫</p>
+<p><a href="https://www.tmdm.tv/" target="_blank" rel="noopener">https://www.tmdm.tv/</a></p>
+<p>Zzzfun</p>
+<p><a href="http://www.zzzfun.com/" target="_blank" rel="noopener">http://www.zzzfun.com/</a></p>
+<p>风车动漫</p>
+<p><a href="http://www.fengchedm.com/" target="_blank" rel="noopener">http://www.fengchedm.com/</a></p>
+<p>樱花动</p>
+<p><a href="http://www.imomoe.in/" target="_blank" rel="noopener">http://www.imomoe.in/</a></p>
+<p>奇奇动漫</p>
+<p><a href="https://www.qiqidongman.com/" target="_blank" rel="noopener">https://www.qiqidongman.com/</a></p>
+<p>Pnext动漫</p>
+<p><a href="http://dm.pnext.top/" target="_blank" rel="noopener">http://dm.pnext.top/</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yetyao.github.io/2010/11/14/电影网站/" data-id="clbc3amb0000ja8w5ivaur6ez" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/电影/">电影</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-网址" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2010/11/14/网址/" class="article-date">
+  <time datetime="2010-11-14T09:02:59.000Z" itemprop="datePublished">2010-11-14</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/网址/">网址</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2010/11/14/网址/">网址</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>壁纸图片</li>
+</ol>
+<p>Awesome Wallpapers</p>
+<p>网址：<a href="https://wallhaven.cc" target="_blank" rel="noopener">https://wallhaven.cc</a></p>
+<p>说明：最佳壁纸美图网站</p>
+<p>免费正版高清图片素材库 Pixabay</p>
+<p>网址：<a href="https://pixabay.com/zh/" target="_blank" rel="noopener">https://pixabay.com/zh/</a></p>
+<p>说明：免费正版图片素材下载</p>
+<p>backiee 壁纸库</p>
+<p>网址：<a href="https://backiee.com" target="_blank" rel="noopener">https://backiee.com</a></p>
+<p>说明：海量壁纸，支持全平台客户端</p>
+<ol start="2">
+<li>影视剧集</li>
+</ol>
+<p>在线之家[/b]网址：<a href="https://zxzj.vip" target="_blank" rel="noopener">https://zxzj.vip</a></p>
+<p>说明：在线观看、网盘下载</p>
+<p>美剧天堂 - 海量好看的美剧</p>
+<p>网址：<a href="https://www.meijutt.tv" target="_blank" rel="noopener">https://www.meijutt.tv</a></p>
+<p>说明：磁力、种子、网盘、在线</p>
+<p>茶杯狐 Cupfox</p>
+<p>网址：<a href="https://cupfox.app" target="_blank" rel="noopener">https://cupfox.app</a></p>
+<p>说明：影视聚合搜索引擎</p>
+<p>BD影视分享</p>
+<p>网址：<a href="https://www.bd2020.co" target="_blank" rel="noopener">https://www.bd2020.co</a></p>
+<p>说明：高清电影资源下载</p>
+<ol start="3">
+<li>电子书</li>
+</ol>
+<p>苦瓜书盘</p>
+<p>网址：<a href="https://kgbook.com" target="_blank" rel="noopener">https://kgbook.com</a></p>
+<p>说明：电子书下载</p>
+<p>知轩藏书</p>
+<p>网址：<a href="http://zxcs.me" target="_blank" rel="noopener">http://zxcs.me</a></p>
+<p>说明：精校网络小说下载</p>
+<p>Mox.moe</p>
+<p>网址：<a href="https://mox.moe" target="_blank" rel="noopener">https://mox.moe</a></p>
+<p>说明：EPUB、MOBI 漫画下载</p>
+<p>书享家-电子书下载导航</p>
+<p>网址：<a href="http://www.shuxiangjia.cn" target="_blank" rel="noopener">http://www.shuxiangjia.cn</a></p>
+<p>说明：全网最全的电子书站点导航</p>
+<ol start="4">
+<li>轻小说</li>
+</ol>
+<p>轻小说文库</p>
+<p>网址：<a href="https://www.wenku8.net/index.php" target="_blank" rel="noopener">https://www.wenku8.net/index.php</a></p>
+<p>说明：TXT 轻小说在线阅读与下载</p>
+<p>哔哩轻小说</p>
+<p>网址：<a href="https://www.linovelib.com" target="_blank" rel="noopener">https://www.linovelib.com</a></p>
+<p>说明：在线阅读、TXT 下载</p>
+<p>轻之国度-专注分享的NACG社群</p>
+<p>网址：<a href="https://www.lightnovel.us/cn/" target="_blank" rel="noopener">https://www.lightnovel.us/cn/</a></p>
+<p>说明：轻小说翻译、下载</p>
+<p>魔笔小说</p>
+<p>网址：<a href="https://www.mobinovels.com" target="_blank" rel="noopener">https://www.mobinovels.com</a></p>
+<p>说明：EPUB、MOBI 轻小说下载</p>
+<p>05.动漫</p>
+<p>AGE动漫</p>
+<p>网址：<a href="https://www.agemys.cc" target="_blank" rel="noopener">https://www.agemys.cc</a></p>
+<p>说明：在线动画、动漫下载</p>
+<p>M站_哔咪动漫</p>
+<p>网址：<a href="https://www.bimiacg5.net" target="_blank" rel="noopener">https://www.bimiacg5.net</a></p>
+<p>说明：在线动画</p>
+<p>爱恋动漫BT下载</p>
+<p>网址：<a href="https://www.kisssub.org" target="_blank" rel="noopener">https://www.kisssub.org</a></p>
+<p>说明：磁力、种子下载，追番、收藏均可</p>
+<p>VCB-Studio - 大家一起实现的故事！</p>
+<p>网址：<a href="https://vcb-s.com" target="_blank" rel="noopener">https://vcb-s.com</a></p>
+<p>说明：BD 动画下载，收藏级</p>
+<ol start="6">
+<li>破解/正版软件工具</li>
+</ol>
+<p>腾讯软件中心-海量软件高速下载</p>
+<p>网址：<a href="https://pc.qq.com" target="_blank" rel="noopener">https://pc.qq.com</a></p>
+<p>说明：比较靠谱的软件下载站，记得点“普通下载”</p>
+<p>牛麦子</p>
+<p>网址：<a href="https://niumaizi.cn" target="_blank" rel="noopener">https://niumaizi.cn</a></p>
+<p>说明：破解版和修改版软件下载</p>
+<p>MSDN, 我告诉你</p>
+<p>网址：<a href="https://msdn.itellyou.cn" target="_blank" rel="noopener">https://msdn.itellyou.cn</a></p>
+<p>说明：原版微软系统软件下载</p>
+<ol start="7">
+<li>学术搜索</li>
+</ol>
+<p>虫部落学术搜索</p>
+<p>网址：<a href="https://scholar.chongbuluo.com" target="_blank" rel="noopener">https://scholar.chongbuluo.com</a></p>
+<p>说明：超强的聚合资料搜索网站</p>
+<p>库问搜索</p>
+<p>网址：<a href="http://www.koovin.com" target="_blank" rel="noopener">http://www.koovin.com</a></p>
+<p>说明：免费开源文献资源共享平台</p>
+<p>iData-知识检索</p>
+<p>网址：<a href="https://www.cn-ki.net" target="_blank" rel="noopener">https://www.cn-ki.net</a></p>
+<p>说明：期刊论文检索下载</p>
+<ol start="8">
+<li>网盘搜索</li>
+</ol>
+<p>优聚搜</p>
+<p>网址：<a href="https://jujuso.com" target="_blank" rel="noopener">https://jujuso.com</a></p>
+<p>说明：百度网盘、阿里云盘、蓝奏云、夸克网盘搜索</p>
+<p>猫狸盘搜</p>
+<p>网址：<a href="https://www.alipansou.com" target="_blank" rel="noopener">https://www.alipansou.com</a></p>
+<p>说明：阿里云盘搜索</p>
+<p>学霸盘</p>
+<p>网址：<a href="https://www.alipansou.com" target="_blank" rel="noopener">https://www.alipansou.com</a></p>
+<p>说明：百度网盘搜索 </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yetyao.github.io/2010/11/14/网址/" data-id="clbc3amb4000oa8w50ak9vw3r" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网址/">网址</a></li></ul>
 
     </footer>
   </div>
@@ -650,7 +874,7 @@ var _hmt = _hmt || [];
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">十二月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">十一月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">九月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">三月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">八月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">七月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">十二月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">十一月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">九月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">三月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">八月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">七月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/11/">十一月 2010</a></li></ul>
     </div>
   </div>
 
@@ -675,11 +899,11 @@ var _hmt = _hmt || [];
           </li>
         
           <li>
-            <a href="/2022/11/14/网址/">网址</a>
+            <a href="/2022/09/08/软件推荐/">软件推荐</a>
           </li>
         
           <li>
-            <a href="/2022/11/14/电影网站/">电影资源网址</a>
+            <a href="/2022/09/05/test/">test</a>
           </li>
         
       </ul>
