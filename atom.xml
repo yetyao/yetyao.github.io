@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>yetyao blog</title>
+  
+  <subtitle>less is more</subtitle>
+  <link href="http://yetyao.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://yetyao.github.io/"/>
+  <updated>2023-03-27T01:51:10.584Z</updated>
+  <id>http://yetyao.github.io/</id>
+  
+  <author>
+    <name>yetyao</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>哲学</title>
+    <link href="http://yetyao.github.io/2023/03/09/%E5%93%B2%E5%AD%A6/"/>
+    <id>http://yetyao.github.io/2023/03/09/%E5%93%B2%E5%AD%A6/</id>
+    <published>2023-03-09T09:02:59.000Z</published>
+    <updated>2023-03-27T01:51:10.584Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    
+    <category term="哲学" scheme="http://yetyao.github.io/tags/哲学/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>软件测试视频合集</title>
+    <link href="http://yetyao.github.io/2022/12/06/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+    <id>http://yetyao.github.io/2022/12/06/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/</id>
+    <published>2022-12-06T09:02:59.000Z</published>
+    <updated>2022-12-14T06:28:25.440Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    
+    <category term="软件测试" scheme="http://yetyao.github.io/tags/软件测试/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>电子书</title>
+    <link href="http://yetyao.github.io/2022/12/05/%E7%94%B5%E5%AD%90%E4%B9%A6/"/>
+    <id>http://yetyao.github.io/2022/12/05/%E7%94%B5%E5%AD%90%E4%B9%A6/</id>
+    <published>2022-12-05T09:02:59.000Z</published>
+    <updated>2023-04-18T03:27:48.953Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    
+    <category term="电子书" scheme="http://yetyao.github.io/tags/电子书/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>阿里云盘资源</title>
+    <link href="http://yetyao.github.io/2022/12/01/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98%E8%B5%84%E6%BA%90/"/>
+    <id>http://yetyao.github.io/2022/12/01/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98%E8%B5%84%E6%BA%90/</id>
+    <published>2022-12-01T09:02:59.000Z</published>
+    <updated>2023-04-18T03:27:46.769Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="阿里云盘" scheme="http://yetyao.github.io/categories/阿里云盘/"/>
+    
+    
+    <category term="阿里云盘" scheme="http://yetyao.github.io/tags/阿里云盘/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>阿里网盘资源-教育</title>
+    <link href="http://yetyao.github.io/2022/11/25/%E9%98%BF%E9%87%8C%E7%BD%91%E7%9B%98%E8%B5%84%E6%BA%90-%E6%95%99%E8%82%B2/"/>
+    <id>http://yetyao.github.io/2022/11/25/%E9%98%BF%E9%87%8C%E7%BD%91%E7%9B%98%E8%B5%84%E6%BA%90-%E6%95%99%E8%82%B2/</id>
+    <published>2022-11-25T09:02:59.000Z</published>
+    <updated>2023-02-23T02:20:28.614Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="阿里网盘" scheme="http://yetyao.github.io/categories/阿里网盘/"/>
+    
+    
+    <category term="阿里网盘" scheme="http://yetyao.github.io/tags/阿里网盘/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>电影推荐</title>
+    <link href="http://yetyao.github.io/2022/11/15/%E7%94%B5%E5%BD%B1LIST/"/>
+    <id>http://yetyao.github.io/2022/11/15/%E7%94%B5%E5%BD%B1LIST/</id>
+    <published>2022-11-15T09:02:59.000Z</published>
+    <updated>2022-11-15T09:54:28.982Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="电影" scheme="http://yetyao.github.io/categories/电影/"/>
+    
+    
+    <category term="电影" scheme="http://yetyao.github.io/tags/电影/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>软件推荐</title>
+    <link href="http://yetyao.github.io/2022/09/08/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    <id>http://yetyao.github.io/2022/09/08/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</id>
+    <published>2022-09-08T09:02:59.000Z</published>
+    <updated>2023-04-03T10:08:52.198Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="软件" scheme="http://yetyao.github.io/categories/软件/"/>
+    
+    
+    <category term="软件" scheme="http://yetyao.github.io/tags/软件/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>image</title>
+    <link href="http://yetyao.github.io/2022/09/05/test/"/>
+    <id>http://yetyao.github.io/2022/09/05/test/</id>
+    <published>2022-09-05T09:02:59.000Z</published>
+    <updated>2022-12-22T04:10:20.302Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    
+    <category term="image" scheme="http://yetyao.github.io/tags/image/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yetyao.github.io/2022/09/02/hello-world/"/>
+    <id>http://yetyao.github.io/2022/09/02/hello-world/</id>
+    <published>2022-09-02T10:21:41.712Z</published>
+    <updated>2022-12-22T04:10:21.686Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>python异常处理</title>
+    <link href="http://yetyao.github.io/2022/03/08/python/"/>
+    <id>http://yetyao.github.io/2022/03/08/python/</id>
+    <published>2022-03-08T01:20:59.000Z</published>
+    <updated>2022-09-02T10:24:24.058Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    
+    <category term="python" scheme="http://yetyao.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mysql-索引</title>
+    <link href="http://yetyao.github.io/2020/09/01/mysql-%E7%B4%A2%E5%BC%95/"/>
+    <id>http://yetyao.github.io/2020/09/01/mysql-%E7%B4%A2%E5%BC%95/</id>
+    <published>2020-09-01T12:18:59.000Z</published>
+    <updated>2022-09-02T10:21:41.714Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="mysql" scheme="http://yetyao.github.io/categories/mysql/"/>
+    
+    
+    <category term="mysql" scheme="http://yetyao.github.io/tags/mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PHP-高并发大流量的解决方案</title>
+    <link href="http://yetyao.github.io/2020/09/01/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%A4%A7%E6%B5%81%E9%87%8F/"/>
+    <id>http://yetyao.github.io/2020/09/01/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%A4%A7%E6%B5%81%E9%87%8F/</id>
+    <published>2020-09-01T12:18:59.000Z</published>
+    <updated>2022-09-02T10:21:41.715Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="PHP" scheme="http://yetyao.github.io/categories/PHP/"/>
+    
+    
+    <category term="PHP" scheme="http://yetyao.github.io/tags/PHP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PHP tips</title>
+    <link href="http://yetyao.github.io/2020/08/23/php-notices/"/>
+    <id>http://yetyao.github.io/2020/08/23/php-notices/</id>
+    <published>2020-08-23T09:18:59.000Z</published>
+    <updated>2022-09-02T10:21:41.715Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="PHP" scheme="http://yetyao.github.io/categories/PHP/"/>
+    
+    
+    <category term="PHP" scheme="http://yetyao.github.io/tags/PHP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>睡眠技巧</title>
+    <link href="http://yetyao.github.io/2020/08/23/sleep/"/>
+    <id>http://yetyao.github.io/2020/08/23/sleep/</id>
+    <published>2020-08-22T17:20:59.000Z</published>
+    <updated>2022-09-02T10:21:41.715Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    
+    <category term="Markdown" scheme="http://yetyao.github.io/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>javascript中false的几种情况</title>
+    <link href="http://yetyao.github.io/2020/07/15/JavaScript-false/"/>
+    <id>http://yetyao.github.io/2020/07/15/JavaScript-false/</id>
+    <published>2020-07-15T12:18:59.000Z</published>
+    <updated>2022-09-02T10:21:41.712Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="javascript" scheme="http://yetyao.github.io/categories/javascript/"/>
+    
+    
+    <category term="javascript" scheme="http://yetyao.github.io/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mysql8.0.12忘记密码</title>
+    <link href="http://yetyao.github.io/2020/07/15/mysql-password/"/>
+    <id>http://yetyao.github.io/2020/07/15/mysql-password/</id>
+    <published>2020-07-15T12:18:59.000Z</published>
+    <updated>2022-09-02T10:21:41.714Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="mysql" scheme="http://yetyao.github.io/categories/mysql/"/>
+    
+    
+    <category term="mysql" scheme="http://yetyao.github.io/tags/mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mysql事务</title>
+    <link href="http://yetyao.github.io/2019/07/15/mysql-transaction/"/>
+    <id>http://yetyao.github.io/2019/07/15/mysql-transaction/</id>
+    <published>2019-07-15T12:18:59.000Z</published>
+    <updated>2022-09-02T10:21:41.714Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="mysql" scheme="http://yetyao.github.io/categories/mysql/"/>
+    
+    
+    <category term="mysql" scheme="http://yetyao.github.io/tags/mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java-java8-新特性02-StreamApi</title>
+    <link href="http://yetyao.github.io/2019/03/15/java8-stream/"/>
+    <id>http://yetyao.github.io/2019/03/15/java8-stream/</id>
+    <published>2019-03-15T12:18:59.000Z</published>
+    <updated>2022-09-02T10:21:41.714Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="java" scheme="http://yetyao.github.io/categories/java/"/>
+    
+    
+    <category term="java" scheme="http://yetyao.github.io/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown语法入门</title>
+    <link href="http://yetyao.github.io/2018/08/25/Markdown%E8%AF%AD%E6%B3%95%E5%85%A5%E9%97%A8/"/>
+    <id>http://yetyao.github.io/2018/08/25/Markdown%E8%AF%AD%E6%B3%95%E5%85%A5%E9%97%A8/</id>
+    <published>2018-08-24T17:20:59.000Z</published>
+    <updated>2022-09-02T10:21:41.712Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    
+    <category term="Markdown" scheme="http://yetyao.github.io/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PHP运算符</title>
+    <link href="http://yetyao.github.io/2018/07/15/PHP%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
+    <id>http://yetyao.github.io/2018/07/15/PHP%E8%BF%90%E7%AE%97%E7%AC%A6/</id>
+    <published>2018-07-15T12:18:59.000Z</published>
+    <updated>2022-09-02T10:21:41.712Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="PHP" scheme="http://yetyao.github.io/categories/PHP/"/>
+    
+    
+    <category term="PHP" scheme="http://yetyao.github.io/tags/PHP/"/>
+    
+  </entry>
+  
+</feed>
