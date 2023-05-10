@@ -6,7 +6,7 @@
   <link href="http://yetyao.github.io/atom.xml" rel="self"/>
   
   <link href="http://yetyao.github.io/"/>
-  <updated>2023-03-27T01:51:10.584Z</updated>
+  <updated>2023-05-10T02:06:53.817Z</updated>
   <id>http://yetyao.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>哲学</title>
+    <link href="http://yetyao.github.io/2023/05/04/chatgpt/"/>
+    <id>http://yetyao.github.io/2023/05/04/chatgpt/</id>
+    <published>2023-05-04T04:02:59.000Z</published>
+    <updated>2023-05-10T02:06:53.817Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    
+    <category term="哲学" scheme="http://yetyao.github.io/tags/哲学/"/>
+    
+  </entry>
   
   <entry>
     <title>哲学</title>
@@ -67,7 +90,7 @@
     <link href="http://yetyao.github.io/2022/12/05/%E7%94%B5%E5%AD%90%E4%B9%A6/"/>
     <id>http://yetyao.github.io/2022/12/05/%E7%94%B5%E5%AD%90%E4%B9%A6/</id>
     <published>2022-12-05T09:02:59.000Z</published>
-    <updated>2023-04-18T03:27:48.953Z</updated>
+    <updated>2023-05-08T02:51:37.149Z</updated>
     
     
       
@@ -90,7 +113,7 @@
     <link href="http://yetyao.github.io/2022/12/01/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98%E8%B5%84%E6%BA%90/"/>
     <id>http://yetyao.github.io/2022/12/01/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98%E8%B5%84%E6%BA%90/</id>
     <published>2022-12-01T09:02:59.000Z</published>
-    <updated>2023-04-18T03:27:46.769Z</updated>
+    <updated>2023-05-04T08:32:13.950Z</updated>
     
     
       
@@ -165,7 +188,7 @@
     <link href="http://yetyao.github.io/2022/09/08/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
     <id>http://yetyao.github.io/2022/09/08/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</id>
     <published>2022-09-08T09:02:59.000Z</published>
-    <updated>2023-04-03T10:08:52.198Z</updated>
+    <updated>2023-05-04T08:32:11.208Z</updated>
     
     
       
@@ -190,7 +213,7 @@
     <link href="http://yetyao.github.io/2022/09/05/test/"/>
     <id>http://yetyao.github.io/2022/09/05/test/</id>
     <published>2022-09-05T09:02:59.000Z</published>
-    <updated>2022-12-22T04:10:20.302Z</updated>
+    <updated>2023-05-04T02:28:15.791Z</updated>
     
     
       
@@ -213,7 +236,7 @@
     <link href="http://yetyao.github.io/2022/09/02/hello-world/"/>
     <id>http://yetyao.github.io/2022/09/02/hello-world/</id>
     <published>2022-09-02T10:21:41.712Z</published>
-    <updated>2022-12-22T04:10:21.686Z</updated>
+    <updated>2023-05-04T08:32:04.762Z</updated>
     
     
       
@@ -470,31 +493,6 @@
     
     
     <category term="Markdown" scheme="http://yetyao.github.io/tags/Markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PHP运算符</title>
-    <link href="http://yetyao.github.io/2018/07/15/PHP%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
-    <id>http://yetyao.github.io/2018/07/15/PHP%E8%BF%90%E7%AE%97%E7%AC%A6/</id>
-    <published>2018-07-15T12:18:59.000Z</published>
-    <updated>2022-09-02T10:21:41.712Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="PHP" scheme="http://yetyao.github.io/categories/PHP/"/>
-    
-    
-    <category term="PHP" scheme="http://yetyao.github.io/tags/PHP/"/>
     
   </entry>
   
