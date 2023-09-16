@@ -6,7 +6,7 @@
   <link href="http://yetyao.github.io/atom.xml" rel="self"/>
   
   <link href="http://yetyao.github.io/"/>
-  <updated>2023-09-16T10:30:56.101Z</updated>
+  <updated>2023-09-16T12:34:43.193Z</updated>
   <id>http://yetyao.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>语录01</title>
+    <link href="http://yetyao.github.io/2023/09/16/%E8%AF%AD%E5%BD%9501/"/>
+    <id>http://yetyao.github.io/2023/09/16/%E8%AF%AD%E5%BD%9501/</id>
+    <published>2023-09-16T11:18:59.000Z</published>
+    <updated>2023-09-16T12:34:43.193Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="语录" scheme="http://yetyao.github.io/categories/语录/"/>
+    
+    
+    <category term="语录" scheme="http://yetyao.github.io/tags/语录/"/>
+    
+  </entry>
   
   <entry>
     <title>chrome插件</title>
@@ -282,7 +307,7 @@
     <link href="http://yetyao.github.io/2022/09/08/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
     <id>http://yetyao.github.io/2022/09/08/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</id>
     <published>2022-09-08T09:02:59.000Z</published>
-    <updated>2023-09-16T09:42:35.870Z</updated>
+    <updated>2023-09-16T12:29:07.741Z</updated>
     
     
       
@@ -464,31 +489,6 @@
     
     
     <category term="Markdown" scheme="http://yetyao.github.io/tags/Markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>javascript中false的几种情况</title>
-    <link href="http://yetyao.github.io/2020/07/15/JavaScript-false/"/>
-    <id>http://yetyao.github.io/2020/07/15/JavaScript-false/</id>
-    <published>2020-07-15T12:18:59.000Z</published>
-    <updated>2022-09-02T10:21:41.712Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="javascript" scheme="http://yetyao.github.io/categories/javascript/"/>
-    
-    
-    <category term="javascript" scheme="http://yetyao.github.io/tags/javascript/"/>
     
   </entry>
   
