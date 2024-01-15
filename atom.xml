@@ -6,7 +6,7 @@
   <link href="http://yetyao.github.io/atom.xml" rel="self"/>
   
   <link href="http://yetyao.github.io/"/>
-  <updated>2024-01-12T09:47:26.828Z</updated>
+  <updated>2024-01-15T09:27:39.553Z</updated>
   <id>http://yetyao.github.io/</id>
   
   <author>
@@ -15,6 +15,106 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>搞钱项目</title>
+    <link href="http://yetyao.github.io/2024/01/15/%E6%90%9E%E9%92%B1%E9%A1%B9%E7%9B%AE/"/>
+    <id>http://yetyao.github.io/2024/01/15/%E6%90%9E%E9%92%B1%E9%A1%B9%E7%9B%AE/</id>
+    <published>2024-01-15T03:02:59.000Z</published>
+    <updated>2024-01-15T09:27:39.553Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="搞钱" scheme="http://yetyao.github.io/categories/搞钱/"/>
+    
+    
+    <category term="搞钱" scheme="http://yetyao.github.io/tags/搞钱/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>教育资源</title>
+    <link href="http://yetyao.github.io/2024/01/15/%E6%95%99%E8%82%B2%E8%B5%84%E6%BA%90/"/>
+    <id>http://yetyao.github.io/2024/01/15/%E6%95%99%E8%82%B2%E8%B5%84%E6%BA%90/</id>
+    <published>2024-01-15T03:02:59.000Z</published>
+    <updated>2024-01-15T09:27:38.003Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="教育" scheme="http://yetyao.github.io/categories/教育/"/>
+    
+    
+    <category term="教育" scheme="http://yetyao.github.io/tags/教育/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>软件技巧</title>
+    <link href="http://yetyao.github.io/2024/01/15/%E8%BD%AF%E4%BB%B6%E6%8A%80%E8%83%BD/"/>
+    <id>http://yetyao.github.io/2024/01/15/%E8%BD%AF%E4%BB%B6%E6%8A%80%E8%83%BD/</id>
+    <published>2024-01-15T03:02:59.000Z</published>
+    <updated>2024-01-15T09:27:38.928Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="软件" scheme="http://yetyao.github.io/categories/软件/"/>
+    
+    
+    <category term="软件" scheme="http://yetyao.github.io/tags/软件/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>音乐资源</title>
+    <link href="http://yetyao.github.io/2024/01/15/%E9%9F%B3%E4%B9%90%E8%B5%84%E6%BA%90/"/>
+    <id>http://yetyao.github.io/2024/01/15/%E9%9F%B3%E4%B9%90%E8%B5%84%E6%BA%90/</id>
+    <published>2024-01-15T03:02:59.000Z</published>
+    <updated>2024-01-15T09:27:36.176Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="音乐" scheme="http://yetyao.github.io/categories/音乐/"/>
+    
+    
+    <category term="音乐" scheme="http://yetyao.github.io/tags/音乐/"/>
+    
+  </entry>
   
   <entry>
     <title>在线网站推荐</title>
@@ -46,7 +146,7 @@
     <link href="http://yetyao.github.io/2023/10/24/%E5%A4%B8%E5%85%8B%E7%BD%91%E7%9B%98%E8%B5%84%E6%BA%90/"/>
     <id>http://yetyao.github.io/2023/10/24/%E5%A4%B8%E5%85%8B%E7%BD%91%E7%9B%98%E8%B5%84%E6%BA%90/</id>
     <published>2023-10-24T09:02:59.000Z</published>
-    <updated>2024-01-12T06:12:21.117Z</updated>
+    <updated>2024-01-15T09:28:50.206Z</updated>
     
     
       
@@ -257,7 +357,7 @@
     <link href="http://yetyao.github.io/2022/12/05/%E7%94%B5%E5%AD%90%E4%B9%A6%E7%BD%91%E7%9B%98%E8%B5%84%E6%BA%90/"/>
     <id>http://yetyao.github.io/2022/12/05/%E7%94%B5%E5%AD%90%E4%B9%A6%E7%BD%91%E7%9B%98%E8%B5%84%E6%BA%90/</id>
     <published>2022-12-05T09:02:59.000Z</published>
-    <updated>2023-11-23T05:15:29.555Z</updated>
+    <updated>2024-01-15T08:24:07.534Z</updated>
     
     
       
@@ -395,100 +495,6 @@
     
     
     <category term="image" scheme="http://yetyao.github.io/tags/image/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yetyao.github.io/2022/09/02/hello-world/"/>
-    <id>http://yetyao.github.io/2022/09/02/hello-world/</id>
-    <published>2022-09-02T10:21:41.712Z</published>
-    <updated>2023-09-16T09:42:31.548Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>python异常处理</title>
-    <link href="http://yetyao.github.io/2022/03/08/python/"/>
-    <id>http://yetyao.github.io/2022/03/08/python/</id>
-    <published>2022-03-08T01:20:59.000Z</published>
-    <updated>2022-09-02T10:24:24.058Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    
-    <category term="python" scheme="http://yetyao.github.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mysql-索引</title>
-    <link href="http://yetyao.github.io/2020/09/01/mysql-%E7%B4%A2%E5%BC%95/"/>
-    <id>http://yetyao.github.io/2020/09/01/mysql-%E7%B4%A2%E5%BC%95/</id>
-    <published>2020-09-01T12:18:59.000Z</published>
-    <updated>2022-09-02T10:21:41.714Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="mysql" scheme="http://yetyao.github.io/categories/mysql/"/>
-    
-    
-    <category term="mysql" scheme="http://yetyao.github.io/tags/mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PHP-高并发大流量的解决方案</title>
-    <link href="http://yetyao.github.io/2020/09/01/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%A4%A7%E6%B5%81%E9%87%8F/"/>
-    <id>http://yetyao.github.io/2020/09/01/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%A4%A7%E6%B5%81%E9%87%8F/</id>
-    <published>2020-09-01T12:18:59.000Z</published>
-    <updated>2022-09-02T10:21:41.715Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="PHP" scheme="http://yetyao.github.io/categories/PHP/"/>
-    
-    
-    <category term="PHP" scheme="http://yetyao.github.io/tags/PHP/"/>
     
   </entry>
   
