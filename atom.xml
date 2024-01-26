@@ -6,7 +6,7 @@
   <link href="http://yetyao.github.io/atom.xml" rel="self"/>
   
   <link href="http://yetyao.github.io/"/>
-  <updated>2024-01-15T09:27:39.553Z</updated>
+  <updated>2024-01-23T07:58:37.137Z</updated>
   <id>http://yetyao.github.io/</id>
   
   <author>
@@ -17,11 +17,61 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>医学资源</title>
+    <link href="http://yetyao.github.io/2024/01/23/%E5%8C%BB%E5%AD%A6%E8%B5%84%E6%BA%90/"/>
+    <id>http://yetyao.github.io/2024/01/23/%E5%8C%BB%E5%AD%A6%E8%B5%84%E6%BA%90/</id>
+    <published>2024-01-23T03:02:59.000Z</published>
+    <updated>2024-01-23T07:58:37.137Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="医学" scheme="http://yetyao.github.io/categories/医学/"/>
+    
+    
+    <category term="医学" scheme="http://yetyao.github.io/tags/医学/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>中国经典</title>
+    <link href="http://yetyao.github.io/2024/01/23/%E4%B8%AD%E5%9B%BD%E7%BB%8F%E5%85%B8/"/>
+    <id>http://yetyao.github.io/2024/01/23/%E4%B8%AD%E5%9B%BD%E7%BB%8F%E5%85%B8/</id>
+    <published>2024-01-23T03:02:59.000Z</published>
+    <updated>2024-01-23T08:01:05.272Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="经典" scheme="http://yetyao.github.io/categories/经典/"/>
+    
+    
+    <category term="经典" scheme="http://yetyao.github.io/tags/经典/"/>
+    
+  </entry>
+  
+  <entry>
     <title>搞钱项目</title>
     <link href="http://yetyao.github.io/2024/01/15/%E6%90%9E%E9%92%B1%E9%A1%B9%E7%9B%AE/"/>
     <id>http://yetyao.github.io/2024/01/15/%E6%90%9E%E9%92%B1%E9%A1%B9%E7%9B%AE/</id>
     <published>2024-01-15T03:02:59.000Z</published>
-    <updated>2024-01-15T09:27:39.553Z</updated>
+    <updated>2024-01-25T10:51:40.691Z</updated>
     
     
       
@@ -46,7 +96,7 @@
     <link href="http://yetyao.github.io/2024/01/15/%E6%95%99%E8%82%B2%E8%B5%84%E6%BA%90/"/>
     <id>http://yetyao.github.io/2024/01/15/%E6%95%99%E8%82%B2%E8%B5%84%E6%BA%90/</id>
     <published>2024-01-15T03:02:59.000Z</published>
-    <updated>2024-01-20T03:28:11.032Z</updated>
+    <updated>2024-01-25T10:51:41.412Z</updated>
     
     
       
@@ -71,7 +121,7 @@
     <link href="http://yetyao.github.io/2024/01/15/%E8%BD%AF%E4%BB%B6%E6%8A%80%E8%83%BD/"/>
     <id>http://yetyao.github.io/2024/01/15/%E8%BD%AF%E4%BB%B6%E6%8A%80%E8%83%BD/</id>
     <published>2024-01-15T03:02:59.000Z</published>
-    <updated>2024-01-17T08:00:01.474Z</updated>
+    <updated>2024-01-26T02:51:05.585Z</updated>
     
     
       
@@ -121,7 +171,7 @@
     <link href="http://yetyao.github.io/2023/11/01/%E5%9C%A8%E7%BA%BF%E7%BD%91%E7%AB%99%E6%8E%A8%E8%8D%90/"/>
     <id>http://yetyao.github.io/2023/11/01/%E5%9C%A8%E7%BA%BF%E7%BD%91%E7%AB%99%E6%8E%A8%E8%8D%90/</id>
     <published>2023-11-01T03:02:59.000Z</published>
-    <updated>2024-01-12T09:47:26.828Z</updated>
+    <updated>2024-01-25T10:51:39.933Z</updated>
     
     
       
@@ -142,11 +192,61 @@
   </entry>
   
   <entry>
+    <title>摄影视频资源</title>
+    <link href="http://yetyao.github.io/2023/11/01/%E6%91%84%E5%BD%B1%E8%A7%86%E9%A2%91%E8%B5%84%E6%BA%90/"/>
+    <id>http://yetyao.github.io/2023/11/01/%E6%91%84%E5%BD%B1%E8%A7%86%E9%A2%91%E8%B5%84%E6%BA%90/</id>
+    <published>2023-11-01T03:02:59.000Z</published>
+    <updated>2024-01-26T02:50:28.296Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="摄影" scheme="http://yetyao.github.io/categories/摄影/"/>
+    
+    
+    <category term="摄影" scheme="http://yetyao.github.io/tags/摄影/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>电影资源</title>
+    <link href="http://yetyao.github.io/2023/11/01/%E7%94%B5%E5%BD%B1%E8%B5%84%E6%BA%90/"/>
+    <id>http://yetyao.github.io/2023/11/01/%E7%94%B5%E5%BD%B1%E8%B5%84%E6%BA%90/</id>
+    <published>2023-11-01T03:02:59.000Z</published>
+    <updated>2024-01-26T02:49:23.976Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="电影" scheme="http://yetyao.github.io/categories/电影/"/>
+    
+    
+    <category term="电影" scheme="http://yetyao.github.io/tags/电影/"/>
+    
+  </entry>
+  
+  <entry>
     <title>夸克网盘资源</title>
     <link href="http://yetyao.github.io/2023/10/24/%E5%A4%B8%E5%85%8B%E7%BD%91%E7%9B%98%E8%B5%84%E6%BA%90/"/>
     <id>http://yetyao.github.io/2023/10/24/%E5%A4%B8%E5%85%8B%E7%BD%91%E7%9B%98%E8%B5%84%E6%BA%90/</id>
     <published>2023-10-24T09:02:59.000Z</published>
-    <updated>2024-01-20T07:14:20.348Z</updated>
+    <updated>2024-01-23T08:03:18.044Z</updated>
     
     
       
@@ -397,104 +497,6 @@
     
     
     <category term="阿里云盘" scheme="http://yetyao.github.io/tags/阿里云盘/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>阿里网盘资源-教育</title>
-    <link href="http://yetyao.github.io/2022/11/25/%E9%98%BF%E9%87%8C%E7%BD%91%E7%9B%98%E8%B5%84%E6%BA%90-%E6%95%99%E8%82%B2/"/>
-    <id>http://yetyao.github.io/2022/11/25/%E9%98%BF%E9%87%8C%E7%BD%91%E7%9B%98%E8%B5%84%E6%BA%90-%E6%95%99%E8%82%B2/</id>
-    <published>2022-11-25T09:02:59.000Z</published>
-    <updated>2023-02-23T02:20:28.614Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="阿里网盘" scheme="http://yetyao.github.io/categories/阿里网盘/"/>
-    
-    
-    <category term="阿里网盘" scheme="http://yetyao.github.io/tags/阿里网盘/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>电影推荐</title>
-    <link href="http://yetyao.github.io/2022/11/15/%E7%94%B5%E5%BD%B1LIST/"/>
-    <id>http://yetyao.github.io/2022/11/15/%E7%94%B5%E5%BD%B1LIST/</id>
-    <published>2022-11-15T09:02:59.000Z</published>
-    <updated>2022-11-15T09:54:28.982Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="电影" scheme="http://yetyao.github.io/categories/电影/"/>
-    
-    
-    <category term="电影" scheme="http://yetyao.github.io/tags/电影/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>软件推荐</title>
-    <link href="http://yetyao.github.io/2022/09/08/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
-    <id>http://yetyao.github.io/2022/09/08/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</id>
-    <published>2022-09-08T09:02:59.000Z</published>
-    <updated>2023-11-01T08:32:27.558Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="软件" scheme="http://yetyao.github.io/categories/软件/"/>
-    
-    
-    <category term="软件" scheme="http://yetyao.github.io/tags/软件/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>image</title>
-    <link href="http://yetyao.github.io/2022/09/05/test/"/>
-    <id>http://yetyao.github.io/2022/09/05/test/</id>
-    <published>2022-09-05T09:02:59.000Z</published>
-    <updated>2023-09-16T09:42:33.666Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    
-    <category term="image" scheme="http://yetyao.github.io/tags/image/"/>
     
   </entry>
   
