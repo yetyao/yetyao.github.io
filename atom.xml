@@ -6,7 +6,7 @@
   <link href="http://yetyao.github.io/atom.xml" rel="self"/>
   
   <link href="http://yetyao.github.io/"/>
-  <updated>2024-01-31T12:47:42.324Z</updated>
+  <updated>2024-02-05T07:34:50.955Z</updated>
   <id>http://yetyao.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yetyao.github.io/2024/01/23/%E5%8C%BB%E5%AD%A6%E8%B5%84%E6%BA%90/"/>
     <id>http://yetyao.github.io/2024/01/23/%E5%8C%BB%E5%AD%A6%E8%B5%84%E6%BA%90/</id>
     <published>2024-01-23T03:02:59.000Z</published>
-    <updated>2024-01-31T12:47:42.324Z</updated>
+    <updated>2024-02-05T07:34:50.955Z</updated>
     
     
       
@@ -46,7 +46,7 @@
     <link href="http://yetyao.github.io/2024/01/23/%E4%B8%AD%E5%9B%BD%E7%BB%8F%E5%85%B8/"/>
     <id>http://yetyao.github.io/2024/01/23/%E4%B8%AD%E5%9B%BD%E7%BB%8F%E5%85%B8/</id>
     <published>2024-01-23T03:02:59.000Z</published>
-    <updated>2024-01-31T12:34:25.325Z</updated>
+    <updated>2024-02-02T10:38:00.624Z</updated>
     
     
       
@@ -67,11 +67,36 @@
   </entry>
   
   <entry>
+    <title>技能技巧</title>
+    <link href="http://yetyao.github.io/2024/01/15/%E6%8A%80%E8%83%BD%E6%8A%80%E5%B7%A7/"/>
+    <id>http://yetyao.github.io/2024/01/15/%E6%8A%80%E8%83%BD%E6%8A%80%E5%B7%A7/</id>
+    <published>2024-01-15T03:02:59.000Z</published>
+    <updated>2024-02-04T02:58:41.760Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="技能" scheme="http://yetyao.github.io/categories/技能/"/>
+    
+    
+    <category term="技能" scheme="http://yetyao.github.io/tags/技能/"/>
+    
+  </entry>
+  
+  <entry>
     <title>搞钱项目</title>
     <link href="http://yetyao.github.io/2024/01/15/%E6%90%9E%E9%92%B1%E9%A1%B9%E7%9B%AE/"/>
     <id>http://yetyao.github.io/2024/01/15/%E6%90%9E%E9%92%B1%E9%A1%B9%E7%9B%AE/</id>
     <published>2024-01-15T03:02:59.000Z</published>
-    <updated>2024-01-25T10:51:40.691Z</updated>
+    <updated>2024-02-03T02:56:59.667Z</updated>
     
     
       
@@ -96,7 +121,7 @@
     <link href="http://yetyao.github.io/2024/01/15/%E6%95%99%E8%82%B2%E8%B5%84%E6%BA%90/"/>
     <id>http://yetyao.github.io/2024/01/15/%E6%95%99%E8%82%B2%E8%B5%84%E6%BA%90/</id>
     <published>2024-01-15T03:02:59.000Z</published>
-    <updated>2024-01-31T12:34:28.756Z</updated>
+    <updated>2024-02-04T02:59:19.302Z</updated>
     
     
       
@@ -117,11 +142,36 @@
   </entry>
   
   <entry>
+    <title>软件合集</title>
+    <link href="http://yetyao.github.io/2024/01/15/%E8%BD%AF%E4%BB%B6%E5%90%88%E9%9B%86/"/>
+    <id>http://yetyao.github.io/2024/01/15/%E8%BD%AF%E4%BB%B6%E5%90%88%E9%9B%86/</id>
+    <published>2024-01-15T03:02:59.000Z</published>
+    <updated>2024-02-02T04:09:40.464Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="软件" scheme="http://yetyao.github.io/categories/软件/"/>
+    
+    
+    <category term="软件" scheme="http://yetyao.github.io/tags/软件/"/>
+    
+  </entry>
+  
+  <entry>
     <title>音乐资源</title>
     <link href="http://yetyao.github.io/2024/01/15/%E9%9F%B3%E4%B9%90%E8%B5%84%E6%BA%90/"/>
     <id>http://yetyao.github.io/2024/01/15/%E9%9F%B3%E4%B9%90%E8%B5%84%E6%BA%90/</id>
     <published>2024-01-15T03:02:59.000Z</published>
-    <updated>2024-01-31T12:34:29.924Z</updated>
+    <updated>2024-02-03T01:33:01.812Z</updated>
     
     
       
@@ -142,11 +192,11 @@
   </entry>
   
   <entry>
-    <title>软件技巧</title>
-    <link href="http://yetyao.github.io/2024/01/15/%E8%BD%AF%E4%BB%B6%E6%8A%80%E8%83%BD/"/>
-    <id>http://yetyao.github.io/2024/01/15/%E8%BD%AF%E4%BB%B6%E6%8A%80%E8%83%BD/</id>
-    <published>2024-01-15T03:02:59.000Z</published>
-    <updated>2024-01-26T09:37:41.957Z</updated>
+    <title>在线网站推荐</title>
+    <link href="http://yetyao.github.io/2023/11/01/%E5%9C%A8%E7%BA%BF%E7%BD%91%E7%AB%99%E6%8E%A8%E8%8D%90/"/>
+    <id>http://yetyao.github.io/2023/11/01/%E5%9C%A8%E7%BA%BF%E7%BD%91%E7%AB%99%E6%8E%A8%E8%8D%90/</id>
+    <published>2023-11-01T03:02:59.000Z</published>
+    <updated>2024-02-05T06:52:31.601Z</updated>
     
     
       
@@ -159,10 +209,10 @@
     
     
     
-    <category term="软件" scheme="http://yetyao.github.io/categories/软件/"/>
+    <category term="网站" scheme="http://yetyao.github.io/categories/网站/"/>
     
     
-    <category term="软件" scheme="http://yetyao.github.io/tags/软件/"/>
+    <category term="网站" scheme="http://yetyao.github.io/tags/网站/"/>
     
   </entry>
   
@@ -192,36 +242,11 @@
   </entry>
   
   <entry>
-    <title>在线网站推荐</title>
-    <link href="http://yetyao.github.io/2023/11/01/%E5%9C%A8%E7%BA%BF%E7%BD%91%E7%AB%99%E6%8E%A8%E8%8D%90/"/>
-    <id>http://yetyao.github.io/2023/11/01/%E5%9C%A8%E7%BA%BF%E7%BD%91%E7%AB%99%E6%8E%A8%E8%8D%90/</id>
-    <published>2023-11-01T03:02:59.000Z</published>
-    <updated>2024-01-25T10:51:39.933Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="网站" scheme="http://yetyao.github.io/categories/网站/"/>
-    
-    
-    <category term="网站" scheme="http://yetyao.github.io/tags/网站/"/>
-    
-  </entry>
-  
-  <entry>
     <title>电影资源</title>
     <link href="http://yetyao.github.io/2023/11/01/%E7%94%B5%E5%BD%B1%E8%B5%84%E6%BA%90/"/>
     <id>http://yetyao.github.io/2023/11/01/%E7%94%B5%E5%BD%B1%E8%B5%84%E6%BA%90/</id>
     <published>2023-11-01T03:02:59.000Z</published>
-    <updated>2024-01-27T04:03:34.729Z</updated>
+    <updated>2024-02-05T02:31:54.258Z</updated>
     
     
       
@@ -261,31 +286,6 @@
     
     
     <category term="网盘" scheme="http://yetyao.github.io/tags/网盘/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>语录01</title>
-    <link href="http://yetyao.github.io/2023/09/16/%E8%AF%AD%E5%BD%9501/"/>
-    <id>http://yetyao.github.io/2023/09/16/%E8%AF%AD%E5%BD%9501/</id>
-    <published>2023-09-16T11:18:59.000Z</published>
-    <updated>2023-09-16T12:34:43.193Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="语录" scheme="http://yetyao.github.io/categories/语录/"/>
-    
-    
-    <category term="语录" scheme="http://yetyao.github.io/tags/语录/"/>
     
   </entry>
   
@@ -342,7 +342,7 @@
     <link href="http://yetyao.github.io/2023/07/04/%E7%94%B5%E5%AD%90%E4%B9%A6%E7%BD%91%E7%AB%99/"/>
     <id>http://yetyao.github.io/2023/07/04/%E7%94%B5%E5%AD%90%E4%B9%A6%E7%BD%91%E7%AB%99/</id>
     <published>2023-07-04T09:02:59.000Z</published>
-    <updated>2023-12-26T07:22:00.146Z</updated>
+    <updated>2024-02-05T07:34:49.292Z</updated>
     
     
       
