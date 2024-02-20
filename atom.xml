@@ -6,7 +6,7 @@
   <link href="http://yetyao.github.io/atom.xml" rel="self"/>
   
   <link href="http://yetyao.github.io/"/>
-  <updated>2024-02-05T07:34:50.955Z</updated>
+  <updated>2024-02-18T04:08:17.384Z</updated>
   <id>http://yetyao.github.io/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>娱乐资源</title>
+    <link href="http://yetyao.github.io/2024/02/01/%E5%A8%B1%E4%B9%90%E8%B5%84%E6%BA%90%E8%A7%86%E9%A2%91/"/>
+    <id>http://yetyao.github.io/2024/02/01/%E5%A8%B1%E4%B9%90%E8%B5%84%E6%BA%90%E8%A7%86%E9%A2%91/</id>
+    <published>2024-02-01T04:02:59.000Z</published>
+    <updated>2024-02-18T04:08:17.384Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="娱乐" scheme="http://yetyao.github.io/categories/娱乐/"/>
+    
+    
+    <category term="娱乐" scheme="http://yetyao.github.io/tags/娱乐/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>中国经典</title>
+    <link href="http://yetyao.github.io/2024/01/23/%E4%B8%AD%E5%9B%BD%E7%BB%8F%E5%85%B8/"/>
+    <id>http://yetyao.github.io/2024/01/23/%E4%B8%AD%E5%9B%BD%E7%BB%8F%E5%85%B8/</id>
+    <published>2024-01-23T03:02:59.000Z</published>
+    <updated>2024-02-18T04:09:23.360Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="经典" scheme="http://yetyao.github.io/categories/经典/"/>
+    
+    
+    <category term="经典" scheme="http://yetyao.github.io/tags/经典/"/>
+    
+  </entry>
   
   <entry>
     <title>医学资源</title>
@@ -42,11 +92,11 @@
   </entry>
   
   <entry>
-    <title>中国经典</title>
-    <link href="http://yetyao.github.io/2024/01/23/%E4%B8%AD%E5%9B%BD%E7%BB%8F%E5%85%B8/"/>
-    <id>http://yetyao.github.io/2024/01/23/%E4%B8%AD%E5%9B%BD%E7%BB%8F%E5%85%B8/</id>
-    <published>2024-01-23T03:02:59.000Z</published>
-    <updated>2024-02-02T10:38:00.624Z</updated>
+    <title>chrome组件分享</title>
+    <link href="http://yetyao.github.io/2024/01/15/chrome%E6%89%A9%E5%B1%95/"/>
+    <id>http://yetyao.github.io/2024/01/15/chrome%E6%89%A9%E5%B1%95/</id>
+    <published>2024-01-15T05:14:59.000Z</published>
+    <updated>2024-02-20T05:54:20.632Z</updated>
     
     
       
@@ -59,10 +109,60 @@
     
     
     
-    <category term="经典" scheme="http://yetyao.github.io/categories/经典/"/>
+    <category term="chrome" scheme="http://yetyao.github.io/categories/chrome/"/>
     
     
-    <category term="经典" scheme="http://yetyao.github.io/tags/经典/"/>
+    <category term="chrome" scheme="http://yetyao.github.io/tags/chrome/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>chatgpt</title>
+    <link href="http://yetyao.github.io/2024/01/15/chatgpt/"/>
+    <id>http://yetyao.github.io/2024/01/15/chatgpt/</id>
+    <published>2024-01-15T05:14:59.000Z</published>
+    <updated>2024-02-20T05:54:12.934Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="chatgpt" scheme="http://yetyao.github.io/categories/chatgpt/"/>
+    
+    
+    <category term="chatgpt" scheme="http://yetyao.github.io/tags/chatgpt/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>图片资源</title>
+    <link href="http://yetyao.github.io/2024/01/15/%E5%9B%BE%E7%89%87%E7%BD%91%E7%AB%99/"/>
+    <id>http://yetyao.github.io/2024/01/15/%E5%9B%BE%E7%89%87%E7%BD%91%E7%AB%99/</id>
+    <published>2024-01-15T05:14:59.000Z</published>
+    <updated>2024-02-06T05:55:16.745Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="图片" scheme="http://yetyao.github.io/categories/图片/"/>
+    
+    
+    <category term="图片" scheme="http://yetyao.github.io/tags/图片/"/>
     
   </entry>
   
@@ -71,7 +171,7 @@
     <link href="http://yetyao.github.io/2024/01/15/%E6%8A%80%E8%83%BD%E6%8A%80%E5%B7%A7/"/>
     <id>http://yetyao.github.io/2024/01/15/%E6%8A%80%E8%83%BD%E6%8A%80%E5%B7%A7/</id>
     <published>2024-01-15T03:02:59.000Z</published>
-    <updated>2024-02-04T02:58:41.760Z</updated>
+    <updated>2024-02-20T05:54:11.661Z</updated>
     
     
       
@@ -96,7 +196,7 @@
     <link href="http://yetyao.github.io/2024/01/15/%E6%90%9E%E9%92%B1%E9%A1%B9%E7%9B%AE/"/>
     <id>http://yetyao.github.io/2024/01/15/%E6%90%9E%E9%92%B1%E9%A1%B9%E7%9B%AE/</id>
     <published>2024-01-15T03:02:59.000Z</published>
-    <updated>2024-02-03T02:56:59.667Z</updated>
+    <updated>2024-02-18T04:07:30.081Z</updated>
     
     
       
@@ -146,7 +246,7 @@
     <link href="http://yetyao.github.io/2024/01/15/%E8%BD%AF%E4%BB%B6%E5%90%88%E9%9B%86/"/>
     <id>http://yetyao.github.io/2024/01/15/%E8%BD%AF%E4%BB%B6%E5%90%88%E9%9B%86/</id>
     <published>2024-01-15T03:02:59.000Z</published>
-    <updated>2024-02-02T04:09:40.464Z</updated>
+    <updated>2024-02-18T03:44:42.201Z</updated>
     
     
       
@@ -171,7 +271,7 @@
     <link href="http://yetyao.github.io/2024/01/15/%E9%9F%B3%E4%B9%90%E8%B5%84%E6%BA%90/"/>
     <id>http://yetyao.github.io/2024/01/15/%E9%9F%B3%E4%B9%90%E8%B5%84%E6%BA%90/</id>
     <published>2024-01-15T03:02:59.000Z</published>
-    <updated>2024-02-03T01:33:01.812Z</updated>
+    <updated>2024-02-20T05:54:13.907Z</updated>
     
     
       
@@ -196,7 +296,7 @@
     <link href="http://yetyao.github.io/2023/11/01/%E5%9C%A8%E7%BA%BF%E7%BD%91%E7%AB%99%E6%8E%A8%E8%8D%90/"/>
     <id>http://yetyao.github.io/2023/11/01/%E5%9C%A8%E7%BA%BF%E7%BD%91%E7%AB%99%E6%8E%A8%E8%8D%90/</id>
     <published>2023-11-01T03:02:59.000Z</published>
-    <updated>2024-02-05T06:52:31.601Z</updated>
+    <updated>2024-02-18T03:53:16.200Z</updated>
     
     
       
@@ -290,29 +390,6 @@
   </entry>
   
   <entry>
-    <title>chrome插件</title>
-    <link href="http://yetyao.github.io/2023/09/16/chrome%E6%8F%92%E4%BB%B6/"/>
-    <id>http://yetyao.github.io/2023/09/16/chrome%E6%8F%92%E4%BB%B6/</id>
-    <published>2023-09-16T09:02:59.000Z</published>
-    <updated>2023-09-16T10:30:56.101Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    
-    <category term="chrome" scheme="http://yetyao.github.io/tags/chrome/"/>
-    
-  </entry>
-  
-  <entry>
     <title>哲学基础问题100个</title>
     <link href="http://yetyao.github.io/2023/09/15/%E5%93%B2%E5%AD%A6%E5%9F%BA%E7%A1%80%E9%97%AE%E9%A2%98100%E4%B8%AA/"/>
     <id>http://yetyao.github.io/2023/09/15/%E5%93%B2%E5%AD%A6%E5%9F%BA%E7%A1%80%E9%97%AE%E9%A2%98100%E4%B8%AA/</id>
@@ -385,29 +462,6 @@
   
   <entry>
     <title>哲学</title>
-    <link href="http://yetyao.github.io/2023/05/04/chatgpt/"/>
-    <id>http://yetyao.github.io/2023/05/04/chatgpt/</id>
-    <published>2023-05-04T04:02:59.000Z</published>
-    <updated>2023-05-10T02:06:53.817Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    
-    <category term="哲学" scheme="http://yetyao.github.io/tags/哲学/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>哲学</title>
     <link href="http://yetyao.github.io/2023/03/09/%E5%93%B2%E5%AD%A6/"/>
     <id>http://yetyao.github.io/2023/03/09/%E5%93%B2%E5%AD%A6/</id>
     <published>2023-03-09T09:02:59.000Z</published>
@@ -449,54 +503,6 @@
     
     
     <category term="软件测试" scheme="http://yetyao.github.io/tags/软件测试/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>电子书网盘资源</title>
-    <link href="http://yetyao.github.io/2022/12/05/%E7%94%B5%E5%AD%90%E4%B9%A6%E7%BD%91%E7%9B%98%E8%B5%84%E6%BA%90/"/>
-    <id>http://yetyao.github.io/2022/12/05/%E7%94%B5%E5%AD%90%E4%B9%A6%E7%BD%91%E7%9B%98%E8%B5%84%E6%BA%90/</id>
-    <published>2022-12-05T09:02:59.000Z</published>
-    <updated>2024-01-18T05:47:08.012Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    
-    <category term="电子书" scheme="http://yetyao.github.io/tags/电子书/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>阿里云盘资源</title>
-    <link href="http://yetyao.github.io/2022/12/01/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98%E8%B5%84%E6%BA%90/"/>
-    <id>http://yetyao.github.io/2022/12/01/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98%E8%B5%84%E6%BA%90/</id>
-    <published>2022-12-01T09:02:59.000Z</published>
-    <updated>2024-01-31T12:34:01.540Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="阿里云盘" scheme="http://yetyao.github.io/categories/阿里云盘/"/>
-    
-    
-    <category term="阿里云盘" scheme="http://yetyao.github.io/tags/阿里云盘/"/>
     
   </entry>
   
