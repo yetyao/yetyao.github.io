@@ -146,7 +146,7 @@
     <link href="http://yetyao.github.io/2024/08/14/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/"/>
     <id>http://yetyao.github.io/2024/08/14/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/</id>
     <published>2024-08-14T03:02:59.000Z</published>
-    <updated>2025-09-29T02:51:02.894Z</updated>
+    <updated>2025-09-29T03:21:30.622Z</updated>
     
     
       
@@ -442,31 +442,6 @@
   </entry>
   
   <entry>
-    <title>付费资源</title>
-    <link href="http://yetyao.github.io/2024/01/23/%E4%BB%98%E8%B4%B9%E8%B5%84%E6%BA%90/"/>
-    <id>http://yetyao.github.io/2024/01/23/%E4%BB%98%E8%B4%B9%E8%B5%84%E6%BA%90/</id>
-    <published>2024-01-23T03:02:59.000Z</published>
-    <updated>2025-08-07T05:38:13.372Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    <category term="资源" scheme="http://yetyao.github.io/categories/资源/"/>
-    
-    
-    <category term="资源" scheme="http://yetyao.github.io/tags/资源/"/>
-    
-  </entry>
-  
-  <entry>
     <title>医学资源</title>
     <link href="http://yetyao.github.io/2024/01/23/%E5%8C%BB%E5%AD%A6%E8%B5%84%E6%BA%90/"/>
     <id>http://yetyao.github.io/2024/01/23/%E5%8C%BB%E5%AD%A6%E8%B5%84%E6%BA%90/</id>
@@ -492,11 +467,11 @@
   </entry>
   
   <entry>
-    <title>chatgpt</title>
-    <link href="http://yetyao.github.io/2024/01/15/chatgpt/"/>
-    <id>http://yetyao.github.io/2024/01/15/chatgpt/</id>
-    <published>2024-01-15T05:14:59.000Z</published>
-    <updated>2025-05-22T01:47:56.069Z</updated>
+    <title>付费资源</title>
+    <link href="http://yetyao.github.io/2024/01/23/%E4%BB%98%E8%B4%B9%E8%B5%84%E6%BA%90/"/>
+    <id>http://yetyao.github.io/2024/01/23/%E4%BB%98%E8%B4%B9%E8%B5%84%E6%BA%90/</id>
+    <published>2024-01-23T03:02:59.000Z</published>
+    <updated>2025-08-07T05:38:13.372Z</updated>
     
     
       
@@ -509,10 +484,35 @@
     
     
     
-    <category term="chatgpt" scheme="http://yetyao.github.io/categories/chatgpt/"/>
+    <category term="资源" scheme="http://yetyao.github.io/categories/资源/"/>
     
     
-    <category term="chatgpt" scheme="http://yetyao.github.io/tags/chatgpt/"/>
+    <category term="资源" scheme="http://yetyao.github.io/tags/资源/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>chrome组件分享</title>
+    <link href="http://yetyao.github.io/2024/01/15/chrome%E6%89%A9%E5%B1%95/"/>
+    <id>http://yetyao.github.io/2024/01/15/chrome%E6%89%A9%E5%B1%95/</id>
+    <published>2024-01-15T05:14:59.000Z</published>
+    <updated>2024-11-18T10:34:16.822Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="chrome" scheme="http://yetyao.github.io/categories/chrome/"/>
+    
+    
+    <category term="chrome" scheme="http://yetyao.github.io/tags/chrome/"/>
     
   </entry>
   
